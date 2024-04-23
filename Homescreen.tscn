@@ -1,47 +1,54 @@
 [gd_scene load_steps=6 format=3 uid="uid://ccd50qmh2o3jf"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_g26lp"]
-[ext_resource type="Texture2D" uid="uid://bacrq3haix457" path="res://Digi-Deck Domain.png" id="1_xxvte"]
 [ext_resource type="Texture2D" uid="uid://bsuhsslwmgaw8" path="res://Start Button.png" id="2_0ftw8"]
+[ext_resource type="Texture2D" uid="uid://dlb6t7yappd3f" path="res://Images/Digi-Deck Domain Backround.png" id="2_55yyi"]
 [ext_resource type="Texture2D" uid="uid://vuars348ebr1" path="res://Quit Button.png" id="4_wtdhy"]
-[ext_resource type="AudioStream" path="res://Txmy - Ｅｔｈｅｒｅａｌ.mp3" id="5_ma7wj"]
+[ext_resource type="AudioStream" uid="uid://8wi0573k4bf2" path="res://Audio/Crescent Dunes.mp3" id="5_rev6d"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_g26lp")
 
-[node name="Digi-deckDomain" type="Sprite2D" parent="."]
-position = Vector2(960, 540)
-texture = ExtResource("1_xxvte")
+[node name="Layer0" type="CanvasLayer" parent="."]
+layer = 0
 
-[node name="StartButton" type="Sprite2D" parent="."]
-position = Vector2(959.5, 540)
-scale = Vector2(0.999479, 1)
-texture = ExtResource("2_0ftw8")
+[node name="Digi-deckDomainBackround" type="Sprite2D" parent="Layer0"]
+position = Vector2(963, 542)
+texture = ExtResource("2_55yyi")
 
-[node name="QuitButton" type="Sprite2D" parent="."]
-position = Vector2(975, 578)
-scale = Vector2(0.76849, 0.840741)
-texture = ExtResource("4_wtdhy")
+[node name="Layer1" type="CanvasLayer" parent="."]
 
-[node name="QuitButton2" type="Button" parent="."]
+[node name="QuitButton2" type="Button" parent="Layer1"]
+modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 offset_left = 883.0
 offset_top = 888.0
 offset_right = 1038.0
 offset_bottom = 941.0
 
-[node name="StartButton2" type="Button" parent="."]
+[node name="StartButton2" type="Button" parent="Layer1"]
+modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 offset_left = 860.0
 offset_top = 777.0
 offset_right = 1059.0
 offset_bottom = 864.0
 
+[node name="StartButton" type="Sprite2D" parent="Layer1"]
+position = Vector2(959.5, 540)
+scale = Vector2(0.999479, 1)
+texture = ExtResource("2_0ftw8")
+
+[node name="QuitButton" type="Sprite2D" parent="Layer1"]
+position = Vector2(975, 578)
+scale = Vector2(0.76849, 0.840741)
+texture = ExtResource("4_wtdhy")
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_ma7wj")
+stream = ExtResource("5_rev6d")
 volume_db = -10.779
 autoplay = true
 
-[connection signal="pressed" from="QuitButton2" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="QuitButton2" to="." method="_on_quit_button_2_pressed"]
-[connection signal="pressed" from="StartButton2" to="." method="_on_start_button_2_pressed"]
+[connection signal="pressed" from="Layer1/QuitButton2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Layer1/QuitButton2" to="." method="_on_quit_button_2_pressed"]
+[connection signal="pressed" from="Layer1/StartButton2" to="." method="_on_start_button_2_pressed"]
