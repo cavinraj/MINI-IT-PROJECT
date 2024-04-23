@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccd50qmh2o3jf"]
+[gd_scene load_steps=6 format=3 uid="uid://ccd50qmh2o3jf"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_g26lp"]
 [ext_resource type="Texture2D" uid="uid://bacrq3haix457" path="res://Digi-Deck Domain.png" id="1_xxvte"]
 [ext_resource type="Texture2D" uid="uid://bsuhsslwmgaw8" path="res://Start Button.png" id="2_0ftw8"]
 [ext_resource type="Texture2D" uid="uid://vuars348ebr1" path="res://Quit Button.png" id="4_wtdhy"]
+[ext_resource type="AudioStream" path="res://Txmy - Ｅｔｈｅｒｅａｌ.mp3" id="5_ma7wj"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_g26lp")
@@ -35,6 +36,11 @@ offset_left = 860.0
 offset_top = 777.0
 offset_right = 1059.0
 offset_bottom = 864.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ma7wj")
+volume_db = -10.0
+autoplay = true
 
 [connection signal="pressed" from="QuitButton2" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="QuitButton2" to="." method="_on_quit_button_2_pressed"]

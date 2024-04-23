@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 [gd_scene load_steps=2 format=3 uid="uid://dfnqa88r1wtk3"]
 
 [ext_resource type="AudioStream" path="res://Txmy - Ｅｔｈｅｒｅａｌ.mp3" id="1_ycc6k"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://b68knoyfyrm0x"]
+
+[ext_resource type="AudioStream" uid="uid://r0xl2cq2t6g" path="res://Txmy - Ｅｔｈｅｒｅａｌ.mp3" id="1_ycc6k"]
+>>>>>>> airil
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_ycc6k")
