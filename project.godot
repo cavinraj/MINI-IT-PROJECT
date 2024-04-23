@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 boot_splash/image="res://Images/help us, we suck at coding.png"
 config/icon="res://icon.svg"
-boot_splash/minimum_display_time=1500
+boot_splash/minimum_display_time=500
 
 [display]
 
