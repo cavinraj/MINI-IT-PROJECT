@@ -13,7 +13,7 @@ script = ExtResource("1_g26lp")
 layer = 0
 
 [node name="Digi-deckDomainBackround" type="Sprite2D" parent="Layer0"]
-position = Vector2(984, 530)
+position = Vector2(963, 542)
 texture = ExtResource("2_55yyi")
 
 [node name="Layer1" type="CanvasLayer" parent="."]
