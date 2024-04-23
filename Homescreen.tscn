@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccd50qmh2o3jf"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_g26lp"]
+[ext_resource type="Texture2D" uid="uid://bacrq3haix457" path="res://Digi-Deck Domain.png" id="1_xxvte"]
+[ext_resource type="Texture2D" uid="uid://bsuhsslwmgaw8" path="res://Start Button.png" id="2_0ftw8"]
+[ext_resource type="Texture2D" uid="uid://vuars348ebr1" path="res://Quit Button.png" id="4_wtdhy"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_g26lp")
+
+[node name="Digi-deckDomain" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_xxvte")
+
+[node name="StartButton" type="Sprite2D" parent="."]
+position = Vector2(959.5, 540)
+scale = Vector2(0.999479, 1)
+texture = ExtResource("2_0ftw8")
+
+[node name="QuitButton" type="Sprite2D" parent="."]
+position = Vector2(975, 578)
+scale = Vector2(0.76849, 0.840741)
+texture = ExtResource("4_wtdhy")
+
+[node name="QuitButton2" type="Button" parent="."]
+show_behind_parent = true
+offset_left = 883.0
+offset_top = 888.0
+offset_right = 1038.0
+offset_bottom = 941.0
+
+[connection signal="pressed" from="QuitButton2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="QuitButton2" to="." method="_on_quit_button_2_pressed"]
