@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://duaq2jbyhgr1e"]
+[gd_scene load_steps=2 format=3 uid="uid://duaq2jbyhgr1e"]
+
+[ext_resource type="VideoStream" path="res://Video/Hey Ya! Low quality.ogv" id="1_xxwln"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("1_xxwln")
+autoplay = true
+expand = true
+loop = true
+buffering_msec = 10
