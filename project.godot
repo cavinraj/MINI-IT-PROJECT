@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="Git Exercise"
+run/main_scene="res://button1test.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"

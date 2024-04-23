@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://drafo5ny8nn2v"]
+
+[ext_resource type="Texture2D" uid="uid://bacrq3haix457" path="res://Digi-Deck Domain.png" id="1_ul80e"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 492.0
+offset_top = 819.0
+offset_right = 694.0
+offset_bottom = 940.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Digi-deckDomain" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_ul80e")
