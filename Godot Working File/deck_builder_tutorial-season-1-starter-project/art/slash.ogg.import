@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dixklg6g4jnsq"
-path="res://.godot/imported/slash.ogg-e4c55e61bf388ba3f20a1dcb4275a8c1.oggvorbisstr"
+path="res://.godot/imported/slash.ogg-5de08f31aac3611756bff05e6c2aec20.oggvorbisstr"
 
 [deps]
 
-source_file="res://art/slash.ogg"
-dest_files=["res://.godot/imported/slash.ogg-e4c55e61bf388ba3f20a1dcb4275a8c1.oggvorbisstr"]
+source_file="res://Godot Working File/deck_builder_tutorial-season-1-starter-project/art/slash.ogg"
+dest_files=["res://.godot/imported/slash.ogg-5de08f31aac3611756bff05e6c2aec20.oggvorbisstr"]
 
 [params]
 
