@@ -187,8 +187,8 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Map1" type="Sprite2D" parent="Layer0/Anchor/Center"]
-position = Vector2(2.08165e-12, -352)
-scale = Vector2(2.86185, 2.86185)
+position = Vector2(2.08165e-12, -328)
+scale = Vector2(2.78092, 2.78092)
 texture = ExtResource("3_q73jr")
 
 [node name="Layer1" type="CanvasLayer" parent="."]
