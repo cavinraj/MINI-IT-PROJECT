@@ -16,11 +16,18 @@ config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 boot_splash/show_image=false
 boot_splash/image="res://Images/help us, we suck at coding.png"
-config/icon="res://icon.svg"
+config/icon="res://Godot Working File/icon.png"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
+window/size/viewport_width=256
+window/size/viewport_height=144
 window/size/resizable=false
-window/stretch/mode="canvas_items"
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="viewport"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="mobile"

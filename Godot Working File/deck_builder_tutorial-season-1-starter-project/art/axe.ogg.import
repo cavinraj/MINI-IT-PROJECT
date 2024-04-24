@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b1vpjjmi5cj3n"
-path="res://.godot/imported/axe.ogg-bc2f0bb926c24860f529014478adc9b5.oggvorbisstr"
+path="res://.godot/imported/axe.ogg-19888b3b1ab2e56f9d343fce7ba8313e.oggvorbisstr"
 
 [deps]
 
-source_file="res://art/axe.ogg"
-dest_files=["res://.godot/imported/axe.ogg-bc2f0bb926c24860f529014478adc9b5.oggvorbisstr"]
+source_file="res://Godot Working File/deck_builder_tutorial-season-1-starter-project/art/axe.ogg"
+dest_files=["res://.godot/imported/axe.ogg-19888b3b1ab2e56f9d343fce7ba8313e.oggvorbisstr"]
 
 [params]
 

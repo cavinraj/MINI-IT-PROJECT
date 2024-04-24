@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dskmdk146n4rq"
-path="res://.godot/imported/pixel_rpg.ttf-59951fa72659cb0c2359654d5398f7c3.fontdata"
+path="res://.godot/imported/pixel_rpg.ttf-a421fb10be2fe1d545242b749e7db0d9.fontdata"
 
 [deps]
 
-source_file="res://art/pixel_rpg.ttf"
-dest_files=["res://.godot/imported/pixel_rpg.ttf-59951fa72659cb0c2359654d5398f7c3.fontdata"]
+source_file="res://Godot Working File/deck_builder_tutorial-season-1-starter-project/art/pixel_rpg.ttf"
+dest_files=["res://.godot/imported/pixel_rpg.ttf-a421fb10be2fe1d545242b749e7db0d9.fontdata"]
 
 [params]
 

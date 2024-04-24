@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hva3iy5hon7a"
-path="res://.godot/imported/tile_0089.png-846d96e8a3c514d2ebb1c1d1a205715c.ctex"
+path="res://.godot/imported/tile_0089.png-de0fa3b494831d546e96b694702ef744.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tile_0089.png"
-dest_files=["res://.godot/imported/tile_0089.png-846d96e8a3c514d2ebb1c1d1a205715c.ctex"]
+source_file="res://Godot Working File/deck_builder_tutorial-season-1-starter-project/art/tile_0089.png"
+dest_files=["res://.godot/imported/tile_0089.png-de0fa3b494831d546e96b694702ef744.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://de2ryat1pxq6"
-path="res://.godot/imported/enemy_attack.ogg-5b3d9f3c5a8ba1ac9d04945985c08a99.oggvorbisstr"
+path="res://.godot/imported/enemy_attack.ogg-62c7ac7e00f852fd5bae29b6596e4796.oggvorbisstr"
 
 [deps]
 
-source_file="res://art/enemy_attack.ogg"
-dest_files=["res://.godot/imported/enemy_attack.ogg-5b3d9f3c5a8ba1ac9d04945985c08a99.oggvorbisstr"]
+source_file="res://Godot Working File/deck_builder_tutorial-season-1-starter-project/art/enemy_attack.ogg"
+dest_files=["res://.godot/imported/enemy_attack.ogg-62c7ac7e00f852fd5bae29b6596e4796.oggvorbisstr"]
 
 [params]
 
