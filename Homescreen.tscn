@@ -18,9 +18,10 @@ layer = 0
 
 [node name="Anchor" type="Control" parent="Layer0"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 7.497
+anchor_bottom = 7.489
+offset_right = -2.23206
+offset_bottom = 5.58398
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -35,9 +36,11 @@ color = Color(0.494118, 1, 1, 1)
 
 [node name="Center" type="Control" parent="Layer0/Anchor"]
 layout_mode = 1
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Digi-deckDomainBackround" type="Sprite2D" parent="Layer0/Anchor/Center"]
 position = Vector2(960, 540)
