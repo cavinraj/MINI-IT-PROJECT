@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpdenqqbovwfq"
+path="res://.godot/imported/8_bit_iced_village_lofi.mp3-453a7225c341c89a2a9ae1b97f9a55f5.mp3str"
+
+[deps]
+
+source_file="res://Godot Working File/Assets/8_bit_iced_village_lofi.mp3"
+dest_files=["res://.godot/imported/8_bit_iced_village_lofi.mp3-453a7225c341c89a2a9ae1b97f9a55f5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
