@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://duaq2jbyhgr1e"]
 
-[ext_resource type="Texture2D" uid="uid://1qseggiruui6" path="res://Images/background.png" id="1_fkh3e"]
+[sub_resource type="TileSet" id="TileSet_j4m1f"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -29,23 +29,6 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Background" type="Sprite2D" parent="Layer0/Anchor/Center"]
-position = Vector2(20.5555, 20)
-scale = Vector2(7.5, 7.5)
-texture = ExtResource("1_fkh3e")
-
-[node name="TextEdit" type="TextEdit" parent="Layer0/Anchor/Center"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -903.0
-offset_top = -115.0
-offset_right = 903.0
-offset_bottom = 115.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "THIS IS A TEST"
-editable = false
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_j4m1f")
+format = 2
