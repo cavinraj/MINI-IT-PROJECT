@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://main.gd" id="1_g26lp"]
 [ext_resource type="Texture2D" uid="uid://dlb6t7yappd3f" path="res://Images/Digi-Deck Domain Backround.png" id="2_55yyi"]
 [ext_resource type="Texture2D" uid="uid://v2wv7k8j1jbc" path="res://Images/QuitButton.png" id="3_gq162"]
-[ext_resource type="Texture2D" uid="uid://bnql1ronmynwp" path="res://Images/StartButton.png" id="4_e4qt3"]
 [ext_resource type="Texture2D" uid="uid://ddde3s07yv6kj" path="res://Images/ContinueButton.png" id="5_22icy"]
-[ext_resource type="AudioStream" uid="uid://8wi0573k4bf2" path="res://Audio/Crescent Dunes.mp3" id="5_rev6d"]
+[ext_resource type="Texture2D" uid="uid://dv7n3opxidi80" path="res://Images/ShopButton.png" id="6_31kbp"]
 [ext_resource type="Texture2D" uid="uid://dist2kxew81px" path="res://Images/NewGameButton.png" id="6_j8vhv"]
+[ext_resource type="AudioStream" uid="uid://prylmk8iqgbj" path="res://Audio/constellation (edited) - MainMenu Music.mp3" id="7_yb0b5"]
 [ext_resource type="Texture2D" uid="uid://qo6jhurv1s7b" path="res://Images/tilemap_packed.png" id="8_warms"]
 [ext_resource type="Texture2D" uid="uid://1qseggiruui6" path="res://Images/background.png" id="9_iqipc"]
 
@@ -66,55 +66,58 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="QuitButton2" type="Button" parent="Layer1/Anchor/Center"]
-modulate = Color(1, 1, 1, 0)
-show_behind_parent = true
-layout_mode = 0
-offset_left = -80.0
-offset_top = 928.0
-offset_right = 80.0
-offset_bottom = 976.0
-
 [node name="QuitButton" type="Sprite2D" parent="Layer1/Anchor/Center"]
 position = Vector2(-8.10623e-06, 952)
 scale = Vector2(0.0833333, 0.080324)
 texture = ExtResource("3_gq162")
 
-[node name="StartButton" type="Sprite2D" parent="Layer1/Anchor/Center"]
-visible = false
-position = Vector2(2.55108e-05, 828)
-scale = Vector2(0.108333, 0.111111)
-texture = ExtResource("4_e4qt3")
+[node name="QuitButton2" type="Button" parent="Layer1/Anchor/Center/QuitButton"]
+modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+offset_left = -960.001
+offset_top = -298.789
+offset_right = -800.001
+offset_bottom = -250.789
 
 [node name="ContinueButton" type="Sprite2D" parent="Layer1/Anchor/Center"]
 position = Vector2(-2.28882e-05, 776)
 scale = Vector2(0.173148, 0.173148)
 texture = ExtResource("5_22icy")
 
-[node name="ContinueButton2" type="Button" parent="Layer1/Anchor/Center"]
+[node name="ContinueButton2" type="Button" parent="Layer1/Anchor/Center/ContinueButton"]
 modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
-layout_mode = 0
-offset_left = -168.0
-offset_top = 744.0
-offset_right = 168.0
-offset_bottom = 808.0
+offset_left = -970.268
+offset_top = -184.813
+offset_right = -634.268
+offset_bottom = -120.813
 
 [node name="NewGameButton" type="Sprite2D" parent="Layer1/Anchor/Center"]
 position = Vector2(0, 856)
 scale = Vector2(0.172222, 0.172222)
 texture = ExtResource("6_j8vhv")
 
-[node name="NewGameButton2" type="Button" parent="Layer1/Anchor/Center"]
+[node name="NewGameButton2" type="Button" parent="Layer1/Anchor/Center/NewGameButton"]
 modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = -168.0
-offset_top = 824.0
-offset_right = 168.0
-offset_bottom = 888.0
+offset_left = -975.485
+offset_top = -185.807
+offset_right = -639.485
+offset_bottom = -121.807
+
+[node name="ShopButton" type="Sprite2D" parent="Layer1/Anchor/Center"]
+position = Vector2(180, 952)
+scale = Vector2(0.083, 0.08)
+texture = ExtResource("6_31kbp")
+
+[node name="ShopButton" type="Button" parent="Layer1/Anchor/Center/ShopButton"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -964.0
+offset_top = -300.0
+offset_right = 964.0
+offset_bottom = 300.0
 
 [node name="Mainmenu Song" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_rev6d")
+stream = ExtResource("7_yb0b5")
 autoplay = true
 
 [node name="TilemapPacked" type="Sprite2D" parent="."]
@@ -125,7 +128,10 @@ texture = ExtResource("8_warms")
 position = Vector2(1072, 1288)
 texture = ExtResource("9_iqipc")
 
-[connection signal="pressed" from="Layer1/Anchor/Center/QuitButton2" to="." method="_on_quit_button_2_pressed"]
-[connection signal="pressed" from="Layer1/Anchor/Center/QuitButton2" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Layer1/Anchor/Center/ContinueButton2" to="." method="_on_start_button_2_pressed"]
-[connection signal="pressed" from="Layer1/Anchor/Center/NewGameButton2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/QuitButton/QuitButton2" to="." method="_on_quit_button_2_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/QuitButton/QuitButton2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/ContinueButton/ContinueButton2" to="." method="_on_start_button_2_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/NewGameButton/NewGameButton2" to="." method="_on_new_game_button_2_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/NewGameButton/NewGameButton2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/ShopButton/ShopButton" to="." method="_on_shop_button_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/ShopButton/ShopButton" to="." method="_on_button_pressed"]

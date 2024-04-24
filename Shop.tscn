@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://cguqwsafvbtej"]
+
+[ext_resource type="Texture2D" uid="uid://dfhk8qf0ehlkf" path="res://Images/ShopBackroundTest.jpg" id="1_ilekw"]
+[ext_resource type="Texture2D" uid="uid://brshx0vw0pyls" path="res://Images/ShopTestText.png" id="2_wwtvf"]
+[ext_resource type="AudioStream" uid="uid://dnu36chss0lap" path="res://Audio/nails (edited) - Shop Music.mp3" id="3_2n7vr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Layer0" type="CanvasLayer" parent="."]
+
+[node name="Anchor" type="Control" parent="Layer0"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Center" type="Control" parent="Layer0/Anchor"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ShopBackroundTest" type="Sprite2D" parent="Layer0/Anchor/Center"]
+position = Vector2(20.0001, 20)
+scale = Vector2(2.35294, 1.94245)
+texture = ExtResource("1_ilekw")
+
+[node name="ShopTestText" type="Sprite2D" parent="Layer0/Anchor/Center"]
+position = Vector2(-6.10352e-05, 305)
+scale = Vector2(0.647222, 0.647222)
+texture = ExtResource("2_wwtvf")
+
+[node name="Backround Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_2n7vr")
+autoplay = true
