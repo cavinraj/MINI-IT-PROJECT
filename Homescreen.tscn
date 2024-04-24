@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccd50qmh2o3jf"]
+[gd_scene load_steps=10 format=3 uid="uid://ccd50qmh2o3jf"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_g26lp"]
 [ext_resource type="Texture2D" uid="uid://dlb6t7yappd3f" path="res://Images/Digi-Deck Domain Backround.png" id="2_55yyi"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://ddde3s07yv6kj" path="res://Images/ContinueButton.png" id="5_22icy"]
 [ext_resource type="AudioStream" uid="uid://8wi0573k4bf2" path="res://Audio/Crescent Dunes.mp3" id="5_rev6d"]
 [ext_resource type="Texture2D" uid="uid://dist2kxew81px" path="res://Images/NewGameButton.png" id="6_j8vhv"]
+[ext_resource type="Texture2D" uid="uid://qo6jhurv1s7b" path="res://Images/tilemap_packed.png" id="8_warms"]
+[ext_resource type="Texture2D" uid="uid://1qseggiruui6" path="res://Images/background.png" id="9_iqipc"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_g26lp")
@@ -114,7 +116,15 @@ offset_bottom = 888.0
 stream = ExtResource("5_rev6d")
 autoplay = true
 
-[connection signal="pressed" from="Layer1/Anchor/Center/QuitButton2" to="." method="_on_button_pressed"]
+[node name="TilemapPacked" type="Sprite2D" parent="."]
+position = Vector2(608, 1304)
+texture = ExtResource("8_warms")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1072, 1288)
+texture = ExtResource("9_iqipc")
+
 [connection signal="pressed" from="Layer1/Anchor/Center/QuitButton2" to="." method="_on_quit_button_2_pressed"]
+[connection signal="pressed" from="Layer1/Anchor/Center/QuitButton2" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Layer1/Anchor/Center/ContinueButton2" to="." method="_on_start_button_2_pressed"]
 [connection signal="pressed" from="Layer1/Anchor/Center/NewGameButton2" to="." method="_on_button_pressed"]
