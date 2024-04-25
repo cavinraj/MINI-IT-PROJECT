@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cguqwsafvbtej"]
+[gd_scene load_steps=6 format=3 uid="uid://cguqwsafvbtej"]
 
 [ext_resource type="Texture2D" uid="uid://dfhk8qf0ehlkf" path="res://Images/ShopBackroundTest.jpg" id="1_ilekw"]
+[ext_resource type="Script" path="res://Shop.gd" id="1_kbw1u"]
 [ext_resource type="Texture2D" uid="uid://brshx0vw0pyls" path="res://Images/ShopTestText.png" id="2_wwtvf"]
 [ext_resource type="AudioStream" uid="uid://dnu36chss0lap" path="res://Audio/nails (edited) - Shop Music.mp3" id="3_2n7vr"]
+[ext_resource type="Texture2D" uid="uid://b37vh85pkq6o4" path="res://Images/MenuButton.png" id="4_owpyn"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_kbw1u")
 
 [node name="Layer0" type="CanvasLayer" parent="."]
 
@@ -40,6 +43,21 @@ position = Vector2(-6.10352e-05, 305)
 scale = Vector2(0.647222, 0.647222)
 texture = ExtResource("2_wwtvf")
 
+[node name="MenuButton" type="Sprite2D" parent="Layer0/Anchor/Center"]
+position = Vector2(-854, -488)
+scale = Vector2(0.0833333, 0.0833333)
+texture = ExtResource("4_owpyn")
+
+[node name="MenuButton" type="Button" parent="Layer0/Anchor/Center/MenuButton"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -960.0
+offset_top = -300.0
+offset_right = 960.0
+offset_bottom = 300.0
+metadata/_edit_use_anchors_ = true
+
 [node name="Backround Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_2n7vr")
 autoplay = true
+
+[connection signal="pressed" from="Layer0/Anchor/Center/MenuButton/MenuButton" to="." method="_on_menu_button_pressed"]
