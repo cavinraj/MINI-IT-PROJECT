@@ -147,9 +147,5 @@ position = Vector2(1072, 1288)
 texture = ExtResource("9_iqipc")
 
 [connection signal="pressed" from="Layer1/Anchor/Center/QuitButton/QuitButton2" to="." method="_on_quit_button_2_pressed"]
-[connection signal="pressed" from="Layer1/Anchor/Center/QuitButton/QuitButton2" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Layer1/Anchor/Center/ContinueButton/ContinueButton2" to="." method="_on_start_button_2_pressed"]
-[connection signal="pressed" from="Layer1/Anchor/Center/NewGameButton/NewGameButton2" to="." method="_on_new_game_button_2_pressed"]
-[connection signal="pressed" from="Layer1/Anchor/Center/NewGameButton/NewGameButton2" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Layer1/Anchor/Center/ShopButton/ShopButton" to="." method="_on_shop_button_pressed"]
-[connection signal="pressed" from="Layer1/Anchor/Center/ShopButton/ShopButton" to="." method="_on_button_pressed"]
