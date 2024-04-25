@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ddde3s07yv6kj" path="res://Images/ContinueButton.png" id="5_22icy"]
 [ext_resource type="Texture2D" uid="uid://dv7n3opxidi80" path="res://Images/ShopButton.png" id="6_31kbp"]
 [ext_resource type="Texture2D" uid="uid://dist2kxew81px" path="res://Images/NewGameButton.png" id="6_j8vhv"]
-[ext_resource type="AudioStream" uid="uid://prylmk8iqgbj" path="res://Audio/constellation (edited) - MainMenu Music.mp3" id="7_yb0b5"]
+[ext_resource type="AudioStream" uid="uid://br06p4f32fkgc" path="res://Audio/knowledge (edited) - MainMenu Music.mp3" id="7_3ksfy"]
 [ext_resource type="Texture2D" uid="uid://qo6jhurv1s7b" path="res://Images/tilemap_packed.png" id="8_warms"]
 [ext_resource type="Texture2D" uid="uid://1qseggiruui6" path="res://Images/background.png" id="9_iqipc"]
 
@@ -135,7 +135,8 @@ offset_bottom = 300.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Mainmenu Song" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_yb0b5")
+stream = ExtResource("7_3ksfy")
+volume_db = -3.0
 autoplay = true
 
 [node name="TilemapPacked" type="Sprite2D" parent="."]
