@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dfhk8qf0ehlkf" path="res://Images/ShopBackroundTest.jpg" id="1_ilekw"]
 [ext_resource type="Script" path="res://Shop.gd" id="1_kbw1u"]
 [ext_resource type="Texture2D" uid="uid://brshx0vw0pyls" path="res://Images/ShopTestText.png" id="2_wwtvf"]
-[ext_resource type="AudioStream" uid="uid://dnu36chss0lap" path="res://Audio/nails (edited) - Shop Music.mp3" id="3_2n7vr"]
+[ext_resource type="AudioStream" uid="uid://wa1k7wf7pnh7" path="res://Audio/nails (edited) - Shop Music.mp3" id="3_2n7vr"]
 [ext_resource type="Texture2D" uid="uid://b37vh85pkq6o4" path="res://Images/MenuButton.png" id="4_owpyn"]
 
 [node name="Node2D" type="Node2D"]
@@ -58,6 +58,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Backround Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_2n7vr")
+volume_db = -5.0
 autoplay = true
 
 [connection signal="pressed" from="Layer0/Anchor/Center/MenuButton/MenuButton" to="." method="_on_menu_button_pressed"]
