@@ -18,6 +18,10 @@ boot_splash/show_image=false
 boot_splash/image="res://Images/help us, we suck at coding.png"
 config/icon="res://Godot Working File/icon.png"
 
+[autoload]
+
+Events="*res://global/events.gd"
+
 [display]
 
 window/size/viewport_width=1920
@@ -43,6 +47,7 @@ right_mouse={
 
 2d_physics/layer_1="card_target_selector"
 2d_physics/layer_2="card_drop_area"
+2d_physics/layer_3="enemies"
 
 [rendering]
 
