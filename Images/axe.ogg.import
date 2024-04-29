@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1vpjjmi5cj3n"
+path="res://.godot/imported/axe.ogg-582a7eece8df7ba2671264a3e1ba83ad.oggvorbisstr"
+
+[deps]
+
+source_file="res://Godot Working File/art/axe.ogg"
+dest_files=["res://.godot/imported/axe.ogg-582a7eece8df7ba2671264a3e1ba83ad.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

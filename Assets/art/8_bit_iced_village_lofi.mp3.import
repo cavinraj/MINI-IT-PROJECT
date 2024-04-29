@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
+uid="uid://dpdenqqbovwfq"
+=======
 uid="uid://f5t6t1okuulv"
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 path="res://.godot/imported/8_bit_iced_village_lofi.mp3-ded3d1f4525361c1014ea9278faf1064.mp3str"
 
 [deps]

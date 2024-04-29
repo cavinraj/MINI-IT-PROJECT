@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
+uid="uid://di5qxm5run6sb"
+=======
 uid="uid://b6xf3ivs8jacu"
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 path="res://.godot/imported/MenuButton.png-89269bc56bbb54ad47b0be09732f895e.ctex"
 metadata={
 "vram_texture": false

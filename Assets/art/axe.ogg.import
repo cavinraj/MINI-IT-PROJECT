@@ -2,7 +2,11 @@
 
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
+<<<<<<< HEAD
+uid="uid://b1vpjjmi5cj3n"
+=======
 uid="uid://ba4k0fyfw1xuw"
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 path="res://.godot/imported/axe.ogg-7fe376c1964fe757cc652f9d692f2eb7.oggvorbisstr"
 
 [deps]

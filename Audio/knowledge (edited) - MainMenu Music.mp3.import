@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
+uid="uid://dyinsvt3fxi8c"
+=======
 uid="uid://bxtlefokhtoda"
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 path="res://.godot/imported/knowledge (edited) - MainMenu Music.mp3-3304ad04df62fc40636b9d267d7f7a90.mp3str"
 
 [deps]

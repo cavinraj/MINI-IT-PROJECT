@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://k7ajvdllifs2"]
 
-[ext_resource type="Theme" path="res://main_theme.tres" id="1_oborl"]
+[ext_resource type="Theme" uid="uid://bpcdxtpn70j1d" path="res://main_theme.tres" id="1_oborl"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_ui.gd" id="2_ecook"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_state_machine.gd" id="3_670bw"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_base_state.gd" id="4_y06gd"]
