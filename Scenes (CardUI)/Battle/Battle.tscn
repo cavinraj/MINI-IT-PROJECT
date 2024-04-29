@@ -14,7 +14,7 @@ size = Vector2(1920, 850)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lntrk"]
 
 [node name="Battle" type="Node2D"]
-metadata/_edit_lock_ = true
+scale = Vector2(1.00053, 1.00053)
 
 [node name="Background" type="Sprite2D" parent="."]
 modulate = Color(0.682353, 0.682353, 0.682353, 1)
@@ -51,11 +51,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -298.8
-offset_top = -147.0
-offset_right = 298.8
+offset_left = -432.0
+offset_top = -264.0
+offset_right = 165.6
+offset_bottom = -117.0
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(1.46443, 1.46443)
 alignment = 1
 script = ExtResource("2_owj4f")
 
