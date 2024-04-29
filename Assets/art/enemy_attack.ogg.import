@@ -2,7 +2,11 @@
 
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
+<<<<<<< HEAD
 uid="uid://de2ryat1pxq6"
+=======
+uid="uid://bp1e8fertfkae"
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 path="res://.godot/imported/enemy_attack.ogg-9d043b913f9311ac96008833af5240a4.oggvorbisstr"
 
 [deps]

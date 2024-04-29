@@ -2,7 +2,11 @@
 
 importer="font_data_dynamic"
 type="FontFile"
+<<<<<<< HEAD
 uid="uid://dskmdk146n4rq"
+=======
+uid="uid://wv4b47wwns4u"
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 path="res://.godot/imported/pixel_rpg.ttf-2b65d52c2bf01e9350666c855efef089.fontdata"
 
 [deps]
@@ -13,7 +17,11 @@ dest_files=["res://.godot/imported/pixel_rpg.ttf-2b65d52c2bf01e9350666c855efef08
 [params]
 
 Rendering=null
+<<<<<<< HEAD
 antialiasing=0
+=======
+antialiasing=1
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 generate_mipmaps=false
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
@@ -26,7 +34,11 @@ oversampling=0.0
 Fallbacks=null
 fallbacks=[]
 Compress=null
+<<<<<<< HEAD
 compress=false
+=======
+compress=true
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 preload=[]
 language_support={}
 script_support={}

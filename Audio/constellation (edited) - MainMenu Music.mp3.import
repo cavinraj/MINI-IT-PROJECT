@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
 uid="uid://dg8vwobdu7vpx"
+=======
+uid="uid://c8m7aicq5u3lv"
+>>>>>>> 5d4d6dc542708e9c1f41cb5ae7de5ce307d8db92
 path="res://.godot/imported/constellation (edited) - MainMenu Music.mp3-97c57ebfb12822dd1cd21dc82b8e1327.mp3str"
 
 [deps]
