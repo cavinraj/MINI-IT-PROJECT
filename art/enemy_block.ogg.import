@@ -2,7 +2,9 @@
 
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
-uid="uid://bv5v5wu46yti7"
+
+uid="uid://dy20oyw28lkx2"
+
 path="res://.godot/imported/enemy_block.ogg-1d3bf6e17523021d184c1e6dc2eb4fc4.oggvorbisstr"
 
 [deps]
