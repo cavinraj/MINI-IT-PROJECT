@@ -1,13 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://k7ajvdllifs2"]
+[gd_scene load_steps=12 format=3 uid="uid://k7ajvdllifs2"]
 
-[ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="1_oborl"]
+[ext_resource type="Theme" path="res://main_theme.tres" id="1_oborl"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_ui.gd" id="2_ecook"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_state_machine.gd" id="3_670bw"]
-[ext_resource type="FontFile" uid="uid://bxqwhvghlv24i" path="res://Assets/art/pixel_rpg.ttf" id="3_i32do"]
+[ext_resource type="FontFile" uid="uid://ch5sp644vybel" path="res://Assets/art/pixel_rpg.ttf" id="3_i32do"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_base_state.gd" id="4_y06gd"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_clicked_state.gd" id="5_hnlto"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_dragging_state.gd" id="6_uobwg"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_released_state.gd" id="7_85580"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_aiming_state.gd" id="9_rfsl2"]
 
 [sub_resource type="Theme" id="Theme_5h7tj"]
 default_font = ExtResource("3_i32do")
@@ -77,6 +78,10 @@ state = 2
 [node name="CardReleasedState" type="Node" parent="CardStateMachine"]
 script = ExtResource("7_85580")
 state = 4
+
+[node name="CardAimingState" type="Node" parent="CardStateMachine"]
+script = ExtResource("9_rfsl2")
+state = 3
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
