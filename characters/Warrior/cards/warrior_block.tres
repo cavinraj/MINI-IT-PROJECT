@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://ovpls14v6exp"]
-
-[ext_resource type="Script" path="res://custom_resources/card.gd" id="1_nbry1"]
-
-[resource]
-script = ExtResource("1_nbry1")
-id = "warrior_block"
-type = 1
-target = 0
