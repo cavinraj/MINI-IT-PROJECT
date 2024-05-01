@@ -1,24 +1,29 @@
-[gd_scene load_steps=9 format=3 uid="uid://k7ajvdllifs2"]
+[gd_scene load_steps=11 format=3 uid="uid://k7ajvdllifs2"]
 
-[ext_resource type="Theme" uid="uid://bpcdxtpn70j1d" path="res://main_theme.tres" id="1_oborl"]
+[ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="1_oborl"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_ui.gd" id="2_ecook"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_state_machine.gd" id="3_670bw"]
+[ext_resource type="FontFile" uid="uid://bxqwhvghlv24i" path="res://Assets/art/pixel_rpg.ttf" id="3_i32do"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_base_state.gd" id="4_y06gd"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_clicked_state.gd" id="5_hnlto"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_dragging_state.gd" id="6_uobwg"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_released_state.gd" id="7_85580"]
 
+[sub_resource type="Theme" id="Theme_5h7tj"]
+default_font = ExtResource("3_i32do")
+default_font_size = 0
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5783l"]
-size = Vector2(106, 146)
+size = Vector2(25, 30)
 
 [node name="CardUI" type="Control"]
-custom_minimum_size = Vector2(108, 147)
+custom_minimum_size = Vector2(25, 30)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1812.0
-offset_bottom = -933.0
+offset_right = -231.0
+offset_bottom = -114.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_oborl")
@@ -41,6 +46,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_5h7tj")
 text = "state"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -50,7 +56,7 @@ collision_mask = 2
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DropPointDetector"]
-position = Vector2(54, 73)
+position = Vector2(12.5, 15)
 shape = SubResource("RectangleShape2D_5783l")
 
 [node name="CardStateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
