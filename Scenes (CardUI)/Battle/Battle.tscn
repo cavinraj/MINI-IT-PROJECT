@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bddao04i22ti4"]
 
-[ext_resource type="Texture2D" uid="uid://cf2i2hh8t4gaq" path="res://Assets/thetherone.png" id="1_3exg5"]
-[ext_resource type="Texture2D" uid="uid://dab6o3cfj758u" path="res://Assets/art/tile_0110.png" id="2_hxgs1"]
+[ext_resource type="Texture2D" uid="uid://br2btnrhuwcch" path="res://Assets/thetherone.png" id="1_3exg5"]
+[ext_resource type="Texture2D" uid="uid://ck7tnxhomr78e" path="res://Assets/art/tile_0110.png" id="2_hxgs1"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/hand.gd" id="2_owj4f"]
 [ext_resource type="PackedScene" uid="uid://k7ajvdllifs2" path="res://Scenes (CardUI)/card_ui/card_ui.tscn" id="2_vvulx"]
 [ext_resource type="Resource" uid="uid://c3wi76d1ouy1q" path="res://characters/Warrior/cards/warrior_axe_attack.tres" id="5_gi3lr"]
