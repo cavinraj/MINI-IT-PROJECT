@@ -1,10 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://bddao04i22ti4"]
 
 [ext_resource type="Texture2D" uid="uid://br2btnrhuwcch" path="res://Assets/thetherone.png" id="1_3exg5"]
-[ext_resource type="Texture2D" uid="uid://ck7tnxhomr78e" path="res://Assets/art/tile_0110.png" id="2_hxgs1"]
+[ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="2_134dg"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/hand.gd" id="2_owj4f"]
 [ext_resource type="PackedScene" uid="uid://k7ajvdllifs2" path="res://Scenes (CardUI)/card_ui/card_ui.tscn" id="2_vvulx"]
 [ext_resource type="PackedScene" uid="uid://bcfn1ri1fst3i" path="res://Scenes (CardUI)/player/player.tscn" id="3_b7fq5"]
+[ext_resource type="Resource" uid="uid://88bq772dsht8" path="res://enemies/crab/test_enemy.tres" id="3_d5bi4"]
 [ext_resource type="Resource" uid="uid://c2g2ei0h17xkb" path="res://characters/Warrior/warrior.tres" id="4_xfid1"]
 [ext_resource type="Resource" uid="uid://c3wi76d1ouy1q" path="res://characters/Warrior/cards/warrior_axe_attack.tres" id="5_gi3lr"]
 [ext_resource type="Resource" uid="uid://ovpls14v6exp" path="res://characters/Warrior/cards/warrior_block.tres" id="6_l726h"]
@@ -12,8 +13,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0762l"]
 size = Vector2(256, 100)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jvj4c"]
 
 [node name="Battle" type="Node2D"]
 metadata/_edit_lock_ = true
@@ -31,15 +30,9 @@ position = Vector2(128, 50)
 shape = SubResource("RectangleShape2D_0762l")
 debug_color = Color(0, 0.6, 0.701961, 0.305882)
 
-[node name="Enemy" type="Area2D" parent="."]
-position = Vector2(216, 80)
-collision_layer = 4
-
-[node name="Sprite2D" type="Sprite2D" parent="Enemy"]
-texture = ExtResource("2_hxgs1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
-shape = SubResource("RectangleShape2D_jvj4c")
+[node name="Enemy" parent="." instance=ExtResource("2_134dg")]
+position = Vector2(205, 80)
+stats = ExtResource("3_d5bi4")
 
 [node name="Player" parent="." instance=ExtResource("3_b7fq5")]
 position = Vector2(45, 80)
