@@ -4,8 +4,6 @@ const MOUSE_Y_SNAPBACK_THRESHOLD : = 138 #For if mouse goes to bottom screen, ca
 
 
 func enter() -> void: #dugging #to clear targets array card UI
-	card_ui.color.color = Color.WEB_PURPLE
-	card_ui.state.text = "AIMING"
 	card_ui.targets.clear()
 	var offset := Vector2(card_ui.parent.size.x / 2, -card_ui.size.y / 2) #calculating position of card to animate it
 	offset.x -= card_ui.size.x / 2
