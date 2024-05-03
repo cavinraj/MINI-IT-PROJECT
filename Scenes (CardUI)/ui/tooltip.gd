@@ -18,6 +18,7 @@ func _ready() -> void:
 	
 	
 func show_tooltip(icon: Texture, text: String) -> void:
+	print("show")
 	is_visible = true
 	if tween:
 		tween.kill()
@@ -30,6 +31,7 @@ func show_tooltip(icon: Texture, text: String) -> void:
 	
 	
 func hide_tooltip() -> void:
+	print("hide")
 	is_visible = false
 	if tween:
 		tween.kill()
