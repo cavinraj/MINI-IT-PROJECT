@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bddao04i22ti4"]
+[gd_scene load_steps=15 format=3 uid="uid://bddao04i22ti4"]
 
 [ext_resource type="Texture2D" uid="uid://com66rftd7uak" path="res://Assets/thetherone.png" id="1_3exg5"]
 [ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="2_134dg"]
@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://c3wi76d1ouy1q" path="res://characters/Warrior/cards/warrior_axe_attack.tres" id="5_gi3lr"]
 [ext_resource type="Resource" uid="uid://ovpls14v6exp" path="res://characters/Warrior/cards/warrior_block.tres" id="6_l726h"]
 [ext_resource type="PackedScene" uid="uid://bsw4mrwkwp5bo" path="res://Scenes (CardUI)/card_target_selector/card_target_selector.tscn" id="7_4laak"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/battle_ui.gd" id="7_ha0ax"]
 [ext_resource type="PackedScene" uid="uid://bp513pxbc4fic" path="res://Scenes (CardUI)/card_ui/mana_ui.tscn" id="11_xhb4w"]
 [ext_resource type="PackedScene" uid="uid://r3khmqik1fp5" path="res://Scenes (CardUI)/ui/tooltip.tscn" id="12_ye4md"]
 
@@ -43,6 +44,7 @@ stats = ExtResource("4_xfid1")
 [node name="CardTargetSelector" parent="." instance=ExtResource("7_4laak")]
 
 [node name="Battle_UI" type="CanvasLayer" parent="." groups=["ui_layer"]]
+script = ExtResource("7_ha0ax")
 
 [node name="Hand" type="HBoxContainer" parent="Battle_UI"]
 anchors_preset = 7
