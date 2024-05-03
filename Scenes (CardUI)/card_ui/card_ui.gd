@@ -39,9 +39,11 @@ func _input(event: InputEvent) -> void:
 func _on_gui_input(event: InputEvent) -> void:
 	card_state_machine.on_gui_input(event)
 	
+	
 func animate_to_position(new_position: Vector2, duration: float) -> void: #new animate position	
 	tween = create_tween().set_trans(Tween.TRANS_CIRC).set_ease (Tween.EASE_OUT)
 	tween.tween_property(self, "global_position", new_position, duration) #to allow access from different sections/modules	 
+
 
 func play() -> void:
 	if not card:
@@ -50,12 +52,14 @@ func play() -> void:
 	card.play(targets, char_stats)
 	queue_free()
 
+
 func _on_mouse_entered() -> void:
 	card_state_machine.on_mouse_entered()
 	
 	
 func _on_mouse_exited() -> void:
 	card_state_machine.on_mouse_exited()
+
 
 func _set_card(value: Card) -> void:
 	if not is_node_ready():
