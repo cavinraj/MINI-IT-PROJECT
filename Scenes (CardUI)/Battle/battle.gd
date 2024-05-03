@@ -3,6 +3,7 @@ extends Node2D
 @export var char_stats: CharacterStats
 
 @onready var battle_ui: BattleUI = $Battle_UI as BattleUI
+@onready var player_handler: PlayerHandler = $PlayerHandler as PlayerHandler
 
 
 func _ready() -> void:
@@ -16,4 +17,4 @@ func _ready() -> void:
 	
 	
 func start_battle(stats: CharacterStats) -> void:
-	print("battle has started!")
+	player_handler.start_battle(stats)
