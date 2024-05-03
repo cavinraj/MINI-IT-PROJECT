@@ -1,9 +1,10 @@
 [gd_resource type="Theme" load_steps=3 format=3 uid="uid://bptdw0dqa47mp"]
 
 [ext_resource type="StyleBox" uid="uid://6sv8w8821r4i" path="res://Scenes (CardUI)/card_ui/card_base_stylebox.tres" id="1_s08wt"]
-[ext_resource type="FontFile" uid="uid://c6hrvj3hi3483" path="res://Assets/art/pixel_rpg.ttf" id="1_wy6gb"]
+[ext_resource type="FontFile" uid="uid://cq3o346ox8exf" path="res://Assets/art/pixel_rpg.ttf" id="1_wy6gb"]
 
 [resource]
 default_font = ExtResource("1_wy6gb")
 default_font_size = 6
 Panel/styles/panel = ExtResource("1_s08wt")
+PanelContainer/styles/panel = ExtResource("1_s08wt")
