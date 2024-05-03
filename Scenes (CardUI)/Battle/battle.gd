@@ -4,6 +4,7 @@ extends Node2D
 
 @onready var battle_ui: BattleUI = $Battle_UI as BattleUI
 @onready var player_handler: PlayerHandler = $PlayerHandler as PlayerHandler
+@onready var player: Player = $Player as Player
 
 
 func _ready() -> void:
@@ -12,6 +13,7 @@ func _ready() -> void:
 	# between battles.
 	var new_stats: CharacterStats = char_stats.create_instance()
 	battle_ui.char_stats = new_stats
+	player.stats = new_stats
 	
 	Events.player_turn_ended.connect(player_handler.end_turn)
 	Events.player_hand_discarded.connect(player_handler.start_turn)
