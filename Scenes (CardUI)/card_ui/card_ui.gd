@@ -8,6 +8,7 @@ const DRAG_STYLEBOX := preload("res://Scenes (CardUI)/card_ui/card_dragging_styl
 const HOVER_STYLEBOX := preload("res://Scenes (CardUI)/card_ui/card_hover_stylebox.tres")
 
 @export var card: Card : set = _set_card
+@export var char_stats: CharacterStats
 
 @onready var panel: Panel = $Panel
 @onready var cost: Label = $Cost
@@ -34,7 +35,14 @@ func _on_gui_input(event: InputEvent) -> void:
 func animate_to_position(new_position: Vector2, duration: float) -> void: #new animate position	
 	tween = create_tween().set_trans(Tween.TRANS_CIRC).set_ease (Tween.EASE_OUT)
 	tween.tween_property(self, "global_position", new_position, duration) #to allow access from different sections/modules	 
+
+func play() -> void:
+	if not card:
+		return
 	
+	card.play(targets, char_stats)
+	queue_free()
+
 func _on_mouse_entered() -> void:
 	card_state_machine.on_mouse_entered()
 	
