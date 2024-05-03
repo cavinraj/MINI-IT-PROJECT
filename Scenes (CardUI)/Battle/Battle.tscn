@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bddao04i22ti4"]
+[gd_scene load_steps=15 format=3 uid="uid://bddao04i22ti4"]
 
 [ext_resource type="Texture2D" uid="uid://com66rftd7uak" path="res://Assets/thetherone.png" id="1_3exg5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/Battle/battle.gd" id="1_tx3os"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/player/player_handler.gd" id="8_vh6yu"]
 [ext_resource type="PackedScene" uid="uid://bp513pxbc4fic" path="res://Scenes (CardUI)/card_ui/mana_ui.tscn" id="11_xhb4w"]
 [ext_resource type="PackedScene" uid="uid://r3khmqik1fp5" path="res://Scenes (CardUI)/ui/tooltip.tscn" id="12_ye4md"]
+[ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="13_fbh1k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0762l"]
 size = Vector2(256, 100)
@@ -71,3 +72,19 @@ char_stats = ExtResource("4_xfid1")
 [node name="Tooltip" parent="Battle_UI" instance=ExtResource("12_ye4md")]
 offset_top = 5.0
 offset_bottom = 41.0
+
+[node name="EndTurnButton" type="Button" parent="Battle_UI"]
+unique_name_in_owner = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -49.0
+offset_top = -18.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("13_fbh1k")
+text = "End Turn"
