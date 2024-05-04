@@ -16,6 +16,7 @@ func _ready() -> void:
 	battle_ui.char_stats = new_stats
 	player.stats = new_stats
 	
+	enemy_handler.child_order_changed.connect(_on_enemies_child_order_changed)
 	Events.enemy_turn_ended.connect(_on_enemy_turn_ended)
 	
 	Events.player_turn_ended.connect(player_handler.end_turn)
@@ -29,6 +30,11 @@ func start_battle(stats: CharacterStats) -> void:
 	player_handler.start_battle(stats)
 
 
+func _on_enemies_child_order_changed() -> void:
+	if enemy_handler.get_child_count() == 0:
+		print("Victory!")
+		
+	
 func _on_enemy_turn_ended() -> void:
 	player_handler.start_turn()
 	enemy_handler.reset_enemy_actions()
