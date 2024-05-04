@@ -1,11 +1,21 @@
+class_name EnemyAction
 extends Node
 
+enum Type{CONDITIONAL, CHANCE_BASED}
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+@export var type: Type
+@export_range(0.0, 10.0) var chance_weight := 0.0
+
+@onready var accumulated_weight := 0.0
+
+var enemy: Enemy
+var target: Node2D
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func is_performable() -> bool:
+	return false
+
+
+func perform_action() -> void:
 	pass
+		
