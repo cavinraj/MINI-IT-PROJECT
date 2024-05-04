@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Stats" load_steps=3 format=3 uid="uid://88bq772dsht8"]
-
-[ext_resource type="Script" path="res://custom_resources/stats.gd" id="1_80651"]
-[ext_resource type="Texture2D" uid="uid://ck7tnxhomr78e" path="res://Assets/art/tile_0110.png" id="1_bsjuw"]
-
-[resource]
-script = ExtResource("1_80651")
-max_health = 10
-art = ExtResource("1_bsjuw")
