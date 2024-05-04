@@ -13,3 +13,6 @@ signal tooltip_hide_requested
 signal player_hand_drawn
 signal player_hand_discarded
 signal player_turn_ended
+
+# Enemy-related events
+signal enemy_action_completed(enemy: Enemy)
