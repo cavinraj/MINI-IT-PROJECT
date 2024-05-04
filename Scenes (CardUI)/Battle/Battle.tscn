@@ -31,17 +31,17 @@ centered = false
 [node name="CardDropArea" type="Area2D" parent="."]
 collision_layer = 2
 
-[node name="EnemyHandler" type="Node2D" parent="CardDropArea"]
-script = ExtResource("4_c6215")
-
-[node name="Enemy" parent="CardDropArea/EnemyHandler" instance=ExtResource("2_134dg")]
-position = Vector2(205, 80)
-stats = ExtResource("5_g048m")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CardDropArea"]
 position = Vector2(128, 50)
 shape = SubResource("RectangleShape2D_0762l")
 debug_color = Color(0, 0.6, 0.701961, 0.305882)
+
+[node name="EnemyHandler" type="Node2D" parent="."]
+script = ExtResource("4_c6215")
+
+[node name="Enemy" parent="EnemyHandler" instance=ExtResource("2_134dg")]
+position = Vector2(205, 80)
+stats = ExtResource("5_g048m")
 
 [node name="Player" parent="." instance=ExtResource("3_b7fq5")]
 position = Vector2(45, 80)
