@@ -82,7 +82,7 @@ func do_turn() -> void:
 func take_damage(damage: int) -> void:
 	if stats.health <= 0:
 		return
-	
+		
 	
 	var tween := create_tween()
 	tween.tween_callback(Shaker.shake.bind(self, 16, 0.15)) #strength,time
