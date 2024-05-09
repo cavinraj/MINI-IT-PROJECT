@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://ovpls14v6exp"]
 
-[ext_resource type="Texture2D" uid="uid://6ib6wqyh563i" path="res://Assets/art/tile_0102.png" id="1_ty1vb"]
-[ext_resource type="Script" path="res://characters/Warrior/cards/warrior_block.gd" id="2_8srpt"]
+[ext_resource type="Texture2D" uid="uid://dcpi2m1hdj2rh" path="res://Assets/art/tile_0102.png" id="1_ty1vb"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/enemy/characters/Warrior/cards/warrior_block.gd" id="2_8srpt"]
 
 [resource]
 script = ExtResource("2_8srpt")

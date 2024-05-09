@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_ui.gd" id="2_ecook"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_state_machine.gd" id="3_670bw"]
 [ext_resource type="StyleBox" uid="uid://6sv8w8821r4i" path="res://Scenes (CardUI)/card_ui/card_base_stylebox.tres" id="3_rgjo7"]
-[ext_resource type="Texture2D" uid="uid://cdvij5a7osft3" path="res://Assets/art/tile_0104.png" id="4_vorc5"]
+[ext_resource type="Texture2D" uid="uid://shq6gt5e0a45" path="res://Assets/art/tile_0104.png" id="4_vorc5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_base_state.gd" id="4_y06gd"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_clicked_state.gd" id="5_hnlto"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/card_ui/card_states/card_dragging_state.gd" id="6_uobwg"]
@@ -40,6 +40,16 @@ theme_override_styles/panel = ExtResource("3_rgjo7")
 [node name="Cost" type="Label" parent="."]
 layout_mode = 0
 offset_right = 10.0
+offset_bottom = 10.0
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TempCost" type="Label" parent="."]
+self_modulate = Color(1, 0.211765, 1, 1)
+layout_mode = 0
+offset_left = 16.0
+offset_right = 26.0
 offset_bottom = 10.0
 text = "2"
 horizontal_alignment = 1
