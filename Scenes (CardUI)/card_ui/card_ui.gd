@@ -16,8 +16,9 @@ const HOVER_STYLEBOX := preload("res://Scenes (CardUI)/card_ui/card_hover_styleb
 @onready var drop_point_detector: Area2D = $DropPointDetector
 @onready var card_state_machine: CardStateMachine = $CardStateMachine as CardStateMachine
 @onready var targets: Array[Node] = []
-@onready var original_index := self.get_index()
 
+
+var original_index := 0
 var parent: Control #the card parent state
 var tween: Tween
 var playable := true : set = _set_playable
@@ -30,6 +31,7 @@ func _ready():
 	Events.card_aim_ended.connect(_on_card_drag_or_aim_ended)
 	Events.card_drag_ended.connect(_on_card_drag_or_aim_ended)
 	card_state_machine.init(self)
+	$TempCost.text = str(get_index()) #visualising card position number
 	
 	
 func _input(event: InputEvent) -> void:
