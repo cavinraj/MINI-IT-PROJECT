@@ -22,6 +22,7 @@ config/icon="res://Godot Working File/icon.png"
 
 Events="*res://global/events.gd"
 Shaker="*res://global/shaker.gd"
+MusicPlayer="*res://global/music_player.tscn"
 
 [display]
 
