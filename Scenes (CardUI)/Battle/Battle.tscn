@@ -1,11 +1,11 @@
 [gd_scene load_steps=20 format=3 uid="uid://bddao04i22ti4"]
 
-[ext_resource type="Texture2D" uid="uid://n505smsloo8k" path="res://Assets/thetherone.png" id="1_3exg5"]
+[ext_resource type="Texture2D" uid="uid://cf2i2hh8t4gaq" path="res://Assets/thetherone.png" id="1_3exg5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/Battle/battle.gd" id="1_tx3os"]
 [ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="2_134dg"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/hand.gd" id="2_owj4f"]
 [ext_resource type="PackedScene" uid="uid://bcfn1ri1fst3i" path="res://Scenes (CardUI)/player/player.tscn" id="3_b7fq5"]
-[ext_resource type="AudioStream" uid="uid://chcwxymp6qxvc" path="res://Assets/art/8_bit_iced_village_lofi.mp3" id="3_veavo"]
+[ext_resource type="AudioStream" uid="uid://csvbh7qpfbk7o" path="res://Assets/art/8_bit_iced_village_lofi.mp3" id="3_veavo"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/enemy/enemy_handler.gd" id="4_c6215"]
 [ext_resource type="Resource" uid="uid://c2g2ei0h17xkb" path="res://characters/Warrior/warrior.tres" id="4_xfid1"]
 [ext_resource type="Resource" uid="uid://dkqlngyun3clx" path="res://enemies/crab/crab_enemy.tres" id="5_g048m"]
@@ -13,11 +13,11 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/battle_ui.gd" id="7_ha0ax"]
 [ext_resource type="Resource" uid="uid://b44psi201n1r3" path="res://enemies/bat/bat_enemy.tres" id="8_d0xtb"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/player/player_handler.gd" id="8_vh6yu"]
-[ext_resource type="PackedScene" uid="uid://bp513pxbc4fic" path="res://Scenes (CardUI)/ui/mana_ui.tscn" id="11_xhb4w"]
+[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/mana_ui.tscn" id="11_xhb4w"]
 [ext_resource type="PackedScene" uid="uid://r3khmqik1fp5" path="res://Scenes (CardUI)/ui/tooltip.tscn" id="12_ye4md"]
 [ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="13_fbh1k"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/red_flash.gd" id="15_pflx1"]
-[ext_resource type="PackedScene" uid="uid://b3n1w5dje7ia0" path="res://Scenes (CardUI)/ui/battle_over_panel.tscn" id="17_6iuyu"]
+[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/battle_over_panel.tscn" id="17_6iuyu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0762l"]
 size = Vector2(256, 100)
