@@ -1,0 +1,189 @@
+[gd_scene load_steps=11 format=3 uid="uid://cf6rktwmv0tqx"]
+
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/character_selector.gd" id="1_qyh0t"]
+[ext_resource type="Texture2D" uid="uid://bbu22p8v3qpvt" path="res://Assets/art/backround.png" id="2_fhmhu"]
+[ext_resource type="Texture2D" uid="uid://bg8nq088xq4wp" path="res://Assets/art/tile_0087.png" id="3_hbuk0"]
+[ext_resource type="Texture2D" uid="uid://daunfqb1w3wga" path="res://Assets/art/clouds.png" id="4_ijxw2"]
+[ext_resource type="Texture2D" uid="uid://btbcw43gr43qb" path="res://Assets/art/tile_0118.png" id="5_clddt"]
+[ext_resource type="Texture2D" uid="uid://b54rluaihj0xh" path="res://Assets/art/tile_0130.png" id="6_jd6qo"]
+[ext_resource type="Texture2D" uid="uid://giu0sk5sv8s" path="res://Assets/art/tile_0103.png" id="7_21xv1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ofyyx"]
+line_spacing = 10.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_p2s02"]
+line_spacing = 6.0
+font_size = 12
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_hj44x"]
+
+[node name="CharacterSelector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.00282)
+script = ExtResource("1_qyh0t")
+
+[node name="Backround" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fhmhu")
+expand_mode = 3
+
+[node name="CharacterText" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.0
+offset_top = 7.9775
+offset_right = 120.0
+offset_bottom = 72.9775
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="CharacterText"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Warrior"
+label_settings = SubResource("LabelSettings_ofyyx")
+
+[node name="Description" type="Label" parent="CharacterText"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Likes to slice things up.
+Second line"
+label_settings = SubResource("LabelSettings_p2s02")
+horizontal_alignment = 1
+
+[node name="CharacterPotrait" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -69.2109
+offset_right = 68.0
+offset_bottom = -9.21091
+grow_vertical = 0
+texture = ExtResource("3_hbuk0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Clouds" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_ijxw2")
+expand_mode = 3
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -58.0
+offset_top = -22.3431
+offset_right = -8.0
+offset_bottom = -8.34308
+grow_horizontal = 0
+grow_vertical = 0
+text = "Start	"
+
+[node name="CharacterButtons" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 73.7919
+offset_right = 224.0
+offset_bottom = 103.792
+theme_override_constants/separation = 15
+
+[node name="WarriorButton" type="Button" parent="CharacterButtons"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_hj44x")
+
+[node name="Icon" type="TextureRect" parent="CharacterButtons/WarriorButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_clddt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WizardButton" type="Button" parent="CharacterButtons"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_hj44x")
+
+[node name="Icon" type="TextureRect" parent="CharacterButtons/WizardButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_jd6qo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AssassinsButton" type="Button" parent="CharacterButtons"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_hj44x")
+
+[node name="Icon" type="TextureRect" parent="CharacterButtons/AssassinsButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_21xv1")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/WarriorButton" to="." method="_on_warrior_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/WizardButton" to="." method="_on_wizard_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/AssassinsButton" to="." method="_on_assassins_button_pressed"]
