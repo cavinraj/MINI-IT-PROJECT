@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgxwreswj8ayl"]
+[gd_scene load_steps=3 format=3 uid="uid://dgxwreswj8ayl"]
 
 [ext_resource type="PackedScene" uid="uid://bc2t1j45hp60" path="res://Scenes (CardUI)/map/map.tscn" id="1_8hs5h"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/run/run.gd" id="1_i3qf7"]
 
 [node name="Run" type="Node"]
+script = ExtResource("1_i3qf7")
 
 [node name="Map" parent="." instance=ExtResource("1_8hs5h")]
 
