@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://c2g2ei0h17xkb"]
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dgryae3qv4lcu"]
 
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_3yr2w"]
-[ext_resource type="Texture2D" uid="uid://bg8nq088xq4wp" path="res://Assets/art/tile_0087.png" id="1_jjbf0"]
-[ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/warrior/warrior_starting_deck.tres" id="3_3ahsn"]
+[ext_resource type="Texture2D" uid="uid://cleq52s6772ql" path="res://Assets/art/tile_0087.png" id="1_jjbf0"]
+[ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_3ahsn"]
 
 [resource]
 script = ExtResource("1_3yr2w")
