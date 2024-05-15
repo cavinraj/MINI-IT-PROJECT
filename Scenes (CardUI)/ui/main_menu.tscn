@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://dal7unxekqid2"]
+[gd_scene load_steps=10 format=3 uid="uid://dal7unxekqid2"]
 
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/main_menu.gd" id="1_lpxto"]
 [ext_resource type="Texture2D" uid="uid://5r67bdrkldmo" path="res://Assets/art/Digi-Deck Domain No Text.png" id="1_mfohv"]
 [ext_resource type="Texture2D" uid="uid://djqfjjcqpwmgd" path="res://Assets/art/tile_0084.png" id="2_lq54j"]
 [ext_resource type="Texture2D" uid="uid://da3xwhuoqrm4v" path="res://Assets/art/tile_0088.png" id="3_040o7"]
@@ -21,6 +22,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
+script = ExtResource("1_lpxto")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -67,6 +69,7 @@ grow_vertical = 2
 theme_override_constants/separation = 8
 
 [node name="Continue" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 14)
 layout_mode = 2
 text = "Continue"
@@ -113,3 +116,7 @@ position = Vector2(219, 91)
 scale = Vector2(2, 2)
 texture = ExtResource("7_tqcoc")
 flip_h = true
+
+[connection signal="pressed" from="VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="VBoxContainer/NewRun" to="." method="_on_new_run_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
