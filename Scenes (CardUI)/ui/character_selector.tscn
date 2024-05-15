@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://njbcwq0xuind"]
 
-[ext_resource type="Script" path="res://Scenes (CardUI)/ui/main_menu.gd" id="1_nvoos"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/character_selector.gd" id="1_mur4y"]
 [ext_resource type="Texture2D" uid="uid://5r67bdrkldmo" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_ypau3"]
 [ext_resource type="Texture2D" uid="uid://ce8ch2p8y1d17" path="res://Assets/art/tile_0118.png" id="4_0p8vg"]
 [ext_resource type="Texture2D" uid="uid://d364tkgv736xl" path="res://Assets/art/tile_0130.png" id="5_1m22a"]
@@ -28,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-script = ExtResource("1_nvoos")
+script = ExtResource("1_mur4y")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -183,3 +183,8 @@ grow_vertical = 2
 texture = ExtResource("6_ibd28")
 expand_mode = 1
 stretch_mode = 5
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/WarriorButton" to="." method="_on_warrior_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/WizardButton" to="." method="_on_wizard_button_pressed"]
+[connection signal="pressed" from="CharacterButtons/AssassinButton" to="." method="_on_assassin_button_pressed"]
