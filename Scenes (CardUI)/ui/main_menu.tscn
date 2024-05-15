@@ -1,0 +1,97 @@
+[gd_scene load_steps=9 format=3 uid="uid://dhh13auhfnfhq"]
+
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/main_menu.gd" id="1_3u3od"]
+[ext_resource type="Texture2D" uid="uid://cr11pden8tn2g" path="res://Assets/art/Digi-Deck Domain.png" id="1_a7xm0"]
+[ext_resource type="Texture2D" uid="uid://cs4gqoon03qel" path="res://Assets/art/tile_0084.png" id="2_2d3sc"]
+[ext_resource type="Texture2D" uid="uid://7rsxbkr6my7h" path="res://Assets/art/tile_0088.png" id="3_jkh86"]
+[ext_resource type="Texture2D" uid="uid://bg8nq088xq4wp" path="res://Assets/art/tile_0087.png" id="4_tycf2"]
+[ext_resource type="Texture2D" uid="uid://taup2i5uvnfe" path="res://Assets/art/tile_0120.png" id="5_xle18"]
+[ext_resource type="Texture2D" uid="uid://dab6o3cfj758u" path="res://Assets/art/tile_0110.png" id="6_xbu5l"]
+[ext_resource type="Texture2D" uid="uid://022x2d57wv8o" path="res://Assets/art/tile_0121.png" id="7_nsmi8"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3u3od")
+
+[node name="Backround" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_a7xm0")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = 15.0
+offset_right = 30.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 3
+
+[node name="Continue" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(2.08165e-12, 14)
+layout_mode = 2
+text = "Continue"
+
+[node name="NewRun" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 14)
+layout_mode = 2
+text = "New Run"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 14)
+layout_mode = 2
+text = "Exit"
+
+[node name="Wizard" type="Sprite2D" parent="."]
+position = Vector2(24, 104)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("2_2d3sc")
+
+[node name="Assassin" type="Sprite2D" parent="."]
+position = Vector2(56, 96)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("3_jkh86")
+
+[node name="Warrior" type="Sprite2D" parent="."]
+position = Vector2(42, 121)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("4_tycf2")
+
+[node name="Bat" type="Sprite2D" parent="."]
+position = Vector2(200, 96)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("5_xle18")
+flip_h = true
+
+[node name="Crab" type="Sprite2D" parent="."]
+position = Vector2(216, 121)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("6_xbu5l")
+flip_h = true
+
+[node name="Ghost" type="Sprite2D" parent="."]
+position = Vector2(232, 82)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("7_nsmi8")
+flip_h = true
+
+[connection signal="pressed" from="VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="VBoxContainer/NewRun" to="." method="_on_new_run_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
