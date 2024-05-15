@@ -8,6 +8,8 @@ const MAP_SCENE := preload("res://Scenes (CardUI)/map/map.tscn")
 const SHOP_SCENE := preload("res://Scenes (CardUI)/shop/shop.tscn")
 const TREASURE_SCENE := preload("res://Scenes (CardUI)/treasure/treasure.tscn")
 
+@export var run_startup: RunStartup
+
 @onready var current_view: Node = $CurrentView
 @onready var battle_button: Button = %BattleButton
 @onready var campfire_button: Button = %CampfireButton
@@ -20,10 +22,15 @@ var character: CharacterStats
 
 
 func _ready() -> void:
-	if not character:
-		var warrior := load("res://characters/Warrior/warrior.tres")
-		character = warrior.create_instance()
-		_start_run()
+	if not run_startup:
+		return
+		
+	match run_startup.type:
+		RunStartup.Type.NEW_RUN:
+			character = run_startup.picked_character.create_instance()
+			_start_run()
+		RunStartup.Type.CONTINUED_RUN:
+			print("TODO: load previous Run")
 
 
 func _start_run() -> void:
