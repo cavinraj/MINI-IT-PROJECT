@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://pkt84l7tswr3"]
+[gd_scene load_steps=2 format=3 uid="uid://c336bnlrrpk5a"]
 
-[ext_resource type="Script" path="res://Scenes (CardUI)/shop/shop.gd" id="1_qo3kq"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/campfire/campfire.gd" id="1_lkcq0"]
 
-[node name="Shop" type="Control"]
+[node name="Campfire" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,7 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("1_qo3kq")
+script = ExtResource("1_lkcq0")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -38,7 +38,7 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "Shop"
+text = "Campfire"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="VBoxContainer"]
