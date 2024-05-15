@@ -1,6 +1,8 @@
 extends Control
 
+
 const ASSASSIN_STATS := preload("res://characters/wizard/wizard.tres")
+
 const WARRIOR_STATS := preload("res://characters/warrior/warrior.tres")
 const WIZARD_STATS := preload("res://characters/wizard/wizard.tres")
 
@@ -19,7 +21,9 @@ func set_current_character(new_character: CharacterStats) -> void:
 	title.text = current_character.character_name
 	description.text = current_character.description
 	character_portrait.texture = current_character.portrait
+
 	
+
 
 func _on_start_button_pressed() -> void:
 	print("Start new Run with %s" % current_character.character_name)
