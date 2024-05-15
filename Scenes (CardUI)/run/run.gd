@@ -53,7 +53,7 @@ func _setup_event_connections() -> void:
 	Events.campfire_exited.connect(_change_view.bind(MAP_SCENE))
 	Events.map_exited.connect(_on_map_exited)
 	Events.shop_exited.connect(_change_view.bind(MAP_SCENE))
-	Events.tresure_room_exited.connect(_change_view.bind(MAP_SCENE))
+	Events.treasure_room_exited.connect(_change_view.bind(MAP_SCENE))
 	
 	battle_button.pressed.connect(_change_view.bind(BATTLE_SCENE))
 	campfire_button.pressed.connect(_change_view.bind(CAMPFIRE_SCENE))

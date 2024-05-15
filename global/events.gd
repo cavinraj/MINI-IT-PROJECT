@@ -37,4 +37,4 @@ signal campfire_exited
 signal battle_reward_exited
 
 # Treasure Room-related events
-signal tresure_room_exited
+signal treasure_room_exited
