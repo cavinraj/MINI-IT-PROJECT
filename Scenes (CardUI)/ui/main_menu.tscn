@@ -1,13 +1,18 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhh13auhfnfhq"]
+[gd_scene load_steps=10 format=3 uid="uid://dal7unxekqid2"]
 
-[ext_resource type="Script" path="res://Scenes (CardUI)/ui/main_menu.gd" id="1_3u3od"]
-[ext_resource type="Texture2D" uid="uid://cr11pden8tn2g" path="res://Assets/art/Digi-Deck Domain.png" id="1_a7xm0"]
-[ext_resource type="Texture2D" uid="uid://cs4gqoon03qel" path="res://Assets/art/tile_0084.png" id="2_2d3sc"]
-[ext_resource type="Texture2D" uid="uid://7rsxbkr6my7h" path="res://Assets/art/tile_0088.png" id="3_jkh86"]
-[ext_resource type="Texture2D" uid="uid://bg8nq088xq4wp" path="res://Assets/art/tile_0087.png" id="4_tycf2"]
-[ext_resource type="Texture2D" uid="uid://taup2i5uvnfe" path="res://Assets/art/tile_0120.png" id="5_xle18"]
-[ext_resource type="Texture2D" uid="uid://dab6o3cfj758u" path="res://Assets/art/tile_0110.png" id="6_xbu5l"]
-[ext_resource type="Texture2D" uid="uid://022x2d57wv8o" path="res://Assets/art/tile_0121.png" id="7_nsmi8"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/main_menu.gd" id="1_lpxto"]
+[ext_resource type="Texture2D" uid="uid://5r67bdrkldmo" path="res://Assets/art/Digi-Deck Domain No Text.png" id="1_mfohv"]
+[ext_resource type="Texture2D" uid="uid://djqfjjcqpwmgd" path="res://Assets/art/tile_0084.png" id="2_lq54j"]
+[ext_resource type="Texture2D" uid="uid://da3xwhuoqrm4v" path="res://Assets/art/tile_0088.png" id="3_040o7"]
+[ext_resource type="Texture2D" uid="uid://cleq52s6772ql" path="res://Assets/art/tile_0087.png" id="4_t5yr4"]
+[ext_resource type="Texture2D" uid="uid://drmf23rd448wt" path="res://Assets/art/tile_0120.png" id="5_t05qq"]
+[ext_resource type="Texture2D" uid="uid://b672irgoduv3" path="res://Assets/art/tile_0110.png" id="6_ki4tp"]
+[ext_resource type="Texture2D" uid="uid://cgnrbxi3pxx4d" path="res://Assets/art/tile_0108.png" id="7_tqcoc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jk3dy"]
+line_spacing = 10.0
+shadow_size = 4
+shadow_color = Color(0.596078, 0.415686, 0.376471, 0.258824)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -16,17 +21,37 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_3u3od")
+size_flags_horizontal = 4
+script = ExtResource("1_lpxto")
 
-[node name="Backround" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_a7xm0")
+texture = ExtResource("1_mfohv")
 expand_mode = 3
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = -59.0
+offset_right = 106.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "My Awesome
+Roguelike Deckbuilder"
+label_settings = SubResource("LabelSettings_jk3dy")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -36,60 +61,60 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -30.0
-offset_top = 15.0
+offset_top = -2.0
 offset_right = 30.0
-offset_bottom = 73.0
+offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 3
+theme_override_constants/separation = 8
 
 [node name="Continue" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(2.08165e-12, 14)
+custom_minimum_size = Vector2(0, 14)
 layout_mode = 2
 text = "Continue"
 
 [node name="NewRun" type="Button" parent="VBoxContainer"]
-custom_minimum_size = Vector2(2.08165e-12, 14)
+custom_minimum_size = Vector2(0, 14)
 layout_mode = 2
 text = "New Run"
 
 [node name="Exit" type="Button" parent="VBoxContainer"]
-custom_minimum_size = Vector2(2.08165e-12, 14)
+custom_minimum_size = Vector2(0, 14)
 layout_mode = 2
 text = "Exit"
 
 [node name="Wizard" type="Sprite2D" parent="."]
-position = Vector2(24, 104)
-scale = Vector2(1.8, 1.8)
-texture = ExtResource("2_2d3sc")
+position = Vector2(20, 105)
+scale = Vector2(2, 2)
+texture = ExtResource("2_lq54j")
 
 [node name="Assassin" type="Sprite2D" parent="."]
-position = Vector2(56, 96)
-scale = Vector2(1.8, 1.8)
-texture = ExtResource("3_jkh86")
+position = Vector2(40, 86)
+scale = Vector2(2, 2)
+texture = ExtResource("3_040o7")
 
 [node name="Warrior" type="Sprite2D" parent="."]
-position = Vector2(42, 121)
-scale = Vector2(1.8, 1.8)
-texture = ExtResource("4_tycf2")
+position = Vector2(44, 112)
+scale = Vector2(2, 2)
+texture = ExtResource("4_t5yr4")
 
 [node name="Bat" type="Sprite2D" parent="."]
-position = Vector2(200, 96)
-scale = Vector2(1.8, 1.8)
-texture = ExtResource("5_xle18")
+position = Vector2(202, 112)
+scale = Vector2(2, 2)
+texture = ExtResource("5_t05qq")
 flip_h = true
 
 [node name="Crab" type="Sprite2D" parent="."]
-position = Vector2(216, 121)
-scale = Vector2(1.8, 1.8)
-texture = ExtResource("6_xbu5l")
+position = Vector2(231, 114)
+scale = Vector2(2, 2)
+texture = ExtResource("6_ki4tp")
 flip_h = true
 
 [node name="Ghost" type="Sprite2D" parent="."]
-position = Vector2(232, 82)
-scale = Vector2(1.8, 1.8)
-texture = ExtResource("7_nsmi8")
+position = Vector2(219, 91)
+scale = Vector2(2, 2)
+texture = ExtResource("7_tqcoc")
 flip_h = true
 
 [connection signal="pressed" from="VBoxContainer/Continue" to="." method="_on_continue_pressed"]

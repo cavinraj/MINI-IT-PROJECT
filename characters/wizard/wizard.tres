@@ -1,16 +1,17 @@
-[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dul0vswpbynlg"]
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dpirhtmqfyvfk"]
 
-[ext_resource type="Texture2D" uid="uid://djqfjjcqpwmgd" path="res://Assets/art/tile_0084.png" id="1_v1j24"]
-[ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_y1m47"]
-[ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_na8kl"]
+[ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_88tp5"]
+[ext_resource type="Texture2D" uid="uid://djqfjjcqpwmgd" path="res://Assets/art/tile_0084.png" id="1_x45ms"]
+[ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_j1yd1"]
 
 [resource]
-script = ExtResource("1_y1m47")
+script = ExtResource("1_88tp5")
 character_name = "Wizard"
-description = "Years of wisdom and reccuring back pain."
-portrait = ExtResource("1_v1j24")
-starting_deck = ExtResource("3_na8kl")
+description = "Years of wisdom and
+recurring back pain."
+portrait = ExtResource("1_x45ms")
+starting_deck = ExtResource("3_j1yd1")
 cards_per_turn = 3
 max_mana = 4
 max_health = 27
-art = ExtResource("1_v1j24")
+art = ExtResource("1_x45ms")
