@@ -1,11 +1,11 @@
 [gd_scene load_steps=20 format=3 uid="uid://bddao04i22ti4"]
 
-[ext_resource type="Texture2D" uid="uid://bw55n4qad7lo5" path="res://Assets/thetherone.png" id="1_3exg5"]
+[ext_resource type="Texture2D" uid="uid://com66rftd7uak" path="res://Assets/thetherone.png" id="1_3exg5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/Battle/battle.gd" id="1_tx3os"]
 [ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="2_134dg"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/hand.gd" id="2_owj4f"]
 [ext_resource type="PackedScene" uid="uid://bcfn1ri1fst3i" path="res://Scenes (CardUI)/player/player.tscn" id="3_b7fq5"]
-[ext_resource type="AudioStream" uid="uid://b1rgrvsh620hl" path="res://Assets/art/8_bit_iced_village_lofi.mp3" id="3_veavo"]
+[ext_resource type="AudioStream" uid="uid://ckuv2iyi2kttw" path="res://Assets/art/8_bit_iced_village_lofi.mp3" id="3_veavo"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/enemy/enemy_handler.gd" id="4_c6215"]
 [ext_resource type="Resource" uid="uid://dgryae3qv4lcu" path="res://characters/Warrior/warrior.tres" id="4_xfid1"]
 [ext_resource type="Resource" uid="uid://dkqlngyun3clx" path="res://enemies/crab/crab_enemy.tres" id="5_g048m"]

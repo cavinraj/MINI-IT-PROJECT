@@ -10,10 +10,6 @@ const CARD_MENU_UI_SCENE := preload("res://Scenes (CardUI)/ui/card_menu_ui.tscn"
 func _ready() -> void:
 	for card: CardMenuUI in tooltip_card.get_children():
 		card.queue_free()
-		
-	hide_tooltip()
-	await get_tree().create_timer(3.0).timeout
-	show_tooltip(preload("res://characters/Warrior/cards/warrior_slash.tres"))
 
 
 func show_tooltip(card: Card) -> void:

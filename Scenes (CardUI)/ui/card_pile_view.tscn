@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsfj0a14iagj4"]
+[gd_scene load_steps=7 format=3 uid="uid://dws7irhbqmomu"]
 
-[ext_resource type="PackedScene" uid="uid://byt4k3u62rfjr" path="res://Scenes (CardUI)/ui/card_menu_ui.tscn" id="1_33hjc"]
+[ext_resource type="PackedScene" uid="uid://byt4k3u62rfjr" path="res://Scenes (CardUI)/ui/card_menu_ui.tscn" id="1_axewt"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/card_pile_view.gd" id="1_fjqwr"]
+[ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="2_1fhlg"]
+[ext_resource type="Resource" uid="uid://ovpls14v6exp" path="res://characters/Warrior/cards/warrior_block.tres" id="4_7xg5n"]
+[ext_resource type="PackedScene" uid="uid://ci5bxt7w1ps83" path="res://Scenes (CardUI)/ui/card_tooltip_popup.tscn" id="4_r5bux"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_iw88n"]
+[sub_resource type="LabelSettings" id="LabelSettings_gcrwt"]
 font_size = 12
 
 [node name="CardPileView" type="Control"]
@@ -12,15 +16,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fjqwr")
+card_pile = ExtResource("2_1fhlg")
 
-[node name="Backround" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.682353)
+color = Color(0, 0, 0, 0.501961)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -42,7 +48,7 @@ theme_override_constants/separation = 10
 unique_name_in_owner = true
 layout_mode = 2
 text = "Discard Pile"
-label_settings = SubResource("LabelSettings_iw88n")
+label_settings = SubResource("LabelSettings_gcrwt")
 horizontal_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
@@ -51,96 +57,126 @@ size_flags_vertical = 3
 horizontal_scroll_mode = 3
 vertical_scroll_mode = 2
 
-[node name="Card" type="GridContainer" parent="MarginContainer/VBoxContainer/ScrollContainer"]
+[node name="Cards" type="GridContainer" parent="MarginContainer/VBoxContainer/ScrollContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/h_separation = 0
-theme_override_constants/v_separation = 8
+theme_override_constants/v_separation = 10
 columns = 6
 
-[node name="CardMenuUI" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI2" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI2" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI3" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI3" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI4" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI4" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI5" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI5" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI6" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI6" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI7" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI7" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI8" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI8" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI9" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI9" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI10" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI10" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI11" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI11" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI12" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI12" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI13" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI13" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI14" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI14" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI15" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI15" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI16" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI16" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI17" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI17" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI18" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI18" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI19" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI19" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI20" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI20" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI21" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI21" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI22" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI22" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI23" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI23" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
-[node name="CardMenuUI24" parent="MarginContainer/VBoxContainer/ScrollContainer/Card" instance=ExtResource("1_33hjc")]
+[node name="CardMenuUI24" parent="MarginContainer/VBoxContainer/ScrollContainer/Cards" instance=ExtResource("1_axewt")]
 layout_mode = 2
+card = ExtResource("4_7xg5n")
 
 [node name="BackButton" type="Button" parent="."]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 14)
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -50.0
-offset_top = 7.0
-offset_right = -10.0
-offset_bottom = 21.0
+offset_left = -48.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 22.0
 grow_horizontal = 0
 text = "Back"
+
+[node name="CardTooltipPopup" parent="." instance=ExtResource("4_r5bux")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1

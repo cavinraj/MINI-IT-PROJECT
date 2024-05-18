@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/card_menu_ui.gd" id="1_rq40i"]
 [ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="1_wc8v5"]
-[ext_resource type="Resource" uid="uid://ovpls14v6exp" path="res://characters/Warrior/cards/warrior_block.tres" id="2_avdva"]
+[ext_resource type="Resource" uid="uid://guba80t47ud2" path="res://characters/Warrior/cards/warrior_slash.tres" id="2_xw137"]
 [ext_resource type="StyleBox" uid="uid://6sv8w8821r4i" path="res://Scenes (CardUI)/card_ui/card_base_stylebox.tres" id="3_87uir"]
 [ext_resource type="Texture2D" uid="uid://c5csm2581d6ij" path="res://Assets/art/tile_0104.png" id="4_nloe3"]
 
@@ -11,7 +11,7 @@ offset_right = 25.0
 offset_bottom = 30.0
 size_flags_horizontal = 3
 script = ExtResource("1_rq40i")
-card = ExtResource("2_avdva")
+card = ExtResource("2_xw137")
 
 [node name="Visuals" type="Control" parent="."]
 custom_minimum_size = Vector2(25, 30)
@@ -31,17 +31,6 @@ theme_override_styles/panel = ExtResource("3_87uir")
 [node name="Cost" type="Label" parent="Visuals"]
 layout_mode = 0
 offset_right = 10.0
-offset_bottom = 10.0
-text = "2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TempCost" type="Label" parent="Visuals"]
-visible = false
-self_modulate = Color(1, 0.211765, 1, 1)
-layout_mode = 0
-offset_left = 16.0
-offset_right = 26.0
 offset_bottom = 10.0
 text = "2"
 horizontal_alignment = 1
