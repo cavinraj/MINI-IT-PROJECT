@@ -10,9 +10,7 @@ const HOVER_STYLEBOX := preload("res://Scenes (CardUI)/card_ui/card_hover_styleb
 @export var card: Card : set = _set_card
 @export var char_stats: CharacterStats : set = _set_char_stats
 
-@onready var panel: Panel = $Panel
-@onready var cost: Label = $Cost
-@onready var icon: TextureRect = $Icon
+@onready var card_visuals: CardVisuals = $CardVisuals
 @onready var drop_point_detector: Area2D = $DropPointDetector
 @onready var card_state_machine: CardStateMachine = $CardStateMachine as CardStateMachine
 @onready var targets: Array[Node] = []
@@ -31,7 +29,6 @@ func _ready():
 	Events.card_aim_ended.connect(_on_card_drag_or_aim_ended)
 	Events.card_drag_ended.connect(_on_card_drag_or_aim_ended)
 	card_state_machine.init(self)
-	$TempCost.text = str(get_index()) #visualising card position number
 	
 	
 func _input(event: InputEvent) -> void:
@@ -68,18 +65,17 @@ func _set_card(value: Card) -> void:
 		await ready
 
 	card = value
-	cost.text = str(card.cost)
-	icon.texture = card.icon
+	card_visuals.card = card
 
 
 func _set_playable(value: bool) -> void:
 	playable = value
 	if not playable:
-		cost.add_theme_color_override("font_color", Color.RED)
-		icon.modulate = Color(1,1,1,0.5)
+		card_visuals.cost.add_theme_color_override("font_color", Color.RED)
+		card_visuals.icon.modulate = Color(1,1,1,0.5)
 	else:
-		cost.remove_theme_color_override("font_color")
-		icon.modulate = Color(1,1,1,1)
+		card_visuals.cost.remove_theme_color_override("font_color")
+		card_visuals.icon.modulate = Color(1,1,1,1)
 
 
 func _set_char_stats(value: CharacterStats) -> void:
