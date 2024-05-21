@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccvfeocl141qk"]
+[gd_scene load_steps=8 format=3 uid="uid://ccvfeocl141qk"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/battle_reward/battle_reward.gd" id="1_okiww"]
 [ext_resource type="Texture2D" uid="uid://qrdouo4reew2" path="res://Assets/art/background.png" id="2_ckd65"]
+[ext_resource type="PackedScene" uid="uid://bsyla0iccm80t" path="res://Scenes (CardUI)/ui/reward_button.tscn" id="3_atwwe"]
+[ext_resource type="Texture2D" uid="uid://db21fk423j2o7" path="res://Assets/art/gold.png" id="4_nmr10"]
+[ext_resource type="Texture2D" uid="uid://btolw8huf5hd5" path="res://Assets/art/rarity.png" id="5_jfcff"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8e31q"]
 font_size = 12
@@ -75,6 +78,16 @@ theme_override_constants/margin_bottom = 5
 [node name="Rewards" type="VBoxContainer" parent="VBoxContainer/RewardContainer/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+
+[node name="GoldReward" parent="VBoxContainer/RewardContainer/MarginContainer/Rewards" instance=ExtResource("3_atwwe")]
+layout_mode = 2
+reward_icon = ExtResource("4_nmr10")
+reward_text = "127 gold"
+
+[node name="CardReward" parent="VBoxContainer/RewardContainer/MarginContainer/Rewards" instance=ExtResource("3_atwwe")]
+layout_mode = 2
+reward_icon = ExtResource("5_jfcff")
+reward_text = "Add New Card"
 
 [node name="BackButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(50, 14)

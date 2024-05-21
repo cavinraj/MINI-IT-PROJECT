@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://db21fk423j2o7" path="res://Assets/art/gold.png" id="1_8ehgy"]
 
 [node name="RewardButton" type="Button"]
+custom_minimum_size = Vector2(0, 14)
 offset_right = 75.0
 offset_bottom = 14.0
 script = ExtResource("1_4p85q")
