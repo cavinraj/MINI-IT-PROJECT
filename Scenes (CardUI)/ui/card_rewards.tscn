@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx741s3n6b0sk"]
+
+[ext_resource type="PackedScene" uid="uid://byt4k3u62rfjr" path="res://Scenes (CardUI)/ui/card_menu_ui.tscn" id="1_0gd2y"]
+[ext_resource type="PackedScene" uid="uid://ci5bxt7w1ps83" path="res://Scenes (CardUI)/ui/card_tooltip_popup.tscn" id="2_elth5"]
+
+[node name="CardRewards" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.666667)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.5
+offset_top = -20.0
+offset_right = 41.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Cards" type="HBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="CardMenuUI" parent="VBoxContainer/Cards" instance=ExtResource("1_0gd2y")]
+layout_mode = 2
+
+[node name="CardMenuUI2" parent="VBoxContainer/Cards" instance=ExtResource("1_0gd2y")]
+layout_mode = 2
+
+[node name="CardMenuUI3" parent="VBoxContainer/Cards" instance=ExtResource("1_0gd2y")]
+layout_mode = 2
+
+[node name="SkipCardReward" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 14)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Skip"
+
+[node name="CardTooltipPopup" parent="." instance=ExtResource("2_elth5")]
+layout_mode = 1
