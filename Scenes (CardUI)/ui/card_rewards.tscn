@@ -49,3 +49,4 @@ text = "Skip"
 
 [node name="CardTooltipPopup" parent="." instance=ExtResource("2_elth5")]
 layout_mode = 1
+background_color = Color(0.298039, 0.129412, 0.2, 0.784314)
