@@ -21,14 +21,12 @@ func _ready() -> void:
 	take_button.pressed.connect(
 		func():
 			card_reward_selected.emit(selected_card)
-			print("drafted %s" % selected_card.id)
 			queue_free()
 	)
 	
 	skip_card_reward.pressed.connect(
 		func():
 			card_reward_selected.emit(null)
-			print("skipped card reward")
 			queue_free()
 	)
 	
@@ -51,3 +49,16 @@ func _show_tooltip(card: Card) -> void:
 	selected_card = card
 	card_tooltip_popup.show_tooltip(card)
 	
+	
+func set_rewards(new_cards: Array[Card]) -> void:
+	rewards = new_cards
+	
+	if not is_node_ready():
+		await ready
+		
+	_clear_rewards()
+	for card: Card in rewards:
+		var new_card := CARD_MENU_UI.instantiate() as CardMenuUI
+		cards.add_child(new_card)
+		new_card.card = card
+		new_card.tooltip_requested.connect(_show_tooltip)

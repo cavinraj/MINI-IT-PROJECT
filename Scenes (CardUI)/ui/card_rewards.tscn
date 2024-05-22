@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://cx741s3n6b0sk"]
+[gd_scene load_steps=7 format=3 uid="uid://cx741s3n6b0sk"]
 
 [ext_resource type="PackedScene" uid="uid://byt4k3u62rfjr" path="res://Scenes (CardUI)/ui/card_menu_ui.tscn" id="1_0gd2y"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/card_rewards.gd" id="1_cmqft"]
 [ext_resource type="PackedScene" uid="uid://ci5bxt7w1ps83" path="res://Scenes (CardUI)/ui/card_tooltip_popup.tscn" id="2_elth5"]
+[ext_resource type="Resource" uid="uid://guba80t47ud2" path="res://characters/Warrior/cards/warrior_slash.tres" id="2_kdr72"]
+[ext_resource type="Resource" uid="uid://dyx1yda12dnbf" path="res://characters/Warrior/cards/warrior_big_slam.tres" id="3_7gnui"]
+[ext_resource type="Resource" uid="uid://76tu5oov5pbn" path="res://characters/Warrior/cards/warrior_true_strength.tres" id="4_f03rr"]
 
 [node name="CardRewards" type="ColorRect"]
 anchors_preset = 15
@@ -12,7 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.666667)
 script = ExtResource("1_cmqft")
-rewards = null
+rewards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("2_kdr72"), ExtResource("3_7gnui"), ExtResource("4_f03rr")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
