@@ -25,11 +25,9 @@ func _ready() -> void:
 
 func generate_map() -> Array[Array]:
 	map_data = _generate_initial_grid()
+	var starting_points := _get_random_starting_points()
 	
-	var i := 0
-	for floor in map_data:
-		print("floor %s: %s" % [i, floor])
-		i += 1
+	print(starting_points)
 	
 	return []
 	
@@ -58,7 +56,21 @@ func _generate_initial_grid() -> Array[Array]:
 		
 	return result
 	
+func _get_random_starting_points() -> Array[int]:
+	var y_coordinates: Array[int]
+	var unique_points: int = 0
 	
+	while unique_points < 2:
+		unique_points = 0
+		y_coordinates = []
+		
+		for i in PATHS:
+			var starting_point := randi_range(0, MAP_WIDTH - 1)
+			if not y_coordinates.has(starting_point):
+				unique_points += 1
+				
+			y_coordinates.append(starting_point)
 	
+	return y_coordinates
 	
 	
