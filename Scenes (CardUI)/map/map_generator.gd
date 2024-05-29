@@ -27,7 +27,6 @@ func generate_map() -> Array[Array]:
 	map_data = _generate_initial_grid()
 	var starting_points := _get_random_starting_points()
 	
-	print(starting_points)
 	
 	return []
 	
