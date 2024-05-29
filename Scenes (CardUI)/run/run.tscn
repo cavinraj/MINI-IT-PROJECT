@@ -3,9 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://bc2t1j45hp60" path="res://Scenes (CardUI)/map/map.tscn" id="1_8hs5h"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/run/run.gd" id="1_i3qf7"]
 [ext_resource type="Resource" uid="uid://dc5xau76tudru" path="res://Scenes (CardUI)/run/run_startup.tres" id="2_v42uh"]
-[ext_resource type="PackedScene" uid="uid://ccy3s3xkt5rlo" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="4_ohvs7"]
-[ext_resource type="PackedScene" uid="uid://2ak1ntrbe3me" path="res://Scenes (CardUI)/ui/gold_ui.tscn" id="4_wh66a"]
-[ext_resource type="Texture2D" uid="uid://cxsd7xiauiurb" path="res://Assets/art/deck.png" id="5_ajk4a"]
+[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="4_ohvs7"]
+[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/gold_ui.tscn" id="4_wh66a"]
+[ext_resource type="Texture2D" uid="uid://bwjw0t0a0fjvg" path="res://Assets/art/deck.png" id="5_ajk4a"]
 [ext_resource type="PackedScene" uid="uid://dws7irhbqmomu" path="res://Scenes (CardUI)/ui/card_pile_view.tscn" id="6_afc18"]
 
 [node name="Run" type="Node"]

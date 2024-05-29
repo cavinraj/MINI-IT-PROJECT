@@ -3,6 +3,7 @@ extends Control
 const CHAR_SELECTOR_SCENE := preload("res://Scenes (CardUI)/ui/character_selector.tscn")
 
 @onready var continue_button: Button = %Continue
+@export var music: AudioStream
 
 
 func _ready() -> void:
