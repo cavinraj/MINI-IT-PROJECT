@@ -93,7 +93,7 @@ func _setup_top_bar():
 func _on_battle_room_entered(room: Room) -> void:
 	var battle_scene: Battle = _change_view(BATTLE_SCENE) as Battle
 	battle_scene.char_stats = character
-	battle_scene.battle_stats = preload("res://battles/tier_0_crab.tres")
+	battle_scene.battle_stats = room.battle_stats
 	battle_scene.start_battle()
 
 
@@ -102,9 +102,7 @@ func _on_battle_won() -> void:
 	reward_scene.run_stats = stats
 	reward_scene.character_stats = character
 	
-	# this is a temporary code, it will come from real battle encounter data
-	# as a dependency
-	reward_scene.add_gold_reward(77)
+	reward_scene.add_gold_reward(map.last_room.battle_stats.roll_gold_reward())
 	reward_scene.add_card_reward()
 	
 	
