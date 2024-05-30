@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dybsj0nnhw6lk"]
+
+[ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="1_06hy6"]
+[ext_resource type="Resource" uid="uid://b44psi201n1r3" path="res://enemies/bat/bat_enemy.tres" id="2_m0kde"]
+
+[node name="Tier1Bats3" type="Node2D"]
+
+[node name="Enemy" parent="." instance=ExtResource("1_06hy6")]
+position = Vector2(160, 75)
+stats = ExtResource("2_m0kde")
+
+[node name="Enemy2" parent="." instance=ExtResource("1_06hy6")]
+position = Vector2(195, 40)
+stats = ExtResource("2_m0kde")
+
+[node name="Enemy3" parent="." instance=ExtResource("1_06hy6")]
+position = Vector2(230, 75)
+stats = ExtResource("2_m0kde")
