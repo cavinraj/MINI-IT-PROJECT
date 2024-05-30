@@ -58,6 +58,7 @@ layer = 3
 
 [node name="Background" type="ColorRect" parent="TopBar"]
 custom_minimum_size = Vector2(2.08165e-12, 18)
+layout_direction = 1
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
