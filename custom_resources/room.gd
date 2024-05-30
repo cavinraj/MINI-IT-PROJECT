@@ -1,7 +1,7 @@
 class_name Room
 extends Resource
 
-enum Type {NOT_ASSIGNED, MONSTER, TREASURE, CAMPFIRE, BOSS} #Types of room
+enum Type {NOT_ASSIGNED, MONSTER, TREASURE, SHOP, CAMPFIRE, BOSS} #Types of room
 
 @export var type: Type
 @export var row: int
