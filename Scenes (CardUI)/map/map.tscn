@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bc2t1j45hp60"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/map/map.gd" id="1_4y16x"]
-[ext_resource type="Script" path="res://Scenes (CardUI)/map/map_generator.gd" id="2_scgbl"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/map/map_generator.gd" id="2_x0lhi"]
 
 [node name="Map" type="Control"]
 layout_mode = 3
@@ -48,6 +48,6 @@ layout_mode = 2
 text = "Go Back"
 
 [node name="MapGenerator" type="Node" parent="."]
-script = ExtResource("2_scgbl")
+script = ExtResource("2_x0lhi")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/character_selector.gd" id="1_mur4y"]
 [ext_resource type="Resource" uid="uid://dc5xau76tudru" path="res://Scenes (CardUI)/run/run_startup.tres" id="2_uoe0v"]
-[ext_resource type="Texture2D" uid="uid://bamoprgmnrmsj" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_ypau3"]
-[ext_resource type="Texture2D" uid="uid://dos73s5btps62" path="res://Assets/art/tile_0118.png" id="4_0p8vg"]
-[ext_resource type="Texture2D" uid="uid://dsj4n52nuscyr" path="res://Assets/art/tile_0130.png" id="5_1m22a"]
-[ext_resource type="Texture2D" uid="uid://dl7uohsn6bfik" path="res://Assets/art/tile_0087.png" id="5_nv777"]
-[ext_resource type="Texture2D" uid="uid://cov0exefqbitb" path="res://Assets/art/tile_0103.png" id="6_ibd28"]
+[ext_resource type="Texture2D" uid="uid://5r67bdrkldmo" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_ypau3"]
+[ext_resource type="Texture2D" uid="uid://ce8ch2p8y1d17" path="res://Assets/art/tile_0118.png" id="4_0p8vg"]
+[ext_resource type="Texture2D" uid="uid://d364tkgv736xl" path="res://Assets/art/tile_0130.png" id="5_1m22a"]
+[ext_resource type="Texture2D" uid="uid://cleq52s6772ql" path="res://Assets/art/tile_0087.png" id="5_nv777"]
+[ext_resource type="Texture2D" uid="uid://cgv8l2art367i" path="res://Assets/art/tile_0103.png" id="6_ibd28"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jk3dy"]
 line_spacing = 10.0
