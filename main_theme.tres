@@ -2,7 +2,7 @@
 
 [ext_resource type="StyleBox" uid="uid://bo8ruoeodnmwo" path="res://Scenes (CardUI)/card_ui/card_hover_stylebox.tres" id="1_aqq0r"]
 [ext_resource type="StyleBox" uid="uid://6sv8w8821r4i" path="res://Scenes (CardUI)/card_ui/card_base_stylebox.tres" id="1_s08wt"]
-[ext_resource type="FontFile" uid="uid://cq3o346ox8exf" path="res://Assets/art/pixel_rpg.ttf" id="1_wy6gb"]
+[ext_resource type="FontFile" uid="uid://cs7d7sr3fiyco" path="res://Assets/art/pixel_rpg.ttf" id="1_wy6gb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1io5m"]
 bg_color = Color(0.631373, 0.34902, 0.321569, 0.505882)

@@ -5,7 +5,7 @@
 [ext_resource type="Resource" uid="uid://dc5xau76tudru" path="res://Scenes (CardUI)/run/run_startup.tres" id="2_v42uh"]
 [ext_resource type="PackedScene" uid="uid://ccy3s3xkt5rlo" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="4_ohvs7"]
 [ext_resource type="PackedScene" uid="uid://2ak1ntrbe3me" path="res://Scenes (CardUI)/ui/gold_ui.tscn" id="4_wh66a"]
-[ext_resource type="Texture2D" uid="uid://cxsd7xiauiurb" path="res://Assets/art/deck.png" id="5_ajk4a"]
+[ext_resource type="Texture2D" uid="uid://dqkrk1mhadajv" path="res://Assets/art/deck.png" id="5_ajk4a"]
 [ext_resource type="PackedScene" uid="uid://dws7irhbqmomu" path="res://Scenes (CardUI)/ui/card_pile_view.tscn" id="6_afc18"]
 
 [node name="Run" type="Node"]
@@ -17,6 +17,7 @@ run_startup = ExtResource("2_v42uh")
 [node name="CurrentView" type="Node" parent="."]
 
 [node name="DebugButtons" type="VBoxContainer" parent="."]
+visible = false
 anchors_preset = 9
 anchor_bottom = 1.0
 grow_vertical = 2
@@ -57,6 +58,7 @@ layer = 3
 
 [node name="Background" type="ColorRect" parent="TopBar"]
 custom_minimum_size = Vector2(2.08165e-12, 18)
+layout_direction = 1
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
