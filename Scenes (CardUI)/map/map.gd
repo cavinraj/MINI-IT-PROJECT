@@ -19,8 +19,6 @@ var camera_edge_y: float
 func _ready() -> void:
 	camera_edge_y = MapGenerator.Y_DIST * (MapGenerator.FLOORS - 1)
 	
-	generate_new_map()
-	unlock_floor(0)
 
 
 
@@ -60,7 +58,7 @@ func unlock_floor(which_floor: int = floors_climbed) -> void:
 				
 func unlock_next_rooms() -> void:
 	for map_room: MapRoom in rooms.get_children():
-		if last_room.next.rooms.has(map_room.room):
+		if last_room.next_rooms.has(map_room.room):
 			map_room.available = true
 			
 			
