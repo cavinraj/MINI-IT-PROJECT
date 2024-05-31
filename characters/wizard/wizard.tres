@@ -1,17 +1,16 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dpirhtmqfyvfk"]
 
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_88tp5"]
-[ext_resource type="Texture2D" uid="uid://djqfjjcqpwmgd" path="res://Assets/art/tile_0084.png" id="1_x45ms"]
+[ext_resource type="Texture2D" path="res://Assets/Gojo.png" id="1_tf1ly"]
 [ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_j1yd1"]
 
 [resource]
 script = ExtResource("1_88tp5")
-character_name = "Wizard"
-description = "Years of wisdom and
-recurring back pain."
-portrait = ExtResource("1_x45ms")
+character_name = "The Honoured One"
+description = "Would I Lose ? Nah I'd Win."
+portrait = ExtResource("1_tf1ly")
 starting_deck = ExtResource("3_j1yd1")
 cards_per_turn = 3
 max_mana = 4
 max_health = 27
-art = ExtResource("1_x45ms")
+art = ExtResource("1_tf1ly")

@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://berflxtj34m66"]
 
-[ext_resource type="Texture2D" uid="uid://da3xwhuoqrm4v" path="res://Assets/art/tile_0088.png" id="1_xdcpi"]
+[ext_resource type="Texture2D" path="res://Assets/Darth Vader.png" id="1_8jc40"]
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_yct45"]
 [ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_p6f6e"]
 
 [resource]
 script = ExtResource("1_yct45")
-character_name = "Assassin"
-description = "Sneaky lil' boi."
-portrait = ExtResource("1_xdcpi")
+character_name = "Darth Vader"
+description = "I find your lack of faith disturbing."
+portrait = ExtResource("1_8jc40")
 starting_deck = ExtResource("3_p6f6e")
 cards_per_turn = 5
 max_mana = 3
 max_health = 24
-art = ExtResource("1_xdcpi")
+art = ExtResource("1_8jc40")

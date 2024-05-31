@@ -1,18 +1,18 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://dgryae3qv4lcu"]
 
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_3yr2w"]
-[ext_resource type="Texture2D" uid="uid://cleq52s6772ql" path="res://Assets/art/tile_0087.png" id="1_jjbf0"]
+[ext_resource type="Texture2D" path="res://Assets/Kratos.png" id="1_58bdv"]
 [ext_resource type="Resource" uid="uid://cinqkqot45rq6" path="res://characters/Warrior/warrior_draftable_cards.tres" id="2_htjh4"]
 [ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_3ahsn"]
 
 [resource]
 script = ExtResource("1_3yr2w")
-character_name = "Warrior"
-description = "Likes to slice things."
-portrait = ExtResource("1_jjbf0")
+character_name = "Kratos"
+description = "Zeus! Your son has returned."
+portrait = ExtResource("1_58bdv")
 starting_deck = ExtResource("3_3ahsn")
 draftable_cards = ExtResource("2_htjh4")
 cards_per_turn = 4
 max_mana = 3
 max_health = 25
-art = ExtResource("1_jjbf0")
+art = ExtResource("1_58bdv")
