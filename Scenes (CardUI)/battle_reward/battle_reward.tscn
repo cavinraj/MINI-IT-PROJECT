@@ -1,8 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccvfeocl141qk"]
+[gd_scene load_steps=9 format=3 uid="uid://ccvfeocl141qk"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/battle_reward/battle_reward.gd" id="1_okiww"]
 [ext_resource type="Texture2D" uid="uid://bssjhbks0m60i" path="res://Assets/art/background.png" id="2_ckd65"]
-[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/reward_button.tscn" id="3_atwwe"]
+[ext_resource type="PackedScene" uid="uid://bsyla0iccm80t" path="res://Scenes (CardUI)/ui/reward_button.tscn" id="3_atwwe"]
 [ext_resource type="Texture2D" uid="uid://bobiev0u048mc" path="res://Assets/art/gold.png" id="4_nmr10"]
 [ext_resource type="Texture2D" uid="uid://06jvcom53rlu" path="res://Assets/art/rarity.png" id="5_jfcff"]
 
@@ -11,6 +11,10 @@ font_size = 12
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vqlk3"]
 bg_color = Color(0, 0, 0, 0.501961)
+
+[sub_resource type="LabelSettings" id="LabelSettings_67rv1"]
+line_spacing = -1.0
+font_size = 6
 
 [node name="BattleReward" type="Control"]
 layout_mode = 3
@@ -50,10 +54,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -55.0
-offset_top = -48.0
-offset_right = 55.0
-offset_bottom = 66.0
+offset_left = -57.0
+offset_top = -62.0
+offset_right = 58.0
+offset_bottom = 67.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -88,6 +92,13 @@ reward_text = "127 gold"
 layout_mode = 2
 reward_icon = ExtResource("5_jfcff")
 reward_text = "Add New Card"
+
+[node name="Notice" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Tip: You can choose to accept
+or skip rewards"
+label_settings = SubResource("LabelSettings_67rv1")
+horizontal_alignment = 1
 
 [node name="BackButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(50, 14)

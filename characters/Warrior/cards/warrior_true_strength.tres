@@ -1,8 +1,8 @@
-[gd_resource type="Resource" load_steps=4 format=3 uid="uid://76tu5oov5pbn"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bgk46pmshry3a"]
 
-[ext_resource type="Texture2D" uid="uid://ca07ookiiwfre" path="res://Assets/art/tile_0127.png" id="1_vbukt"]
+[ext_resource type="Texture2D" uid="uid://xos0oxhs3duf" path="res://Assets/art/tile_0127.png" id="1_vbukt"]
 [ext_resource type="Script" path="res://characters/Warrior/cards/warrior_true_strength.gd" id="2_edogh"]
-[ext_resource type="AudioStream" uid="uid://dm1ydy3do1mn5" path="res://Assets/art/true_strength.ogg" id="3_8yad0"]
+[ext_resource type="AudioStream" uid="uid://sxxtdq2nm3kn" path="res://Assets/art/true_strength.ogg" id="3_8yad0"]
 
 [resource]
 script = ExtResource("2_edogh")

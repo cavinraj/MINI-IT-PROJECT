@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dpirhtmqfyvfk"]
 
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_88tp5"]
-[ext_resource type="Texture2D" path="res://Assets/Gojo.png" id="1_tf1ly"]
+[ext_resource type="Texture2D" uid="uid://bkrgjlhtn0vol" path="res://Assets/Gojo.png" id="1_tf1ly"]
 [ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_j1yd1"]
 
 [resource]

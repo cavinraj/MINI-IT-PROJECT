@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://ce4xa378243a1"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/map/map_room.gd" id="1_3ay2r"]
-[ext_resource type="Texture2D" uid="uid://cgv8l2art367i" path="res://Assets/art/tile_0103.png" id="1_4oqow"]
+[ext_resource type="Texture2D" uid="uid://cov0exefqbitb" path="res://Assets/art/tile_0103.png" id="1_4oqow"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tf3in"]
 
