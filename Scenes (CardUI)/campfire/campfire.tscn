@@ -113,3 +113,7 @@ text = "Rest"
 layout_mode = 2
 text = "+30% HP"
 horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="pressed" from="UILayer/UI/RestButton" to="." method="_on_rest_button_pressed"]
