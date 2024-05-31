@@ -11,6 +11,7 @@ const TREASURE_SCENE := preload("res://Scenes (CardUI)/treasure/treasure.tscn")
 
 @onready var map = $Map
 @onready var current_view: Node = $CurrentView
+@onready var health_ui: HealthUI = %HealthUI
 @onready var gold_ui: GoldUI = %GoldUI
 @onready var deck_button: CardPileOpener = %DeckButton
 @onready var deck_view: CardPileView = %DeckView
@@ -43,6 +44,7 @@ func _start_run() -> void:
 	
 	_setup_event_connections()
 	_setup_top_bar()
+	
 	map.generate_new_map()
 	map.unlock_floor(0)
 	
@@ -84,6 +86,8 @@ func _setup_event_connections() -> void:
 	
 	
 func _setup_top_bar():
+	character.stats_changed.connect(health_ui.update_stats.bind(character))
+	health_ui.update_stats(character)
 	gold_ui.run_stats = stats
 	deck_button.card_pile = character.deck
 	deck_view.card_pile = character.deck
@@ -96,6 +100,9 @@ func _on_battle_room_entered(room: Room) -> void:
 	battle_scene.battle_stats = room.battle_stats
 	battle_scene.start_battle()
 
+func _on_campfire_entered() -> void:
+	var campfire := _change_view(CAMPFIRE_SCENE) as Campfire
+	campfire.char_stats = character
 
 func _on_battle_won() -> void:
 	var reward_scene := _change_view(BATTLE_REWARD_SCENE) as BattleReward
@@ -113,7 +120,7 @@ func _on_map_exited(room: Room) -> void:
 		Room.Type.TREASURE:
 			_change_view(TREASURE_SCENE)
 		Room.Type.CAMPFIRE:
-			_change_view(CAMPFIRE_SCENE)
+			_on_campfire_entered()
 		Room.Type.SHOP:
 			_change_view(SHOP_SCENE)
 		Room.Type.BOSS:
