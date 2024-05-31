@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://c336bnlrrpk5a"]
+[gd_scene load_steps=15 format=3 uid="uid://c336bnlrrpk5a"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/campfire/campfire.gd" id="1_lkcq0"]
 [ext_resource type="Texture2D" uid="uid://b4owpjiemyjoa" path="res://Assets/line.png" id="2_0w3gx"]
+[ext_resource type="Resource" uid="uid://dgryae3qv4lcu" path="res://characters/Warrior/warrior.tres" id="2_l1pw3"]
 
 [sub_resource type="Gradient" id="Gradient_dmpkj"]
 offsets = PackedFloat32Array(0.162338, 1)
@@ -132,6 +133,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_lkcq0")
+char_stats = ExtResource("2_l1pw3")
 
 [node name="BackgroundLayer" type="CanvasLayer" parent="."]
 layer = 0
