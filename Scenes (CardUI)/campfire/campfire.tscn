@@ -1,15 +1,50 @@
-[gd_scene load_steps=5 format=3 uid="uid://c336bnlrrpk5a"]
+[gd_scene load_steps=11 format=3 uid="uid://c336bnlrrpk5a"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/campfire/campfire.gd" id="1_lkcq0"]
+[ext_resource type="Texture2D" uid="uid://b4owpjiemyjoa" path="res://Assets/line.png" id="2_0w3gx"]
 
-[sub_resource type="Gradient" id="Gradient_rdd5i"]
+[sub_resource type="Gradient" id="Gradient_dmpkj"]
+offsets = PackedFloat32Array(0.162338, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.258824, 0.145098, 0.133333, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_iptv5"]
-gradient = SubResource("Gradient_rdd5i")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8npuc"]
+gradient = SubResource("Gradient_dmpkj")
 fill_from = Vector2(0.5, 1)
 fill_to = Vector2(0.5, 0)
 metadata/_snap_enabled = true
 metadata/_snap_count = 8
+
+[sub_resource type="Gradient" id="Gradient_8s0bo"]
+offsets = PackedFloat32Array(0, 0.262295, 0.5, 0.762295, 1)
+colors = PackedColorArray(0.984314, 1, 0, 1, 1, 0.619608, 0.258824, 1, 0.898039, 0.231373, 0, 1, 0.396078, 0.0823529, 0, 1, 0.396078, 0.0823529, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_oe5bt"]
+gradient = SubResource("Gradient_8s0bo")
+
+[sub_resource type="Curve" id="Curve_g1a8f"]
+_data = [Vector2(0, 0.32967), 0.0, 0.0, 0, 0, Vector2(0.18, 1), 0.0, 0.0, 0, 0, Vector2(0.8, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.516483), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_na1mv"]
+curve = SubResource("Curve_g1a8f")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yb46y"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 25.0
+angle_min = 60.0
+angle_max = 120.0
+direction = Vector3(0, -1, 0)
+spread = 10.0
+initial_velocity_min = 50.0
+initial_velocity_max = 50.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 15.0
+linear_accel_max = 25.0
+damping_min = 20.0
+damping_max = 50.0
+damping_curve = SubResource("CurveTexture_na1mv")
+color_ramp = SubResource("GradientTexture1D_oe5bt")
 
 [sub_resource type="LabelSettings" id="LabelSettings_nagxr"]
 font_size = 12
@@ -27,20 +62,26 @@ script = ExtResource("1_lkcq0")
 [node name="BackgroundLayer" type="CanvasLayer" parent="."]
 layer = 0
 
-[node name="TextureRect" type="TextureRect" parent="BackgroundLayer"]
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("GradientTexture2D_iptv5")
+texture = SubResource("GradientTexture2D_8npuc")
 
 [node name="ParticlesLayer" type="CanvasLayer" parent="."]
 
+[node name="GPUParticles2D" type="GPUParticles2D" parent="ParticlesLayer"]
+position = Vector2(90, 100)
+amount = 128
+process_material = SubResource("ParticleProcessMaterial_yb46y")
+texture = ExtResource("2_0w3gx")
+lifetime = 1.5
+
 [node name="UILayer" type="CanvasLayer" parent="."]
 
-[node name="UI" type="VBoxContainer" parent="."]
-layout_mode = 1
+[node name="UI" type="VBoxContainer" parent="UILayer"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -53,22 +94,22 @@ offset_bottom = 22.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Title" type="Label" parent="UI"]
+[node name="Title" type="Label" parent="UILayer/UI"]
 layout_mode = 2
 text = "Campfire"
 label_settings = SubResource("LabelSettings_nagxr")
 horizontal_alignment = 1
 
-[node name="Spacer" type="Control" parent="UI"]
+[node name="Spacer" type="Control" parent="UILayer/UI"]
 layout_mode = 2
 
-[node name="RestButton" type="Button" parent="UI"]
+[node name="RestButton" type="Button" parent="UILayer/UI"]
 custom_minimum_size = Vector2(40, 14)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Rest"
 
-[node name="Description" type="Label" parent="UI"]
+[node name="Description" type="Label" parent="UILayer/UI"]
 layout_mode = 2
 text = "+30% HP"
 horizontal_alignment = 1
