@@ -1,10 +1,33 @@
 class_name  StatusHandler
 extends GridContainer
 
+signal statuses_applied(type: Status.Type)
+
+const STATUS_APPLY_INTERVAL := 0.25
 const  STATUS_UI = preload("res://Scenes (CardUI)/status_handler/status_ui.tscn")
 
 @export var status_owner: Node2D
 
+
+func apply_statuses_by_type(type: Status.Type) -> void:
+	if type == Status.Type.EVENT_BASED:
+		return
+		
+	var status_queue: Array[Status] = _get_all_statuses().filter(
+		func(status: Status):
+			return status.type == type
+	)
+	if status_queue.is_empty():
+		statuses_applied.emit(type)
+		return
+		
+	var tween := create_tween()
+	for status: Status in status_queue:
+		tween.tween_callback(status.apply_status.bind(status_owner))
+		tween.tween_interval(STATUS_APPLY_INTERVAL)
+		
+	tween.finished.connect(func(): statuses_applied.emit(type))
+	
 
 func add_status(status: Status) -> void:
 	var stackable := status.stack_type != Status.StackType.NONE
