@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Status" load_steps=2 format=3 uid="uid://c50fac47d70ys"]
+
+[ext_resource type="Script" path="res://custom_resources/status.gd" id="1_cgjpq"]
+
+[resource]
+script = ExtResource("1_cgjpq")
+id = ""
+type = 0
+stack_type = 0
+can_expire = false
+duration = 0
+stacks = 0
+tooltip = ""
