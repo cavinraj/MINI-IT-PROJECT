@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://dal7unxekqid2"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/main_menu.gd" id="1_lpxto"]
-[ext_resource type="Texture2D" uid="uid://b35uvjl4pouvr" path="res://Assets/art/Digi-Deck Domain No Text.png" id="1_mfohv"]
-[ext_resource type="Texture2D" uid="uid://dnfsngnex376e" path="res://Assets/art/tile_0084.png" id="2_lq54j"]
-[ext_resource type="Texture2D" uid="uid://1pcynunyhq1f" path="res://Assets/art/tile_0088.png" id="3_040o7"]
-[ext_resource type="Texture2D" uid="uid://ck4w4va11qmrc" path="res://Assets/art/tile_0087.png" id="4_t5yr4"]
-[ext_resource type="Texture2D" uid="uid://bf2quqo8g4v7y" path="res://Assets/art/tile_0120.png" id="5_t05qq"]
-[ext_resource type="Texture2D" uid="uid://d271pxxwrkdb1" path="res://Assets/art/tile_0110.png" id="6_ki4tp"]
-[ext_resource type="Texture2D" uid="uid://cnoofpoqf8nf6" path="res://Assets/art/tile_0108.png" id="7_tqcoc"]
+[ext_resource type="Texture2D" uid="uid://5r67bdrkldmo" path="res://Assets/art/Digi-Deck Domain No Text.png" id="1_mfohv"]
+[ext_resource type="Texture2D" uid="uid://djqfjjcqpwmgd" path="res://Assets/art/tile_0084.png" id="2_lq54j"]
+[ext_resource type="Texture2D" uid="uid://da3xwhuoqrm4v" path="res://Assets/art/tile_0088.png" id="3_040o7"]
+[ext_resource type="Texture2D" uid="uid://cleq52s6772ql" path="res://Assets/art/tile_0087.png" id="4_t5yr4"]
+[ext_resource type="Texture2D" uid="uid://drmf23rd448wt" path="res://Assets/art/tile_0120.png" id="5_t05qq"]
+[ext_resource type="Texture2D" uid="uid://b672irgoduv3" path="res://Assets/art/tile_0110.png" id="6_ki4tp"]
+[ext_resource type="Texture2D" uid="uid://cgnrbxi3pxx4d" path="res://Assets/art/tile_0108.png" id="7_tqcoc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jk3dy"]
 line_spacing = 10.0
