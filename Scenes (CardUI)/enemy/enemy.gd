@@ -16,6 +16,10 @@ var enemy_action_picker: EnemyActionPicker
 var current_action: EnemyAction : set = set_current_action
 
 
+func _ready() -> void:
+	status_handler.status_owner = self
+	
+	
 func set_current_action(value: EnemyAction) -> void:
 	current_action = value
 	if current_action: #check if current action is valid and not null, if valid, we called update indent ui
