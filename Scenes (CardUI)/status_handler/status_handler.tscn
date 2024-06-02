@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://du4h7krjx4r2w"]
+
+[node name="StatusHandler" type="GridContainer"]
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 6
