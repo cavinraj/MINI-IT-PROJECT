@@ -46,3 +46,15 @@ func _on_enemy_turn_ended() -> void:
 
 func _on_player_died() -> void:
 	Events.battle_over_screen_requested.emit("Game Over! :(", BattleOverPanel.Type.LOSE)
+	MusicPlayer.stop()
+	var audio_player = $AudioStreamPlayer
+	
+	randomize()
+	var random_sound = sound_effects[randi() % sound_effects.size()]
+	$AudioStreamPlayer.stream = random_sound
+	$AudioStreamPlayer.play()
+
+var sound_effects = [
+	preload("res://audio/fail/SPONGEBOB FAIL SOUND EFFECT.mp3"),
+	preload("res://audio/fail/Womp womp womp | Sound effect.mp3"),
+]
