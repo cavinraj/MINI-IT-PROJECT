@@ -7,6 +7,7 @@ const BASE_STYLEBOX := preload("res://Scenes (CardUI)/card_ui/card_base_stylebox
 const DRAG_STYLEBOX := preload("res://Scenes (CardUI)/card_ui/card_dragging_stylebox.tres")
 const HOVER_STYLEBOX := preload("res://Scenes (CardUI)/card_ui/card_hover_stylebox.tres")
 
+@export var player_modifiers: ModifierHandler
 @export var card: Card : set = _set_card
 @export var char_stats: CharacterStats : set = _set_char_stats
 
@@ -48,7 +49,7 @@ func play() -> void:
 	if not card:
 		return
 	
-	card.play(targets, char_stats)
+	card.play(targets, char_stats, player_modifiers)
 	queue_free()
 
 
