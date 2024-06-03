@@ -1,16 +1,15 @@
-class_name MyAwesomeStatus
+class_name ExposedStatus
 extends Status
 
-var member_var = 0
+const MODIFIER := 0.5
 
 
-func initialize_status(target):
-	print("Initialize my status for target %s" % target)
+func apply_status(target: Node) -> void:
+	print("%s should take %s%% more damage !" % [target, MODIFIER * 100])
 	
-	
-func apply_status(target):
-	print("My status targets %s" % target)
-	print("It does %s something" % member_var)
+	var damage_effect := DamageEffect.new()
+	damage_effect.amount = 12
+	damage_effect.execute([target])
 	
 	status_applied.emit(self)
 
