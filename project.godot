@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Git Exercise"
-run/main_scene="res://Scenes (CardUI)/Battle/Battle.tscn"
+run/main_scene="res://Scenes (CardUI)/run/run.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 boot_splash/show_image=false
