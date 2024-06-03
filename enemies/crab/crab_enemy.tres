@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="1_5ri02"]
 [ext_resource type="PackedScene" uid="uid://bfrubmg84h0gr" path="res://enemies/crab/crab_enemy_ai.tscn" id="1_7p241"]
-[ext_resource type="Texture2D" uid="uid://b672irgoduv3" path="res://Assets/art/tile_0110.png" id="1_nxtr5"]
+[ext_resource type="Texture2D" uid="uid://bl8k6uilmep01" path="res://Assets/art/tile_0110.png" id="1_nxtr5"]
 
 [resource]
 script = ExtResource("1_5ri02")
 ai = ExtResource("1_7p241")
-max_health = 10
+max_health = 25
 art = ExtResource("1_nxtr5")

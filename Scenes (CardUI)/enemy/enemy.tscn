@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhna04sq3k1a3"]
+[gd_scene load_steps=11 format=3 uid="uid://dhna04sq3k1a3"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/enemy/enemy.gd" id="1_17dy0"]
-[ext_resource type="Texture2D" uid="uid://b672irgoduv3" path="res://Assets/art/tile_0110.png" id="1_vpadu"]
-[ext_resource type="Texture2D" uid="uid://cac72bmib1vyd" path="res://Assets/art/arrow.png" id="2_8pnto"]
+[ext_resource type="Texture2D" uid="uid://bl8k6uilmep01" path="res://Assets/art/tile_0110.png" id="1_vpadu"]
+[ext_resource type="Texture2D" uid="uid://ii875ihhumbr" path="res://Assets/art/arrow.png" id="2_8pnto"]
 [ext_resource type="PackedScene" uid="uid://duunu00400fbt" path="res://Scenes (CardUI)/ui/stats_ui.tscn" id="3_h6w8n"]
 [ext_resource type="PackedScene" uid="uid://dsfcnhj6s40e3" path="res://Scenes (CardUI)/ui/intent_ui.tscn" id="5_24nwr"]
 [ext_resource type="PackedScene" uid="uid://du4h7krjx4r2w" path="res://Scenes (CardUI)/status_handler/status_handler.tscn" id="6_i3etg"]
+[ext_resource type="PackedScene" uid="uid://c53r8jelw5yx6" path="res://Scenes (CardUI)/modifier_handler/modifier_handler.tscn" id="7_cm3hq"]
+[ext_resource type="PackedScene" uid="uid://dt5x6vmaay7ih" path="res://Scenes (CardUI)/modifier_handler/modifier.tscn" id="8_u0ncv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bc4ak"]
 
@@ -44,6 +46,13 @@ offset_top = 25.0
 offset_right = -27.0
 offset_bottom = 25.0
 status_owner = NodePath("..")
+
+[node name="ModifierHandler" parent="." instance=ExtResource("7_cm3hq")]
+
+[node name="DamageDealtModifier" parent="ModifierHandler" instance=ExtResource("8_u0ncv")]
+
+[node name="DamageTakenModifier" parent="ModifierHandler" instance=ExtResource("8_u0ncv")]
+type = 1
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

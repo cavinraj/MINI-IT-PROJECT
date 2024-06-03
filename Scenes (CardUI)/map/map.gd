@@ -18,7 +18,9 @@ var camera_edge_y: float
 
 func _ready() -> void:
 	camera_edge_y = MapGenerator.Y_DIST * (MapGenerator.FLOORS - 1)
-	
+	if has_node("/root/BGMusic"):
+		var music_player = get_node("/root/BGMusic")
+		music_player.stop()
 
 
 
@@ -68,10 +70,12 @@ func unlock_next_rooms() -> void:
 func show_map() -> void:
 	show()
 	camera_2d.enabled = true
+	$AudioStreamPlayer.play()
 
 func hide_map() -> void:
 	hide()
 	camera_2d.enabled = false
+	$AudioStreamPlayer.stop()
 	
 func _spawn_room(room: Room) -> void:
 	var new_map_room := MAP_ROOM.instantiate() as MapRoom

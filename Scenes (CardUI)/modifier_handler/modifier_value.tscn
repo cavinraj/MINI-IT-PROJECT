@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://k4iq6b8r8rrd"]
+
+[ext_resource type="Script" path="res://Scenes (CardUI)/modifier_handler/modifier_value.gd" id="1_xspgs"]
+
+[node name="ModifierValue" type="Node"]
+script = ExtResource("1_xspgs")

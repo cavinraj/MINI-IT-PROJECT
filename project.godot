@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Git Exercise"
-run/main_scene="res://Scenes (CardUI)/run/run.tscn"
+run/main_scene="res://Scenes (CardUI)/ui/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 boot_splash/show_image=false
@@ -24,6 +24,7 @@ Events="*res://global/events.gd"
 Shaker="*res://global/shaker.gd"
 MusicPlayer="*res://global/music_player.tscn"
 SFXPlayer="*res://global/sfx_player.tscn"
+BGMusic="*res://audio/bg_music/bg_music.tscn"
 
 [display]
 

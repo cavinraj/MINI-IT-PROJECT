@@ -11,6 +11,7 @@ const ARROW_OFFSET := 5
 @onready var stats_ui: StatsUI = $StatsUI
 @onready var intent_ui: IntentUI = $IntentUI
 @onready var status_handler: StatusHandler = $StatusHandler
+@onready var modifier_handler: ModifierHandler = $ModifierHandler
 
 var enemy_action_picker: EnemyActionPicker
 var current_action: EnemyAction : set = set_current_action
@@ -84,14 +85,16 @@ func do_turn() -> void:
 	current_action.perform_action()
 	
 	
-func take_damage(damage: int) -> void:
+func take_damage(damage: int, which_modifier: Modifier.Type) -> void:
 	if stats.health <= 0:
 		return
 		
 	
+	var modified_damage := modifier_handler.get_modified_value(damage, which_modifier)
+	
 	var tween := create_tween()
 	tween.tween_callback(Shaker.shake.bind(self, 16, 0.15)) #strength,time
-	tween.tween_callback(stats.take_damage.bind(damage))
+	tween.tween_callback(stats.take_damage.bind(modified_damage))
 	tween.tween_interval(0.17) #makes sure tween finishes
 	
 	tween.finished.connect(

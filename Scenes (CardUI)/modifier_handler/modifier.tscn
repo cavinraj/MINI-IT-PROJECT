@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt5x6vmaay7ih"]
+
+[ext_resource type="Script" path="res://Scenes (CardUI)/modifier_handler/modifier.gd" id="1_t5a4u"]
+
+[node name="Modifier" type="Node"]
+script = ExtResource("1_t5a4u")

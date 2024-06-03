@@ -37,7 +37,7 @@ func start_battle() -> void:
 func _on_enemies_child_order_changed() -> void:
 	if enemy_handler.get_child_count() == 0:
 		Events.battle_over_screen_requested.emit("Victorious! :)", BattleOverPanel.Type.WIN )
-		
+		MusicPlayer.stop()
 	
 func _on_enemy_turn_ended() -> void:
 	player_handler.start_turn()
@@ -46,3 +46,15 @@ func _on_enemy_turn_ended() -> void:
 
 func _on_player_died() -> void:
 	Events.battle_over_screen_requested.emit("Game Over! :(", BattleOverPanel.Type.LOSE)
+	MusicPlayer.stop()
+	var audio_player = $AudioStreamPlayer
+	
+	randomize()
+	var random_sound = sound_effects[randi() % sound_effects.size()]
+	$AudioStreamPlayer.stream = random_sound
+	$AudioStreamPlayer.play()
+
+var sound_effects = [
+	preload("res://audio/fail/SPONGEBOB FAIL SOUND EFFECT.mp3"),
+	preload("res://audio/fail/Womp womp womp | Sound effect.mp3"),
+]

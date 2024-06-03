@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CardPile" load_steps=7 format=3 uid="uid://c7lahkhmpspkw"]
 
-[ext_resource type="Resource" uid="uid://c3wi76d1ouy1q" path="res://characters/Warrior/cards/warrior_axe_attack.tres" id="1_3e0i6"]
 [ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="1_gf8bv"]
-[ext_resource type="Resource" uid="uid://guba80t47ud2" path="res://characters/Warrior/cards/warrior_slash.tres" id="2_gs8q2"]
-[ext_resource type="Resource" uid="uid://ovpls14v6exp" path="res://characters/Warrior/cards/warrior_block.tres" id="2_ypd36"]
-[ext_resource type="Resource" uid="uid://dee474f5bj1js" path="res://characters/Warrior/cards/warrior_big_slam.tres" id="4_qyfpu"]
-[ext_resource type="Resource" uid="uid://bgk46pmshry3a" path="res://characters/Warrior/cards/warrior_true_strength.tres" id="5_dliip"]
+[ext_resource type="Resource" uid="uid://c3wi76d1ouy1q" path="res://characters/Warrior/cards/warrior_axe_attack.tres" id="1_ng3t1"]
+[ext_resource type="Resource" uid="uid://guba80t47ud2" path="res://characters/Warrior/cards/warrior_slash.tres" id="2_ypk2c"]
+[ext_resource type="Resource" uid="uid://ovpls14v6exp" path="res://characters/Warrior/cards/warrior_block.tres" id="3_4ku1j"]
+[ext_resource type="Resource" uid="uid://bgk46pmshry3a" path="res://characters/Warrior/cards/warrior_true_strength.tres" id="4_1k8v0"]
+[ext_resource type="Resource" uid="uid://dee474f5bj1js" path="res://characters/Warrior/cards/warrior_big_slam.tres" id="5_51264"]
 
 [resource]
 script = ExtResource("1_gf8bv")
-cards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("1_3e0i6"), ExtResource("1_3e0i6"), ExtResource("1_3e0i6"), ExtResource("1_3e0i6"), ExtResource("2_gs8q2"), ExtResource("2_ypd36"), ExtResource("2_ypd36"), ExtResource("2_ypd36"), ExtResource("2_ypd36"), ExtResource("2_gs8q2"), ExtResource("4_qyfpu"), ExtResource("5_dliip")])
+cards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("1_ng3t1"), ExtResource("1_ng3t1"), ExtResource("1_ng3t1"), ExtResource("2_ypk2c"), ExtResource("2_ypk2c"), ExtResource("3_4ku1j"), ExtResource("3_4ku1j"), ExtResource("3_4ku1j"), ExtResource("4_1k8v0"), ExtResource("5_51264")])
