@@ -24,6 +24,7 @@ Events="*res://global/events.gd"
 Shaker="*res://global/shaker.gd"
 MusicPlayer="*res://global/music_player.tscn"
 SFXPlayer="*res://global/sfx_player.tscn"
+BGMusic="*res://audio/bg_music/bg_music.tscn"
 
 [display]
 
