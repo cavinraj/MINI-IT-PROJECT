@@ -191,3 +191,5 @@ visible = false
 [node name="DiscardPileView" parent="CardPileViews" instance=ExtResource("21_ub5ml")]
 unique_name_in_owner = true
 visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
