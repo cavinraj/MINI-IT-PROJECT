@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/character_selector.gd" id="1_mur4y"]
 [ext_resource type="Resource" uid="uid://dc5xau76tudru" path="res://Scenes (CardUI)/run/run_startup.tres" id="2_uoe0v"]
 [ext_resource type="Texture2D" uid="uid://5r67bdrkldmo" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_ypau3"]
-[ext_resource type="Texture2D" uid="uid://ce8ch2p8y1d17" path="res://Assets/art/tile_0118.png" id="4_0p8vg"]
+[ext_resource type="Texture2D" uid="uid://cbcx5fhot3i48" path="res://Assets/current arts/Ragnarok.png" id="5_2gatj"]
 [ext_resource type="Texture2D" uid="uid://cleq52s6772ql" path="res://Assets/art/tile_0087.png" id="5_nv777"]
 [ext_resource type="Texture2D" uid="uid://bbye67xtextjs" path="res://Assets/jjk pin.png" id="6_4bspg"]
 [ext_resource type="Texture2D" uid="uid://4ah8sktmfcjr" path="res://Assets/Lightsaber.png" id="7_07bki"]
@@ -136,7 +136,7 @@ offset_right = 10.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_0p8vg")
+texture = ExtResource("5_2gatj")
 expand_mode = 1
 stretch_mode = 5
 

@@ -79,6 +79,9 @@ func reshuffle_deck_from_discard() -> void:
 
 
 func _on_card_played(card: Card) -> void:
+	if card.exhausts or card.type == Card.Type.POWER:
+		return
+		
 	character.discard.add_card(card)
 
 
