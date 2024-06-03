@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="Status" load_steps=3 format=3 uid="uid://cou65qn2nvbfx"]
+[gd_resource type="Resource" script_class="TrueStrengthStatus" load_steps=3 format=3 uid="uid://cou65qn2nvbfx"]
 
 [ext_resource type="Texture2D" uid="uid://cn2c1psh561cc" path="res://Assets/current arts/tile_0127.png" id="1_10er6"]
-[ext_resource type="Script" path="res://custom_resources/status.gd" id="1_f5mlp"]
+[ext_resource type="Script" path="res://statuses/true_strength_form.gd" id="2_agqqx"]
 
 [resource]
-script = ExtResource("1_f5mlp")
+script = ExtResource("2_agqqx")
 id = "true_strength_form"
 type = 0
 stack_type = 0
