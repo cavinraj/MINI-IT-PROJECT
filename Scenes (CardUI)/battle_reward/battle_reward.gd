@@ -26,6 +26,14 @@ var card_rarity_weights := {
 func _ready() -> void:
 	for node: Node in rewards.get_children():
 		node.queue_free()
+		
+	var rewards = $Rewards
+	var audio_player = $AudioStreamPlayer
+	
+	randomize()
+	var random_sound = sound_effects[randi() % sound_effects.size()]
+	$AudioStreamPlayer.stream = random_sound
+	$AudioStreamPlayer.play()
 	
 	
 func add_gold_reward(amount: int) -> void:
@@ -109,3 +117,13 @@ func _on_card_reward_taken(card: Card) -> void:
 	
 func _on_back_button_pressed():
 	Events.battle_reward_exited.emit()
+
+var sound_effects = [
+	preload("res://audio/victory/MM2 Sheriff Victory Screen Green-Blue Screen With Music.mp3"),
+	preload("res://audio/victory/Mobile Games Victory Sound Effect Meme.mp3"),
+	preload("res://audio/victory/RobloxVictory.mp3"),
+	preload("res://audio/victory/Stage Win (Super Mario) - Sound Effect HD.mp3"),
+	preload("res://audio/victory/Victory!! Meme sound effect.mp3"),
+	preload("res://audio/victory/WIN sound effect no copyright.mp3"),
+	preload("res://audio/victory/You Win ( Street Fighter ) Sound Effect.mp3"),
+]
