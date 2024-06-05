@@ -119,11 +119,11 @@ func _on_back_button_pressed():
 	Events.battle_reward_exited.emit()
 
 var sound_effects = [
-	preload("res://audio/victory/MM2 Sheriff Victory Screen Green-Blue Screen With Music.mp3"),
-	preload("res://audio/victory/Mobile Games Victory Sound Effect Meme.mp3"),
+	preload("res://audio/victory/MM2SheriffVictoryScreenGreenBlueScreenWithMusic.mp3"),
+	preload("res://audio/victory/MobileGamesVictory.mp3"),
 	preload("res://audio/victory/RobloxVictory.mp3"),
-	preload("res://audio/victory/Stage Win (Super Mario) - Sound Effect HD.mp3"),
-	preload("res://audio/victory/Victory!! Meme sound effect.mp3"),
-	preload("res://audio/victory/WIN sound effect no copyright.mp3"),
-	preload("res://audio/victory/You Win ( Street Fighter ) Sound Effect.mp3"),
+	preload("res://audio/victory/StageWin(SuperMario).mp3"),
+	preload("res://audio/victory/VictoryMemesoundeffect.mp3"),
+	preload("res://audio/victory/WIN.mp3"),
+	preload("res://audio/victory/YouWin(StreetFighter).mp3"),
 ]
