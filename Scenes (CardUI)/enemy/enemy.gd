@@ -23,9 +23,7 @@ func _ready() -> void:
 	
 func set_current_action(value: EnemyAction) -> void:
 	current_action = value
-	if current_action: #check if current action is valid and not null, if valid, we called update indent ui
-		current_action.update_intent_text()
-		intent_ui.update_intent(current_action.intent)
+	update_intent()
 
 
 func set_enemy_stats(value: EnemyStats) -> void:
@@ -75,6 +73,12 @@ func update_enemy() -> void:
 	arrow.position = Vector2.RIGHT * (sprite_2d.get_rect().size.x / 2 + ARROW_OFFSET)
 	setup_ai()
 	update_stats()
+
+
+func update_intent() -> void:
+	if current_action: #check if current action is valid and not null, if valid, we called update indent ui
+		current_action.update_intent_text()
+		intent_ui.update_intent(current_action.intent)
 
 
 func do_turn() -> void:
