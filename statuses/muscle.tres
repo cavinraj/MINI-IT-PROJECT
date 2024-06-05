@@ -12,4 +12,4 @@ can_expire = false
 duration = 0
 stacks = 2
 icon = ExtResource("1_wl3w0")
-tooltip = "MUSCLE"
+tooltip = "Muscle: attacks deal %s more damage."
