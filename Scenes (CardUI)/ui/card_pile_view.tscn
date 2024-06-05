@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://dws7irhbqmomu"]
 
-[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/card_menu_ui.tscn" id="1_axewt"]
+[ext_resource type="PackedScene" uid="uid://byt4k3u62rfjr" path="res://Scenes (CardUI)/ui/card_menu_ui.tscn" id="1_axewt"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/card_pile_view.gd" id="1_fjqwr"]
 [ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="2_1fhlg"]
-[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/card_tooltip_popup.tscn" id="4_r5bux"]
+[ext_resource type="PackedScene" uid="uid://ci5bxt7w1ps83" path="res://Scenes (CardUI)/ui/card_tooltip_popup.tscn" id="4_r5bux"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_gcrwt"]
 font_size = 12

@@ -1,14 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://3uf40ebld4wa"]
+[gd_scene load_steps=3 format=3 uid="uid://3uf40ebld4wa"]
 
 [ext_resource type="Texture2D" uid="uid://d0edy7thj8ce6" path="res://Assets/current arts/heart.png" id="1_si3xq"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/status_handler/status_ui.gd" id="1_w5pat"]
-[ext_resource type="Resource" uid="uid://cou65qn2nvbfx" path="res://statuses/true_strength_form.tres" id="2_cvsth"]
 
 [node name="StatusUI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+mouse_filter = 2
 script = ExtResource("1_w5pat")
-status = ExtResource("2_cvsth")
 
 [node name="Icon" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(10, 10)

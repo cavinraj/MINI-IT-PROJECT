@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpcbhger4xyle"]
+
+[ext_resource type="Texture2D" uid="uid://dl5a6vr25fsv2" path="res://Assets/expose.png" id="1_4cpya"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/status_tooltip.gd" id="1_gwdle"]
+
+[node name="StatusTooltip" type="HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+offset_right = 150.0
+offset_bottom = 15.0
+script = ExtResource("1_gwdle")
+
+[node name="Icon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+texture = ExtResource("1_4cpya")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Takes 50% more damage from attacks, for %s turns."
+vertical_alignment = 1
+autowrap_mode = 2

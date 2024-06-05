@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsfcnhj6s40e3"]
 
-[ext_resource type="Texture2D" uid="uid://6afb3iepeq1b" path="res://Assets/art/tile_0106.png" id="1_ssl04"]
+[ext_resource type="Texture2D" uid="uid://cisjj3qdymqjr" path="res://Assets/art/tile_0106.png" id="1_ssl04"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/intent_ui.gd" id="1_tkaua"]
 
 [node name="IntentUI" type="HBoxContainer"]
@@ -22,7 +22,7 @@ texture = ExtResource("1_ssl04")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Number" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 2
 size_flags_vertical = 1
 text = "7"

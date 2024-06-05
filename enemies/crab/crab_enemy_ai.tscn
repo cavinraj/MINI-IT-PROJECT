@@ -4,26 +4,26 @@
 [ext_resource type="Script" path="res://enemies/crab/crab_attack_action.gd" id="2_acjdb"]
 [ext_resource type="Script" path="res://enemies/crab/crab_block_action.gd" id="3_0wlbi"]
 [ext_resource type="Script" path="res://custom_resources/intent.gd" id="3_2vhxf"]
-[ext_resource type="Texture2D" uid="uid://giu0sk5sv8s" path="res://Assets/art/tile_0103.png" id="3_woiid"]
+[ext_resource type="Texture2D" uid="uid://cgv8l2art367i" path="res://Assets/art/tile_0103.png" id="3_woiid"]
 [ext_resource type="Script" path="res://enemies/crab/crab_mega_block_action.gd" id="4_ou2bt"]
-[ext_resource type="AudioStream" uid="uid://bb6n8cg502507" path="res://Assets/art/enemy_attack.ogg" id="5_80504"]
-[ext_resource type="Texture2D" uid="uid://ruk3xu7sg5st" path="res://Assets/art/tile_0101.png" id="6_6sbyw"]
-[ext_resource type="AudioStream" uid="uid://bfo12k38rsm7x" path="res://Assets/art/enemy_block.ogg" id="8_upmkk"]
-[ext_resource type="Texture2D" uid="uid://dcpi2m1hdj2rh" path="res://Assets/art/tile_0102.png" id="8_y4tcs"]
+[ext_resource type="AudioStream" uid="uid://df8oqijlmbjor" path="res://Assets/art/enemy_attack.ogg" id="5_80504"]
+[ext_resource type="Texture2D" uid="uid://cuti24q5n5xcn" path="res://Assets/art/tile_0101.png" id="6_6sbyw"]
+[ext_resource type="AudioStream" uid="uid://dwvv321sbnlhr" path="res://Assets/art/enemy_block.ogg" id="8_upmkk"]
+[ext_resource type="Texture2D" uid="uid://6ib6wqyh563i" path="res://Assets/art/tile_0102.png" id="8_y4tcs"]
 
 [sub_resource type="Resource" id="Resource_kn8un"]
 script = ExtResource("3_2vhxf")
-number = "7"
+base_text = "%s"
 icon = ExtResource("3_woiid")
 
 [sub_resource type="Resource" id="Resource_08pl1"]
 script = ExtResource("3_2vhxf")
-number = ""
+base_text = "6"
 icon = ExtResource("6_6sbyw")
 
 [sub_resource type="Resource" id="Resource_wpu0d"]
 script = ExtResource("3_2vhxf")
-number = ""
+base_text = "15"
 icon = ExtResource("8_y4tcs")
 
 [node name="CrabEnemyAI" type="Node"]

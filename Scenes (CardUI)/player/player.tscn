@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bcfn1ri1fst3i"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/player/player.gd" id="1_d527u"]
-[ext_resource type="Texture2D" uid="uid://dl7uohsn6bfik" path="res://Assets/art/tile_0087.png" id="1_jgu5e"]
+[ext_resource type="Texture2D" uid="uid://cleq52s6772ql" path="res://Assets/art/tile_0087.png" id="1_jgu5e"]
 [ext_resource type="PackedScene" uid="uid://duunu00400fbt" path="res://Scenes (CardUI)/ui/stats_ui.tscn" id="2_ghuq6"]
 [ext_resource type="PackedScene" uid="uid://du4h7krjx4r2w" path="res://Scenes (CardUI)/status_handler/status_handler.tscn" id="4_7mqjv"]
 [ext_resource type="PackedScene" uid="uid://c53r8jelw5yx6" path="res://Scenes (CardUI)/modifier_handler/modifier_handler.tscn" id="5_ortff"]
