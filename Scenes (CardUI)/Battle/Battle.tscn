@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bddao04i22ti4"]
+[gd_scene load_steps=24 format=3 uid="uid://bddao04i22ti4"]
 
 [ext_resource type="Texture2D" uid="uid://com66rftd7uak" path="res://Assets/thetherone.png" id="1_3exg5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/Battle/battle.gd" id="1_tx3os"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://ccy3s3xkt5rlo" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="17_tp2vk"]
 [ext_resource type="Texture2D" uid="uid://dwvo4vtupox0i" path="res://Assets/art/discard.png" id="18_ujg67"]
 [ext_resource type="PackedScene" uid="uid://dws7irhbqmomu" path="res://Scenes (CardUI)/ui/card_pile_view.tscn" id="21_ub5ml"]
+[ext_resource type="PackedScene" uid="uid://cteykn8ftalpk" path="res://Scenes (CardUI)/ui/status_view.tscn" id="22_rntqu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0762l"]
 size = Vector2(256, 100)
@@ -191,6 +192,12 @@ visible = false
 
 [node name="DiscardPileView" parent="CardPileViews" instance=ExtResource("21_ub5ml")]
 unique_name_in_owner = true
+visible = false
+
+[node name="StatusViewLayer" type="CanvasLayer" parent="."]
+layer = 4
+
+[node name="StatusView" parent="StatusViewLayer" instance=ExtResource("22_rntqu")]
 visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

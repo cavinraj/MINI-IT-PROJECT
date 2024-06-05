@@ -9,6 +9,8 @@ const STATUS_TOOLTIP = preload("res://Scenes (CardUI)/ui/status_tooltip.tscn")
 func _ready() -> void:
 	for tooltip: StatusTooltip in status_tooltips.get_children():
 		tooltip.queue_free()
+		
+	Events.status_tooltip_requested.connect(show_view)
 
 
 func _input(event: InputEvent) -> void:
