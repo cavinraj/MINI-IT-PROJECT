@@ -24,6 +24,7 @@ func _ready() -> void:
 func set_current_action(value: EnemyAction) -> void:
 	current_action = value
 	if current_action: #check if current action is valid and not null, if valid, we called update indent ui
+		current_action.update_intent_text()
 		intent_ui.update_intent(current_action.intent)
 
 

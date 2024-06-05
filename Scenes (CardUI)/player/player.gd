@@ -13,7 +13,6 @@ func _ready() -> void:
 	status_handler.status_owner = self
 
 
-
 func set_character_stats(value: CharacterStats) -> void:
 	stats = value
 	
