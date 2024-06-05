@@ -55,6 +55,6 @@ func _on_player_died() -> void:
 	$AudioStreamPlayer.play()
 
 var sound_effects = [
-	preload("res://audio/fail/SPONGEBOB FAIL SOUND EFFECT.mp3"),
-	preload("res://audio/fail/Womp womp womp | Sound effect.mp3"),
+	preload("res://audio/fail/SPONGEBOBFAIL.mp3"),
+	preload("res://audio/fail/WompwompSound effect.mp3"),
 ]
