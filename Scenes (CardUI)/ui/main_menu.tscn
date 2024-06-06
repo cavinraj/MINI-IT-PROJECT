@@ -83,6 +83,11 @@ custom_minimum_size = Vector2(0, 14)
 layout_mode = 2
 text = "Exit"
 
+[node name="Option" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 14)
+layout_mode = 2
+text = "Option"
+
 [node name="Wizard" type="Sprite2D" parent="."]
 position = Vector2(20, 105)
 scale = Vector2(2, 2)
