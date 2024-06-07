@@ -113,12 +113,22 @@ func _on_battle_won() -> void:
 	reward_scene.add_card_reward()
 	
 	
+func _on_treasure_entered() -> void:
+	var treasure := _change_view(TREASURE_SCENE) as Treasure
+	treasure.run_stats = stats
+	treasure.character_stats = character
+	
+	treasure.add_card_reward()
+	treasure.add_card_reward()
+	treasure.add_card_reward()
+	
+	
 func _on_map_exited(room: Room) -> void:
 	match room.type:
 		Room.Type.MONSTER:
 			_on_battle_room_entered(room)
 		Room.Type.TREASURE:
-			_change_view(TREASURE_SCENE)
+			_on_treasure_entered()
 		Room.Type.CAMPFIRE:
 			_on_campfire_entered()
 		Room.Type.SHOP:

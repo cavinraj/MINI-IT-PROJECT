@@ -1,13 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsyla0iccm80t"]
+[gd_scene load_steps=3 format=3 uid="uid://dcm2m5bhnxn11"]
 
-[ext_resource type="Script" path="res://Scenes (CardUI)/ui/reward_button.gd" id="1_4p85q"]
-[ext_resource type="Texture2D" uid="uid://bobiev0u048mc" path="res://Assets/art/gold.png" id="1_8ehgy"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/treasure/treasure_reward_button.gd" id="1_efjoy"]
+[ext_resource type="Texture2D" uid="uid://cqpb86dnjtgji" path="res://Assets/art/tile_0089.png" id="1_vsg4j"]
 
-[node name="RewardButton" type="Button"]
+[node name="TreasureRewardButton" type="Button"]
 custom_minimum_size = Vector2(0, 14)
 offset_right = 75.0
 offset_bottom = 14.0
-script = ExtResource("1_4p85q")
+script = ExtResource("1_efjoy")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -25,19 +25,20 @@ theme_override_constants/margin_bottom = 2
 layout_mode = 2
 theme_override_constants/separation = 2
 
-[node name="CustomIcon" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+[node name="Custom_Treasure_Icon" type="TextureRect" parent="MarginContainer/HBoxContainer"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(10, 10)
 layout_mode = 2
-texture = ExtResource("1_8ehgy")
-expand_mode = 1
+texture = ExtResource("1_vsg4j")
+expand_mode = 3
 stretch_mode = 5
 
-[node name="CustomText" type="Label" parent="MarginContainer/HBoxContainer"]
+[node name="Custom_Treasure_Text" type="Label" parent="MarginContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 1
-text = "99 gold"
+text = "Open"
+horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

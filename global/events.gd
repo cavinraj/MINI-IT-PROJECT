@@ -40,3 +40,4 @@ signal battle_reward_exited
 
 # Treasure Room-related events
 signal treasure_room_exited
+signal treasure_room_entered
