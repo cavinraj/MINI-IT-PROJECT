@@ -14,5 +14,5 @@ starting_deck = ExtResource("3_3ahsn")
 draftable_cards = ExtResource("2_htjh4")
 cards_per_turn = 4
 max_mana = 3
-max_health = 25
+max_health = 35
 art = ExtResource("1_58bdv")

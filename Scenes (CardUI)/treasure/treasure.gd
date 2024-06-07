@@ -93,17 +93,8 @@ func _on_card_reward_taken(card: Card) -> void:
 	if not character_stats or not card:
 		return
 	
-	price_check()
-	run_stats.gold -= price
 	character_stats.deck.add_card(card)
 
-
-func price_check() -> void:
-	if run_stats.gold < price:
-		treasure_button.disabled = true
-		treasure_button_2.disabled = true
-		treasure_button_3.disabled = true
-		
 
 func _on_return_button_pressed():
 	Events.treasure_room_exited.emit()
