@@ -24,8 +24,8 @@ func set_reward_text(new_text: String) -> void:
 		await ready
 		
 	custom_text.text = reward_text
-	
-	
+
+
 func _on_pressed():
 	queue_free()
 

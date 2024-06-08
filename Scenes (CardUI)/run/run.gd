@@ -121,6 +121,14 @@ func _on_treasure_entered() -> void:
 	treasure.add_card_reward()
 	treasure.add_card_reward()
 	treasure.add_card_reward()
+
+func _on_shop_entered() -> void:
+	var shop := _change_view(SHOP_SCENE) as Shop
+	shop.run_stats = stats
+	shop.character_stats = character
+	
+	shop.add_card_reward()
+	shop.add_card_reward()
 	
 	
 func _on_map_exited(room: Room) -> void:
@@ -132,6 +140,6 @@ func _on_map_exited(room: Room) -> void:
 		Room.Type.CAMPFIRE:
 			_on_campfire_entered()
 		Room.Type.SHOP:
-			_change_view(SHOP_SCENE)
+			_on_shop_entered()
 		Room.Type.BOSS:
 			_on_battle_room_entered(room)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dcm2m5bhnxn11"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/treasure/treasure_reward_button.gd" id="1_efjoy"]
-[ext_resource type="Texture2D" uid="uid://cqpb86dnjtgji" path="res://Assets/art/tile_0089.png" id="1_vsg4j"]
+[ext_resource type="Texture2D" uid="uid://bidksnq1shx48" path="res://Assets/art/tile_0089.png" id="1_vsg4j"]
 
 [node name="TreasureRewardButton" type="Button"]
 custom_minimum_size = Vector2(0, 14)

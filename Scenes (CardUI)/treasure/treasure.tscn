@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ba4ggerfstw1u"]
+[gd_scene load_steps=7 format=3 uid="uid://ba4ggerfstw1u"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/treasure/treasure.gd" id="1_r5hgw"]
 [ext_resource type="PackedScene" uid="uid://dcm2m5bhnxn11" path="res://Scenes (CardUI)/treasure/treasure_reward_button.tscn" id="2_kphh7"]
-[ext_resource type="Texture2D" uid="uid://5r67bdrkldmo" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_ux0lt"]
-[ext_resource type="Texture2D" uid="uid://cqpb86dnjtgji" path="res://Assets/art/tile_0089.png" id="3_42f33"]
+[ext_resource type="Texture2D" uid="uid://b35uvjl4pouvr" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_ux0lt"]
+[ext_resource type="Texture2D" uid="uid://bidksnq1shx48" path="res://Assets/art/tile_0089.png" id="3_42f33"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_me6lc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qjbn"]
 bg_color = Color(0, 0, 0, 0.501961)
@@ -46,6 +48,7 @@ grow_vertical = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 8
 text = "Treasure"
+label_settings = SubResource("LabelSettings_me6lc")
 horizontal_alignment = 1
 
 [node name="TreasureContainer" type="PanelContainer" parent="VBoxContainer"]
@@ -84,9 +87,5 @@ custom_minimum_size = Vector2(50, 14)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Return"
-
-[node name="Notice" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-text = "Note: One treasure costs 150 coins"
 
 [connection signal="pressed" from="VBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]
