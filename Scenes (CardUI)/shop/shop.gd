@@ -30,7 +30,7 @@ func _ready() -> void:
 	var shops = $Shops
 
 func add_card_reward() -> void:
-	var shop_card_reward := SHOP_BUY_BUTTON.instantiate() as ShopBuyButton
+	var shop_card_reward := SHOP_BUY_BUTTON.instantiate() as shopbuybutton
 	shop_card_reward.shop_icon = SHOP_ICON
 	shop_card_reward.shop_text = SHOP_TEXT
 	shop_card_reward.pressed.connect(_show_card_rewards)
@@ -87,7 +87,6 @@ func _on_card_reward_taken(card: Card) -> void:
 	if not character_stats or not card:
 		return
 	
-	run_stats.gold -= price
 	character_stats.deck.add_card(card)
 
 func _on_return_pressed():

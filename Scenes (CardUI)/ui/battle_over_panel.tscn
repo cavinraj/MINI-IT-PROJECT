@@ -53,3 +53,5 @@ custom_minimum_size = Vector2(50, 16)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Restart"
+
+[connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
