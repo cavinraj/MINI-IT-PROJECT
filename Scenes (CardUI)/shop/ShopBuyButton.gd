@@ -1,4 +1,4 @@
-class_name ShopBuyButton
+class_name shopbuybutton
 extends Button
 
 
