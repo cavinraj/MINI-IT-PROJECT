@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://bddao04i22ti4"]
 
-[ext_resource type="Texture2D" uid="uid://bw55n4qad7lo5" path="res://Assets/thetherone.png" id="1_3exg5"]
+[ext_resource type="Texture2D" uid="uid://bw55n4qad7lo5" path="res://Assets/art/thetherone.png" id="1_3exg5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/Battle/battle.gd" id="1_tx3os"]
 [ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="2_134dg"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/hand.gd" id="2_owj4f"]
@@ -19,7 +19,7 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/red_flash.gd" id="15_pflx1"]
 [ext_resource type="PackedScene" uid="uid://b3n1w5dje7ia0" path="res://Scenes (CardUI)/ui/battle_over_panel.tscn" id="17_6iuyu"]
 [ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="17_tp2vk"]
-[ext_resource type="Texture2D" uid="uid://b3njqi8v8o4cn" path="res://Assets/art/discard.png" id="18_ujg67"]
+[ext_resource type="Texture2D" uid="uid://n0hg3rg4ly3o" path="res://Assets/art/discard.png" id="18_ujg67"]
 [ext_resource type="PackedScene" uid="uid://dws7irhbqmomu" path="res://Scenes (CardUI)/ui/card_pile_view.tscn" id="21_ub5ml"]
 [ext_resource type="PackedScene" uid="uid://cteykn8ftalpk" path="res://Scenes (CardUI)/ui/status_view.tscn" id="22_rntqu"]
 
