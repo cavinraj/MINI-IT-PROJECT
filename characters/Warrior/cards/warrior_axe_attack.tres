@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://de27jwqr0f6qr"]
 
-[ext_resource type="Texture2D" uid="uid://dgfmv3r2q044e" path="res://Assets/art/tile_0119.png" id="1_ncvax"]
+[ext_resource type="Texture2D" uid="uid://c5c3yrn8ocwwq" path="res://Assets/art/tile_0119.png" id="1_ncvax"]
 [ext_resource type="Script" path="res://characters/warrior/cards/warrior_axe_attack.gd" id="2_6wr2g"]
-[ext_resource type="AudioStream" uid="uid://daipnxqvjrmhv" path="res://Assets/art/axe.ogg" id="3_mjbrs"]
+[ext_resource type="AudioStream" uid="uid://f5u51vi522ku" path="res://Assets/art/axe.ogg" id="3_mjbrs"]
 
 [resource]
 script = ExtResource("2_6wr2g")
