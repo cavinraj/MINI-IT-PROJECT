@@ -4,4 +4,3 @@
 
 [node name="BGMusic" type="AudioStreamPlayer"]
 stream = ExtResource("1_4fa6d")
-autoplay = true
