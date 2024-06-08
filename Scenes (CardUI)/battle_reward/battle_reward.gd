@@ -26,7 +26,7 @@ var card_rarity_weights := {
 func _ready() -> void:
 	for node: Node in rewards.get_children():
 		node.queue_free()
-		
+	MusicPlayer.stop()
 	var rewards = $Rewards
 	var audio_player = $AudioStreamPlayer
 	

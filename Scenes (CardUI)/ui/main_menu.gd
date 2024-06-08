@@ -6,8 +6,12 @@ const CHAR_SELECTOR_SCENE := preload("res://Scenes (CardUI)/ui/character_selecto
 @export var music: AudioStream
 
 
+
 func _ready() -> void:
 	get_tree().paused = false
+	if has_node("/root/BGMusic"):
+		var music_player = get_node("/root/BGMusic")
+		music_player.play()
 	
 
 func _on_continue_pressed() -> void:
