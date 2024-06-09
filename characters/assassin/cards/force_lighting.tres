@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cav68ga46pp6y"]
+
+[ext_resource type="Script" path="res://characters/assassin/cards/force_lighting.gd" id="1_mybiq"]
+
+[resource]
+script = ExtResource("1_mybiq")
+id = "light saber"
+type = 0
+rarity = 1
+target = 2
+cost = 2
+exhausts = false
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"
