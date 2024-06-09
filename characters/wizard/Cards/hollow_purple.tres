@@ -12,4 +12,4 @@ target = 2
 cost = 5
 exhausts = true
 icon = ExtResource("1_sfyoe")
-tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies and apply 4 [color=\"ffdf00\"]Exposed[/color].[/center]"
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage and apply 4 [color=\"ffdf00\"]Exposed[/color].[/center]"

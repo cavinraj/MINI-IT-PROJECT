@@ -1,6 +1,6 @@
 extends Card
 
-var base_damage := 10
+var base_damage := 7
 
 
 func get_default_tooltip() -> String:

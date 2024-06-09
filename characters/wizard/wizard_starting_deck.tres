@@ -1,11 +1,10 @@
-[gd_resource type="Resource" script_class="CardPile" load_steps=6 format=3 uid="uid://ckvi5psijjpl1"]
+[gd_resource type="Resource" script_class="CardPile" load_steps=5 format=3 uid="uid://ckvi5psijjpl1"]
 
 [ext_resource type="Resource" uid="uid://bhqn21h24td2l" path="res://characters/wizard/Cards/lapse_blue.tres" id="1_e1vd0"]
 [ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="1_n65vc"]
 [ext_resource type="Resource" uid="uid://t5vtd8f0wk4g" path="res://characters/wizard/Cards/limitless_barrier.tres" id="2_lwxar"]
-[ext_resource type="Resource" uid="uid://c8aaf4t7htuje" path="res://characters/wizard/Cards/black_flash.tres" id="2_xis8y"]
 [ext_resource type="Resource" uid="uid://biqavtqp7i511" path="res://characters/wizard/Cards/reversal_red.tres" id="3_3nuor"]
 
 [resource]
 script = ExtResource("1_n65vc")
-cards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("1_e1vd0"), ExtResource("1_e1vd0"), ExtResource("1_e1vd0"), ExtResource("2_xis8y"), ExtResource("3_3nuor"), ExtResource("2_lwxar"), ExtResource("2_lwxar"), ExtResource("2_lwxar"), ExtResource("2_xis8y"), ExtResource("3_3nuor")])
+cards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("1_e1vd0"), ExtResource("1_e1vd0"), ExtResource("1_e1vd0"), ExtResource("3_3nuor"), ExtResource("3_3nuor"), ExtResource("2_lwxar"), ExtResource("2_lwxar"), ExtResource("2_lwxar"), ExtResource("3_3nuor"), ExtResource("3_3nuor")])
