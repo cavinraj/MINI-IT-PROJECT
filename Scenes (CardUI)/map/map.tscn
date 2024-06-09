@@ -43,4 +43,5 @@ texture = SubResource("GradientTexture1D_3dh67")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_14o2a")
+volume_db = -11.042
 autoplay = true
