@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bahmcwdjstgub" path="res://Assets/art/Black Flash.png" id="1_wyvsr"]
 [ext_resource type="Script" path="res://characters/wizard/Cards/black_flash.gd" id="2_ofdfj"]
-[ext_resource type="AudioStream" uid="uid://dg60bejeoojwp" path="res://Assets/art/blackflash.mp3" id="3_i18fl"]
+[ext_resource type="AudioStream" path="res://Assets/art/blackflash.mp3" id="3_i18fl"]
 
 [resource]
 script = ExtResource("2_ofdfj")
