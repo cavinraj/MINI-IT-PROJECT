@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://dhna04sq3k1a3"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/enemy/enemy.gd" id="1_17dy0"]
-[ext_resource type="Texture2D" uid="uid://bl8k6uilmep01" path="res://Assets/art/tile_0110.png" id="1_vpadu"]
-[ext_resource type="Texture2D" uid="uid://ii875ihhumbr" path="res://Assets/art/arrow.png" id="2_8pnto"]
+[ext_resource type="Texture2D" uid="uid://d271pxxwrkdb1" path="res://Assets/art/tile_0110.png" id="1_vpadu"]
+[ext_resource type="Texture2D" uid="uid://nh0jmglxqnj2" path="res://Assets/art/arrow.png" id="2_8pnto"]
 [ext_resource type="PackedScene" uid="uid://duunu00400fbt" path="res://Scenes (CardUI)/ui/stats_ui.tscn" id="3_h6w8n"]
 [ext_resource type="PackedScene" uid="uid://dsfcnhj6s40e3" path="res://Scenes (CardUI)/ui/intent_ui.tscn" id="5_24nwr"]
 [ext_resource type="PackedScene" uid="uid://du4h7krjx4r2w" path="res://Scenes (CardUI)/status_handler/status_handler.tscn" id="6_i3etg"]

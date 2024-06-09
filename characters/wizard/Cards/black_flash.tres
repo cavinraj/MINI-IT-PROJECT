@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://c8aaf4t7htuje"]
 
-[ext_resource type="Texture2D" uid="uid://bahmcwdjstgub" path="res://Assets/art/Black Flash.png" id="1_wyvsr"]
+[ext_resource type="Texture2D" uid="uid://bnqp5bigiwt0v" path="res://Assets/art/Black Flash.png" id="1_wyvsr"]
 [ext_resource type="Script" path="res://characters/wizard/Cards/black_flash.gd" id="2_ofdfj"]
-[ext_resource type="AudioStream" path="res://Assets/art/blackflash.mp3" id="3_i18fl"]
+[ext_resource type="AudioStream" uid="uid://cp6y36ymivlfm" path="res://Assets/art/blackflash.mp3" id="3_i18fl"]
 
 [resource]
 script = ExtResource("2_ofdfj")
