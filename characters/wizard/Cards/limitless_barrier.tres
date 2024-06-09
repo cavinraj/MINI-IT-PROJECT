@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://t5vtd8f0wk4g"]
+
+[ext_resource type="Texture2D" uid="uid://bx2ex6gnu24es" path="res://Assets/art/Limitless Barrier.png" id="1_ui5ds"]
+[ext_resource type="Script" path="res://characters/wizard/Cards/limitless_barrier.gd" id="2_xkb4y"]
+
+[resource]
+script = ExtResource("2_xkb4y")
+id = "limitless_barrier"
+type = 1
+rarity = 0
+target = 0
+cost = 2
+exhausts = false
+icon = ExtResource("1_ui5ds")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"

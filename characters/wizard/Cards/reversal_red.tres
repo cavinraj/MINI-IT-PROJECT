@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://biqavtqp7i511"]
+
+[ext_resource type="Texture2D" uid="uid://donomvgurqy5m" path="res://Assets/art/Reversal Red.png" id="1_vgv0i"]
+[ext_resource type="Script" path="res://characters/wizard/Cards/reversal_red.gd" id="2_74bu0"]
+
+[resource]
+script = ExtResource("2_74bu0")
+id = "reversal_red"
+type = 0
+rarity = 1
+target = 1
+cost = 3
+exhausts = false
+icon = ExtResource("1_vgv0i")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"
