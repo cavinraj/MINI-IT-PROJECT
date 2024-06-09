@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TrueStrengthStatus" load_steps=3 format=3 uid="uid://cou65qn2nvbfx"]
 
-[ext_resource type="Texture2D" uid="uid://42nq3wm81ytr" path="res://Assets/art/tile_0127.png" id="1_ld2ra"]
+[ext_resource type="Texture2D" uid="uid://bloe5p2hogun3" path="res://Assets/art/tile_0127.png" id="1_ld2ra"]
 [ext_resource type="Script" path="res://statuses/true_strength_form.gd" id="2_agqqx"]
 
 [resource]

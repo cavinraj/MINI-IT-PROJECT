@@ -3,7 +3,7 @@ extends Control
 
 const CARD_REWARDS = preload("res://Scenes (CardUI)/ui/card_rewards.tscn")
 const SHOP_BUY_BUTTON = preload("res://Scenes (CardUI)/shop/shop_buy_button.tscn")
-const SHOP_ICON := preload("res://Assets/art/coupons.png")
+const SHOP_ICON := preload("res://Assets/current arts/coupons.png")
 const SHOP_TEXT := "Card Pack"
 
 var price = 150

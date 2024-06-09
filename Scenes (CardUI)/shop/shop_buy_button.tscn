@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bu3ffefkxptaj"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/shop/ShopBuyButton.gd" id="1_6od3r"]
-[ext_resource type="Texture2D" uid="uid://q2dr7k42g0ao" path="res://Assets/current arts/coupons.png" id="2_s8sgg"]
+[ext_resource type="Texture2D" uid="uid://djq1xs50kuqwn" path="res://Assets/current arts/coupons.png" id="2_s8sgg"]
 
 [node name="ShopBuyButton" type="Button"]
 custom_minimum_size = Vector2(45, 45)
