@@ -12,5 +12,5 @@ portrait = ExtResource("1_tf1ly")
 starting_deck = ExtResource("3_wiv1v")
 cards_per_turn = 3
 max_mana = 5
-max_health = 30
+max_health = 25
 art = ExtResource("1_tf1ly")
