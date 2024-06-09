@@ -1,13 +1,13 @@
-[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://bl8hs38w7ewb1"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bl8hs38w7ewb1"]
 
-[ext_resource type="Script" path="res://custom_resources/card.gd" id="1_wrnr3"]
+[ext_resource type="Script" path="res://characters/wizard/Cards/hollow_purple.gd" id="1_qxq1y"]
 
 [resource]
-script = ExtResource("1_wrnr3")
-id = ""
+script = ExtResource("1_qxq1y")
+id = "hollow_purple"
 type = 0
-rarity = 0
-target = 0
-cost = 0
-exhausts = false
-tooltip_text = ""
+rarity = 2
+target = 2
+cost = 5
+exhausts = true
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies and apply 4 [color=\"ffdf00\"]Exposed[/color].[/center]"
