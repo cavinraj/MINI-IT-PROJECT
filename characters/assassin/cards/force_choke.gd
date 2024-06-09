@@ -2,8 +2,8 @@ extends Card
 
 const EXPOSED_STATUS = preload("res://statuses/exposed.tres")
 
-var base_damage := 4
-var exposed_duration := 2
+var base_damage := 8
+var exposed_duration := 1
 
 
 func get_default_tooltip() -> String:

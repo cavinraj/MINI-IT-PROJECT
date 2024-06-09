@@ -1,15 +1,15 @@
 [gd_resource type="Resource" load_steps=3 format=3 uid="uid://bjdgy12x6xoyy"]
 
-[ext_resource type="Texture2D" uid="uid://6fjxnpgx2pt3" path="res://Assets/art/Lightsaber.png" id="1_dnjk0"]
-[ext_resource type="Script" path="res://characters/assassin/cards/light_saber.gd" id="2_8qg6a"]
+[ext_resource type="Texture2D" uid="uid://cimv2hih4atra" path="res://Assets/art/Force Shield.png" id="1_2ykbr"]
+[ext_resource type="Script" path="res://characters/assassin/cards/force_block.gd" id="1_r2o5y"]
 
 [resource]
-script = ExtResource("2_8qg6a")
-id = "light saber"
-type = 0
+script = ExtResource("1_r2o5y")
+id = "force block"
+type = 1
 rarity = 0
-target = 1
-cost = 2
+target = 0
+cost = 1
 exhausts = false
-icon = ExtResource("1_dnjk0")
-tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"
+icon = ExtResource("1_2ykbr")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"
