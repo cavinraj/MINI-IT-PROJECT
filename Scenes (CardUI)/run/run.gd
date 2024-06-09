@@ -143,3 +143,4 @@ func _on_map_exited(room: Room) -> void:
 			_on_shop_entered()
 		Room.Type.BOSS:
 			_on_battle_room_entered(room)
+			get_tree().change_scene_to_file("res://audio/bg_music/bg_music.tscn")
