@@ -1,16 +1,18 @@
-[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dpirhtmqfyvfk"]
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://dpirhtmqfyvfk"]
 
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_88tp5"]
-[ext_resource type="Texture2D" uid="uid://4ge21rm111km" path="res://Assets/Gojo.png" id="1_tf1ly"]
-[ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_j1yd1"]
+[ext_resource type="Texture2D" uid="uid://chrmxen0vgk1b" path="res://Assets/Gojo.png" id="1_tf1ly"]
+[ext_resource type="Resource" uid="uid://boyep4yo5a15h" path="res://characters/wizard/wizard_draftable_deck.tres" id="2_yx5ns"]
+[ext_resource type="Resource" uid="uid://ckvi5psijjpl1" path="res://characters/wizard/wizard_starting_deck.tres" id="3_wiv1v"]
 
 [resource]
 script = ExtResource("1_88tp5")
 character_name = "The Honoured One"
 description = "Would I Lose ? Nah I'd Win."
 portrait = ExtResource("1_tf1ly")
-starting_deck = ExtResource("3_j1yd1")
+starting_deck = ExtResource("3_wiv1v")
+draftable_cards = ExtResource("2_yx5ns")
 cards_per_turn = 3
-max_mana = 4
-max_health = 27
+max_mana = 5
+max_health = 30
 art = ExtResource("1_tf1ly")

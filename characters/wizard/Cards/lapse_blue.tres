@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bhqn21h24td2l"]
+
+[ext_resource type="Texture2D" uid="uid://xvv5c8pcele6" path="res://Assets/art/Lapse Blue.png" id="1_ylwdv"]
+[ext_resource type="Script" path="res://characters/wizard/Cards/lapse_blue.gd" id="2_xhwi2"]
+
+[resource]
+script = ExtResource("2_xhwi2")
+id = "lapse_blue"
+type = 0
+rarity = 0
+target = 2
+cost = 2
+exhausts = false
+icon = ExtResource("1_ylwdv")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies.[/center]"
