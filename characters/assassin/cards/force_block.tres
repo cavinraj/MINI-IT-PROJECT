@@ -1,7 +1,8 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bjdgy12x6xoyy"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bjdgy12x6xoyy"]
 
 [ext_resource type="Texture2D" uid="uid://cimv2hih4atra" path="res://Assets/art/Force Shield.png" id="1_2ykbr"]
 [ext_resource type="Script" path="res://characters/assassin/cards/force_block.gd" id="1_r2o5y"]
+[ext_resource type="AudioStream" uid="uid://cnkn7q3lr6wkf" path="res://Assets/art/forceblock.mp3" id="3_8bbw8"]
 
 [resource]
 script = ExtResource("1_r2o5y")
@@ -13,3 +14,4 @@ cost = 1
 exhausts = false
 icon = ExtResource("1_2ykbr")
 tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"
+sound = ExtResource("3_8bbw8")

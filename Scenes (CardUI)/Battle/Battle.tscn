@@ -201,5 +201,5 @@ layer = 4
 visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-volume_db = -5.0
+volume_db = -11.934
 bus = &"Music"
