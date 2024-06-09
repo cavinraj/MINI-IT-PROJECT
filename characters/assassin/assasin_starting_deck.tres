@@ -1,11 +1,10 @@
-[gd_resource type="Resource" script_class="CardPile" load_steps=6 format=3 uid="uid://bhiew6dwoplq2"]
+[gd_resource type="Resource" script_class="CardPile" load_steps=5 format=3 uid="uid://bhiew6dwoplq2"]
 
 [ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="1_gltmo"]
 [ext_resource type="Resource" uid="uid://bjdgy12x6xoyy" path="res://characters/assassin/cards/force_block.tres" id="1_mqroy"]
 [ext_resource type="Resource" uid="uid://0qijytqw2iv0" path="res://characters/assassin/cards/light_saber.tres" id="2_qhsy0"]
 [ext_resource type="Resource" uid="uid://cav68ga46pp6y" path="res://characters/assassin/cards/force_lighting.tres" id="3_age13"]
-[ext_resource type="Resource" uid="uid://wjofnpnl6fdd" path="res://characters/assassin/cards/force_choke.tres" id="4_ukljo"]
 
 [resource]
 script = ExtResource("1_gltmo")
-cards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("1_mqroy"), ExtResource("1_mqroy"), ExtResource("1_mqroy"), ExtResource("1_mqroy"), ExtResource("2_qhsy0"), ExtResource("2_qhsy0"), ExtResource("2_qhsy0"), ExtResource("2_qhsy0"), ExtResource("3_age13"), ExtResource("3_age13"), ExtResource("4_ukljo"), ExtResource("4_ukljo"), ExtResource("4_ukljo"), ExtResource("4_ukljo"), ExtResource("4_ukljo"), ExtResource("4_ukljo"), ExtResource("4_ukljo"), ExtResource("4_ukljo")])
+cards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("1_mqroy"), ExtResource("1_mqroy"), ExtResource("1_mqroy"), ExtResource("1_mqroy"), ExtResource("2_qhsy0"), ExtResource("2_qhsy0"), ExtResource("2_qhsy0"), ExtResource("2_qhsy0"), ExtResource("3_age13"), ExtResource("3_age13")])
