@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/Battle/battle.gd" id="1_tx3os"]
 [ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="2_134dg"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/hand.gd" id="2_owj4f"]
-[ext_resource type="AudioStream" uid="uid://xoyiylag7bog" path="res://audio/battle/waveart.mp3" id="3_7grid"]
+[ext_resource type="AudioStream" uid="uid://xoyiylag7bog" path="res://Audio/battle/waveart.mp3" id="3_7grid"]
 [ext_resource type="PackedScene" uid="uid://bcfn1ri1fst3i" path="res://Scenes (CardUI)/player/player.tscn" id="3_b7fq5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/enemy/enemy_handler.gd" id="4_c6215"]
 [ext_resource type="Resource" uid="uid://dgryae3qv4lcu" path="res://characters/Warrior/warrior.tres" id="4_xfid1"]
