@@ -31,6 +31,8 @@ signal map_exited(room: Room)
 
 # Shop-related events
 signal shop_exited
+signal shop_notice_entered
+signal shop_notice_exited
 
 # Campfire-related events
 signal campfire_exited

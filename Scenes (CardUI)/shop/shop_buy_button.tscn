@@ -1,13 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://bu3ffefkxptaj"]
+[gd_scene load_steps=5 format=3 uid="uid://bu3ffefkxptaj"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/shop/ShopBuyButton.gd" id="1_6od3r"]
-[ext_resource type="Texture2D" uid="uid://q2dr7k42g0ao" path="res://Assets/current arts/coupons.png" id="2_s8sgg"]
+[ext_resource type="Script" path="res://custom_resources/run_stats.gd" id="2_rm6ch"]
+[ext_resource type="Texture2D" uid="uid://djq1xs50kuqwn" path="res://Assets/current arts/coupons.png" id="2_s8sgg"]
+
+[sub_resource type="Resource" id="Resource_4lhxb"]
+script = ExtResource("2_rm6ch")
+gold = 0
+card_rewards = 3
+common_weight = 6.0
+uncommon_weight = 3.7
+rare_weight = 0.3
+treasure_common_weight = 0.3
+treasure_uncommon_weight = 3.7
+treasure_rare_weight = 6.0
+shop_common_weight = 0.3
+shop_uncommon_weight = 3.7
+shop_rare_weight = 6.0
 
 [node name="ShopBuyButton" type="Button"]
 custom_minimum_size = Vector2(45, 45)
 offset_right = 45.0
 offset_bottom = 45.0
 script = ExtResource("1_6od3r")
+run_stats = SubResource("Resource_4lhxb")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1

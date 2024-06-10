@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://pkt84l7tswr3"]
+[gd_scene load_steps=6 format=3 uid="uid://pkt84l7tswr3"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/shop/shop.gd" id="1_qo3kq"]
-[ext_resource type="Texture2D" uid="uid://b35uvjl4pouvr" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_4jogj"]
+[ext_resource type="Texture2D" uid="uid://bamoprgmnrmsj" path="res://Assets/art/Digi-Deck Domain No Text.png" id="2_4jogj"]
+[ext_resource type="PackedScene" uid="uid://bc2t1j45hp60" path="res://Scenes (CardUI)/map/map.tscn" id="2_7c47e"]
 [ext_resource type="PackedScene" uid="uid://bu3ffefkxptaj" path="res://Scenes (CardUI)/shop/shop_buy_button.tscn" id="3_u3vg2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b1ya8"]
@@ -15,6 +16,10 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_qo3kq")
+
+[node name="Map" parent="." instance=ExtResource("2_7c47e")]
+
+[node name="Node" type="Node" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

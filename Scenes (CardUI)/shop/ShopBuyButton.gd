@@ -2,9 +2,10 @@ class_name shopbuybutton
 extends Button
 
 
-
+@export var run_stats: RunStats
 @export var shop_icon: Texture : set = set_reward_icon
 @export var shop_text: String : set = set_reward_text
+var price = 30
 
 @onready var custom_shop_icon: TextureRect = %CustomIcon
 @onready var custom_shop_text: Label = %CustomText
