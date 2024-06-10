@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardPile" load_steps=6 format=3 uid="uid://ui6o320gf7oy"]
+
+[ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="1_bk6nt"]
+[ext_resource type="Resource" uid="uid://0qijytqw2iv0" path="res://characters/assassin/cards/light_saber.tres" id="1_oy6ph"]
+[ext_resource type="Resource" uid="uid://cav68ga46pp6y" path="res://characters/assassin/cards/force_lighting.tres" id="2_18t0y"]
+[ext_resource type="Resource" uid="uid://wjofnpnl6fdd" path="res://characters/assassin/cards/force_choke.tres" id="3_y1yp2"]
+[ext_resource type="Resource" uid="uid://bjdgy12x6xoyy" path="res://characters/assassin/cards/force_block.tres" id="4_g4ncx"]
+
+[resource]
+script = ExtResource("1_bk6nt")
+cards = Array[Resource("res://custom_resources/card.gd")]([ExtResource("1_oy6ph"), ExtResource("1_oy6ph"), ExtResource("1_oy6ph"), ExtResource("2_18t0y"), ExtResource("2_18t0y"), ExtResource("2_18t0y"), ExtResource("2_18t0y"), ExtResource("3_y1yp2"), ExtResource("3_y1yp2"), ExtResource("4_g4ncx"), ExtResource("4_g4ncx"), ExtResource("4_g4ncx")])

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/map/map.gd" id="1_4y16x"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/map/map_generator.gd" id="2_x0lhi"]
 [ext_resource type="Resource" uid="uid://botbcs7m4q816" path="res://battles/battle_stats_pool.tres" id="3_pcjhb"]
-[ext_resource type="AudioStream" uid="uid://dgjfg0cpm8ors" path="res://audio/map/remastered.mp3" id="4_14o2a"]
+[ext_resource type="AudioStream" uid="uid://ifign5gv6una" path="res://audio/map/remastered.mp3" id="4_14o2a"]
 
 [sub_resource type="Gradient" id="Gradient_iw4af"]
 colors = PackedColorArray(0.215686, 0.215686, 0.215686, 1, 0.4, 0.219608, 0.203922, 1)
@@ -43,4 +43,5 @@ texture = SubResource("GradientTexture1D_3dh67")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_14o2a")
+volume_db = -11.042
 autoplay = true

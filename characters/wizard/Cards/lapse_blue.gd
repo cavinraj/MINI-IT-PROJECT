@@ -2,7 +2,6 @@ extends Card
 
 var base_damage := 5
 
-
 func get_default_tooltip() -> String:
 	return tooltip_text % base_damage
 

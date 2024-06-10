@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ExposedStatus" load_steps=3 format=3 uid="uid://c50fac47d70ys"]
 
-[ext_resource type="Texture2D" uid="uid://ilwspca333ci" path="res://Assets/current arts/expose.png" id="1_5xuqk"]
+[ext_resource type="Texture2D" uid="uid://ekwk8ahdkoo3" path="res://Assets/art/expose.png" id="1_5xuqk"]
 [ext_resource type="Script" path="res://statuses/exposed.gd" id="2_wdjgk"]
 
 [resource]

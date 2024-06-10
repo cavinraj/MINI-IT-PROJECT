@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://wjofnpnl6fdd"]
+
+[ext_resource type="Script" path="res://characters/assassin/cards/force_choke.gd" id="1_d3jik"]
+[ext_resource type="Texture2D" uid="uid://yt4k1hcdiql7" path="res://Assets/art/Force Choke.png" id="1_rm444"]
+[ext_resource type="AudioStream" uid="uid://bpi78lxieeq8o" path="res://Assets/art/forcechocke.mp3" id="3_jjy7p"]
+
+[resource]
+script = ExtResource("1_d3jik")
+id = "force choke"
+type = 1
+rarity = 2
+target = 2
+cost = 5
+exhausts = false
+icon = ExtResource("1_rm444")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage and apply 2 [color=\"ffdf00\"]Exposed[/color].[/center]"
+sound = ExtResource("3_jjy7p")
