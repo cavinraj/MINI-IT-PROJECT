@@ -6,8 +6,10 @@ const BATTLE_REWARD_SCENE := preload("res://Scenes (CardUI)/battle_reward/battle
 const CAMPFIRE_SCENE := preload("res://Scenes (CardUI)/campfire/campfire.tscn")
 const SHOP_SCENE := preload("res://Scenes (CardUI)/shop/shop.tscn")
 const TREASURE_SCENE := preload("res://Scenes (CardUI)/treasure/treasure.tscn")
+const SHOP_NOTICE_SCENE := preload("res://Scenes (CardUI)/shop/shop_notice.tscn")
 
 @export var run_startup: RunStartup
+var price = 30
 
 @onready var map = $Map
 @onready var current_view: Node = $CurrentView
@@ -76,6 +78,7 @@ func _setup_event_connections() -> void:
 	Events.map_exited.connect(_on_map_exited)
 	Events.shop_exited.connect(_show_map)
 	Events.treasure_room_exited.connect(_show_map)
+	Events.shop_notice_exited.connect(_show_map)
 	
 	battle_button.pressed.connect(_change_view.bind(BATTLE_SCENE))
 	campfire_button.pressed.connect(_change_view.bind(CAMPFIRE_SCENE))

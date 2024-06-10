@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://ccvfeocl141qk"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/battle_reward/battle_reward.gd" id="1_okiww"]
-[ext_resource type="Texture2D" uid="uid://0kxlwocg1qgv" path="res://Assets/art/background.png" id="2_ckd65"]
+[ext_resource type="Texture2D" uid="uid://qrdouo4reew2" path="res://Assets/art/background.png" id="2_ckd65"]
 [ext_resource type="PackedScene" uid="uid://bsyla0iccm80t" path="res://Scenes (CardUI)/ui/reward_button.tscn" id="3_atwwe"]
-[ext_resource type="Texture2D" uid="uid://dwqwg44mjgg2j" path="res://Assets/art/gold.png" id="4_nmr10"]
-[ext_resource type="Texture2D" uid="uid://cedefbs7o2180" path="res://Assets/art/rarity.png" id="5_jfcff"]
+[ext_resource type="Texture2D" uid="uid://bobiev0u048mc" path="res://Assets/art/gold.png" id="4_nmr10"]
+[ext_resource type="Texture2D" uid="uid://06jvcom53rlu" path="res://Assets/art/rarity.png" id="5_jfcff"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8e31q"]
 font_size = 12

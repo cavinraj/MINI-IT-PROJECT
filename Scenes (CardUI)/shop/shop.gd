@@ -5,12 +5,15 @@ const CARD_REWARDS = preload("res://Scenes (CardUI)/ui/card_rewards.tscn")
 const SHOP_BUY_BUTTON = preload("res://Scenes (CardUI)/shop/shop_buy_button.tscn")
 const SHOP_ICON := preload("res://Assets/current arts/coupons.png")
 const SHOP_TEXT := "Card Pack"
+const SHOP_NOTICE_SCENE := preload("res://Scenes (CardUI)/shop/shop_notice.tscn")
 
-var price = 150
+var price = 30
 
 @export var run_stats: RunStats
 @export var character_stats: CharacterStats
 
+@onready var map = $Map
+@onready var node: Node = $Node
 @onready var shops: HBoxContainer = %Shops
 @onready var ShopBuyButton1: Button = $ShopBuyButton1
 @onready var ShopBuyButton2: Button = $ShopBuyButton2
@@ -87,7 +90,28 @@ func _on_card_reward_taken(card: Card) -> void:
 	if not character_stats or not card:
 		return
 	
-	character_stats.deck.add_card(card)
+	if run_stats.gold <= price:
+		_shop_notice_entered()
+	else:
+		run_stats.gold -= price
+		character_stats.deck.add_card(card)
+	
+	
+func _shop_notice_entered() -> void:
+	var shop_notice := _change_view(SHOP_NOTICE_SCENE) as ShopNotice
 
+
+func _change_view(scene: PackedScene) -> Node:
+	if node.get_child_count() > 0:
+		node.get_child(0).queue_free()
+		
+	get_tree().paused = false
+	var new_view := scene.instantiate()
+	node.add_child(new_view)
+	map.hide_map()
+
+	return new_view
+	
+	
 func _on_return_pressed():
 	Events.shop_exited.emit()
