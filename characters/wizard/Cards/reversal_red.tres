@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://biqavtqp7i511"]
 
-[ext_resource type="Texture2D" uid="uid://dnd6ogrd7leiu" path="res://Assets/art/Reversal Red.png" id="1_vgv0i"]
+[ext_resource type="Texture2D" uid="uid://c5qn8cdlchuuu" path="res://Assets/art/Reversal Red.png" id="1_vgv0i"]
 [ext_resource type="Script" path="res://characters/wizard/Cards/reversal_red.gd" id="2_74bu0"]
-[ext_resource type="AudioStream" uid="uid://cgr3d86u1j6bx" path="res://Assets/art/reversalred.mp3" id="3_a2jtm"]
+[ext_resource type="AudioStream" uid="uid://0fboumpqj24k" path="res://Assets/art/reversalred.mp3" id="3_a2jtm"]
 
 [resource]
 script = ExtResource("2_74bu0")
