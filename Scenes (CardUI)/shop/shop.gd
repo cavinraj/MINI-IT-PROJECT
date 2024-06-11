@@ -18,6 +18,9 @@ func _ready() -> void:
 		
 	Events.shop_card_bought.connect(_on_shop_card_bought)
 	
+	
+	_blink_timer_setup()
+	blink_timer.timeout.connect(_on_blink_timer_timeout)
 
 
 func _input(event: InputEvent) -> void:
@@ -27,6 +30,11 @@ func _input(event: InputEvent) -> void:
 
 func populate_shop() -> void:
 	_generate_shop_cards()
+
+
+func _blink_timer_setup() -> void:
+	blink_timer.wait_time = randf_range(1.0, 5.0)
+	blink_timer.start()
 
 
 func _generate_shop_cards() -> void:
@@ -59,3 +67,6 @@ func _on_leave_button_pressed() -> void:
 
 
 
+func _on_blink_timer_timeout() -> void:
+	shop_keeper_animation.play("blink")
+	_blink_timer_setup()
