@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://t5vtd8f0wk4g"]
 
-[ext_resource type="Texture2D" uid="uid://dxft0tj8xyecv" path="res://Assets/art/Limitless Barrier.png" id="1_ui5ds"]
+[ext_resource type="Texture2D" uid="uid://cn2hk71uhm0nl" path="res://Assets/art/Limitless Barrier.png" id="1_ui5ds"]
 [ext_resource type="Script" path="res://characters/wizard/Cards/limitless_barrier.gd" id="2_xkb4y"]
-[ext_resource type="AudioStream" uid="uid://bn5dapqyfog0t" path="res://Assets/art/limitlessbarrier.mp3" id="3_al8yd"]
+[ext_resource type="AudioStream" uid="uid://ty1q08drj0fv" path="res://Assets/art/limitlessbarrier.mp3" id="3_al8yd"]
 
 [resource]
 script = ExtResource("2_xkb4y")
