@@ -1,11 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://p3qw4g3a4phu"]
+[gd_scene load_steps=8 format=3 uid="uid://p3qw4g3a4phu"]
 
 [ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="1_x3amo"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/card_visuals.gd" id="2_7btoh"]
 [ext_resource type="StyleBox" uid="uid://6sv8w8821r4i" path="res://Scenes (CardUI)/card_ui/card_base_stylebox.tres" id="2_f1lxx"]
-[ext_resource type="Resource" uid="uid://3al7k3kqj4i0" path="res://characters/Warrior/cards/warrior_slash.tres" id="3_15fek"]
-[ext_resource type="Texture2D" uid="uid://dhcm86v3150se" path="res://Assets/art/tile_0104.png" id="3_v3bkd"]
-[ext_resource type="Texture2D" uid="uid://cfkmipgy4x27w" path="res://Assets/art/rarity.png" id="4_qm2vk"]
+[ext_resource type="Script" path="res://custom_resources/card.gd" id="3_fuhgx"]
+[ext_resource type="Texture2D" uid="uid://bhhdf5ilve4ye" path="res://Assets/art/tile_0104.png" id="3_v3bkd"]
+[ext_resource type="Texture2D" uid="uid://cedefbs7o2180" path="res://Assets/art/rarity.png" id="4_qm2vk"]
+
+[sub_resource type="Resource" id="Resource_0tts1"]
+script = ExtResource("3_fuhgx")
+id = ""
+type = 0
+rarity = 0
+target = 0
+cost = 0
+exhausts = false
+tooltip_text = ""
 
 [node name="CardVisuals" type="Control"]
 custom_minimum_size = Vector2(25, 30)
@@ -13,7 +23,7 @@ layout_mode = 3
 anchors_preset = 0
 theme = ExtResource("1_x3amo")
 script = ExtResource("2_7btoh")
-card = ExtResource("3_15fek")
+card = SubResource("Resource_0tts1")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
