@@ -1,15 +1,15 @@
 [gd_scene load_steps=15 format=3 uid="uid://c336bnlrrpk5a"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/campfire/campfire.gd" id="1_lkcq0"]
-[ext_resource type="Texture2D" uid="uid://brfapakmw3y4o" path="res://Assets/line.png" id="2_0w3gx"]
+[ext_resource type="Texture2D" uid="uid://crjadxn4xu6no" path="res://Assets/line.png" id="2_0w3gx"]
 [ext_resource type="Resource" uid="uid://dgryae3qv4lcu" path="res://characters/Warrior/warrior.tres" id="2_l1pw3"]
 
-[sub_resource type="Gradient" id="Gradient_dmpkj"]
+[sub_resource type="Gradient" id="Gradient_f7reo"]
 offsets = PackedFloat32Array(0.162338, 1)
 colors = PackedColorArray(0, 0, 0, 1, 0.258824, 0.145098, 0.133333, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_8npuc"]
-gradient = SubResource("Gradient_dmpkj")
+gradient = SubResource("Gradient_f7reo")
 fill_from = Vector2(0.5, 1)
 fill_to = Vector2(0.5, 0)
 metadata/_snap_enabled = true

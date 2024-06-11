@@ -20,12 +20,6 @@ const SHOP_BASE_RARE_WEIGHT := 6.0
 @export_range(0.0, 10.0) var common_weight := BASE_COMMON_WEIGHT
 @export_range(0.0, 10.0) var uncommon_weight := BASE_UNCOMMON_WEIGHT
 @export_range(0.0, 10.0) var rare_weight := BASE_RARE_WEIGHT
-@export_range(0.0, 10.0) var treasure_common_weight := TREASURE_BASE_COMMON_WEIGHT
-@export_range(0.0, 10.0) var treasure_uncommon_weight := TREASURE_BASE_UNCOMMON_WEIGHT
-@export_range(0.0, 10.0) var treasure_rare_weight := TREASURE_BASE_RARE_WEIGHT
-@export_range(0.0, 10.0) var shop_common_weight := SHOP_BASE_COMMON_WEIGHT
-@export_range(0.0, 10.0) var shop_uncommon_weight := SHOP_BASE_UNCOMMON_WEIGHT
-@export_range(0.0, 10.0) var shop_rare_weight := SHOP_BASE_RARE_WEIGHT
 
 
 func set_gold(new_amount: int) -> void:
@@ -37,13 +31,3 @@ func reset_weights() -> void:
 	common_weight = BASE_COMMON_WEIGHT
 	uncommon_weight = BASE_UNCOMMON_WEIGHT
 	rare_weight = BASE_RARE_WEIGHT
-
-func reset_treasure_weights() -> void:
-	treasure_common_weight = TREASURE_BASE_COMMON_WEIGHT
-	treasure_uncommon_weight = TREASURE_BASE_UNCOMMON_WEIGHT
-	treasure_rare_weight = TREASURE_BASE_RARE_WEIGHT
-
-func reset_shop_weights() -> void:
-	shop_common_weight = SHOP_BASE_COMMON_WEIGHT
-	shop_uncommon_weight = SHOP_BASE_UNCOMMON_WEIGHT
-	shop_rare_weight = SHOP_BASE_RARE_WEIGHT
