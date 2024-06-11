@@ -33,6 +33,7 @@ signal map_exited(room: Room)
 signal shop_exited
 signal shop_notice_entered
 signal shop_notice_exited
+signal shop_card_bought(card: Card, gold_cost: int)
 
 # Campfire-related events
 signal campfire_exited
