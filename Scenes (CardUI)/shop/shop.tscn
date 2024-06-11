@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://pkt84l7tswr3"]
+[gd_scene load_steps=12 format=3 uid="uid://pkt84l7tswr3"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/shop/shop.gd" id="1_qo3kq"]
 [ext_resource type="Texture2D" uid="uid://8becinpu0nt4" path="res://Assets/art/tile_0086.png" id="2_uw4an"]
 [ext_resource type="Texture2D" uid="uid://bgg2k5th4yfgs" path="res://Assets/art/shopkeeper_blink.png" id="3_1h8hn"]
 [ext_resource type="PackedScene" uid="uid://c4r6b22qgh0wl" path="res://Scenes (CardUI)/shop/shop_card.tscn" id="4_vypc6"]
+[ext_resource type="PackedScene" uid="uid://ci5bxt7w1ps83" path="res://Scenes (CardUI)/ui/card_tooltip_popup.tscn" id="5_c2bqb"]
 
 [sub_resource type="Gradient" id="Gradient_dmpkj"]
 offsets = PackedFloat32Array(0.162338, 1)
@@ -156,3 +157,9 @@ layout_mode = 2
 
 [node name="ShopCard3" parent="UILayer/ShopContent/Cards" instance=ExtResource("4_vypc6")]
 layout_mode = 2
+
+[node name="CardTooltipPopup" parent="UILayer" instance=ExtResource("5_c2bqb")]
+unique_name_in_owner = true
+visible = false
+
+[connection signal="pressed" from="UILayer/LeaveButton" to="." method="_on_leave_button_pressed"]
