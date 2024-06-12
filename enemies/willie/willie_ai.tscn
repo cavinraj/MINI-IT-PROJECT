@@ -1,0 +1,50 @@
+[gd_scene load_steps=15 format=3 uid="uid://bt3de0a7lyi4j"]
+
+[ext_resource type="Script" path="res://Scenes (CardUI)/enemy/enemy_action_picker.gd" id="1_hnwgk"]
+[ext_resource type="Script" path="res://enemies/willie/willie_muscle_buff_action.gd" id="2_t07an"]
+[ext_resource type="Texture2D" uid="uid://42nq3wm81ytr" path="res://Assets/art/tile_0127.png" id="3_3txaj"]
+[ext_resource type="Script" path="res://custom_resources/intent.gd" id="4_f2kun"]
+[ext_resource type="AudioStream" uid="uid://d147unt0ojc7v" path="res://Assets/art/enemy_block.ogg" id="5_1m0sb"]
+[ext_resource type="Script" path="res://enemies/willie/willie_attack_action.gd" id="6_p0156"]
+[ext_resource type="Texture2D" uid="uid://bgnfcdsjx4jyf" path="res://Assets/art/attack_negative.png" id="7_nw7rf"]
+[ext_resource type="AudioStream" uid="uid://b2sfdkyc76joo" path="res://Assets/art/enemy_attack.ogg" id="8_esn73"]
+[ext_resource type="Script" path="res://enemies/willie/willie_block_action.gd" id="9_kiows"]
+[ext_resource type="Texture2D" uid="uid://du54in1y8k1j5" path="res://Assets/art/tile_0102.png" id="10_888u6"]
+[ext_resource type="AudioStream" uid="uid://de31jglpcrhuo" path="res://Assets/art/block.ogg" id="11_vlet7"]
+
+[sub_resource type="Resource" id="Resource_e0e0o"]
+script = ExtResource("4_f2kun")
+base_text = ""
+icon = ExtResource("3_3txaj")
+
+[sub_resource type="Resource" id="Resource_2yrlg"]
+script = ExtResource("4_f2kun")
+base_text = "%s"
+icon = ExtResource("7_nw7rf")
+
+[sub_resource type="Resource" id="Resource_24xtc"]
+script = ExtResource("4_f2kun")
+base_text = ""
+icon = ExtResource("10_888u6")
+
+[node name="WillieAI" type="Node"]
+script = ExtResource("1_hnwgk")
+
+[node name="MuscleBuffAction" type="Node" parent="."]
+script = ExtResource("2_t07an")
+intent = SubResource("Resource_e0e0o")
+sound = ExtResource("5_1m0sb")
+
+[node name="AttackAction" type="Node" parent="."]
+script = ExtResource("6_p0156")
+intent = SubResource("Resource_2yrlg")
+sound = ExtResource("8_esn73")
+type = 1
+chance_weight = 6.5
+
+[node name="BlockAction" type="Node" parent="."]
+script = ExtResource("9_kiows")
+intent = SubResource("Resource_24xtc")
+sound = ExtResource("11_vlet7")
+type = 1
+chance_weight = 3.5

@@ -1,12 +1,11 @@
 extends EnemyAction
 
+@export var block := 10
 
-@export var block := 12
 
 func perform_action():
 	if not enemy or not target:
 		return
-	
 	
 	var block_effect := BlockEffect.new()
 	block_effect.amount = block
@@ -17,5 +16,3 @@ func perform_action():
 		func():
 			Events.enemy_action_completed.emit(enemy)
 	)
-
-

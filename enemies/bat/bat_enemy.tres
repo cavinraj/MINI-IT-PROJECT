@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="EnemyStats" load_steps=4 format=3 uid="uid://b44psi201n1r3"]
 
 [ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="1_bx4nh"]
-[ext_resource type="Texture2D" uid="uid://drmf23rd448wt" path="res://Assets/art/tile_0120.png" id="1_cxmkv"]
+[ext_resource type="Texture2D" uid="uid://cmc8loc8pkw4s" path="res://Assets/art/tile_0120.png" id="1_cxmkv"]
 [ext_resource type="PackedScene" uid="uid://c1rk0t3yt8dwx" path="res://enemies/bat/bat_enemy_ai.tscn" id="1_nkoqb"]
 
 [resource]
