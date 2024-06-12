@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://du54in1y8k1j5" path="res://Assets/art/tile_0102.png" id="10_888u6"]
 [ext_resource type="AudioStream" uid="uid://de31jglpcrhuo" path="res://Assets/art/block.ogg" id="11_vlet7"]
 
-[sub_resource type="Resource" id="Resource_bweil"]
+[sub_resource type="Resource" id="Resource_e0e0o"]
 script = ExtResource("4_f2kun")
 base_text = ""
 icon = ExtResource("3_3txaj")
@@ -32,7 +32,7 @@ script = ExtResource("1_hnwgk")
 
 [node name="MuscleBuffAction" type="Node" parent="."]
 script = ExtResource("2_t07an")
-intent = SubResource("Resource_bweil")
+intent = SubResource("Resource_e0e0o")
 sound = ExtResource("5_1m0sb")
 
 [node name="AttackAction" type="Node" parent="."]

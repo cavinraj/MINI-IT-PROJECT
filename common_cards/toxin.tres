@@ -13,5 +13,5 @@ target = 0
 cost = 1
 exhausts = true
 icon = ExtResource("1_feu6u")
-tooltip_text = ""
+tooltip_text = "[center]Slows you down[/center]"
 sound = ExtResource("3_120ul")
