@@ -57,7 +57,7 @@ texture = ExtResource("4_kptq5")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="VbocContainer" type="VBoxContainer" parent="."]
+[node name="VboxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -72,7 +72,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
 
-[node name="Message" type="Label" parent="VbocContainer"]
+[node name="Message" type="Label" parent="VboxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 text = "The Warrior
@@ -81,8 +81,10 @@ label_settings = SubResource("LabelSettings_iguwd")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MainMenuButton" type="Button" parent="VbocContainer"]
+[node name="MainMenuButton" type="Button" parent="VboxContainer"]
 custom_minimum_size = Vector2(60, 14)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Main Menu"
+
+[connection signal="pressed" from="VboxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
