@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://cj6hli3j6sle3"]
+
+[ext_resource type="Script" path="res://Scenes (CardUI)/ui/character_selector.gd" id="1_yq42p"]
+[ext_resource type="Resource" uid="uid://dc5xau76tudru" path="res://Scenes (CardUI)/run/run_startup.tres" id="2_w1akd"]
+[ext_resource type="Texture2D" uid="uid://k3lnmq8243cv" path="res://Assets/art/tile_0087.png" id="4_kptq5"]
+
+[sub_resource type="Gradient" id="Gradient_ctsge"]
+colors = PackedColorArray(0, 0, 0, 1, 0.659996, 0.0396639, 0.728421, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_h0ctb"]
+gradient = SubResource("Gradient_ctsge")
+fill_from = Vector2(0.5, 0.9)
+fill_to = Vector2(0.5, 0)
+metadata/_snap_enabled = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_iguwd"]
+line_spacing = 6.0
+font_size = 12
+shadow_size = 4
+shadow_color = Color(0.596078, 0.415686, 0.376471, 0.258824)
+
+[node name="CharacterSelector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_yq42p")
+run_startup = ExtResource("2_w1akd")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_h0ctb")
+expand_mode = 3
+
+[node name="CharacterPortrait" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -75.0
+offset_right = 70.0
+offset_bottom = -15.0
+grow_vertical = 0
+texture = ExtResource("4_kptq5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CharacterText" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.0
+offset_top = 9.0
+offset_right = 120.0
+offset_bottom = 74.0
+grow_horizontal = 2
+
+[node name="Description" type="Label" parent="CharacterText"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Likes to slice things up.
+Second line of text."
+label_settings = SubResource("LabelSettings_iguwd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="CharacterText"]
+layout_mode = 2
+text = "Start"
+
+[connection signal="pressed" from="CharacterText/StartButton" to="." method="_on_start_button_pressed"]
