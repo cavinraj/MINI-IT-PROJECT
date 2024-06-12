@@ -2,7 +2,7 @@ extends Card
 
 const EXPOSED_STATUS = preload("res://statuses/exposed.tres")
 
-var base_damage := 6
+var base_damage := 600
 var exposed_duration := 1
 
 
