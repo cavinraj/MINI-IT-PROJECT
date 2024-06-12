@@ -1,10 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://njbcwq0xuind"]
+[gd_scene load_steps=11 format=3 uid="uid://njbcwq0xuind"]
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/character_selector.gd" id="1_mur4y"]
 [ext_resource type="Resource" uid="uid://dc5xau76tudru" path="res://Scenes (CardUI)/run/run_startup.tres" id="2_uoe0v"]
 [ext_resource type="Texture2D" uid="uid://do6acp5w4smo7" path="res://Assets/art/Digi-Deck Domain No Text (2).png" id="2_ypau3"]
 [ext_resource type="Texture2D" uid="uid://dteursjtpat74" path="res://Assets/art/Ragnarok.png" id="5_2gatj"]
 [ext_resource type="Texture2D" uid="uid://k3lnmq8243cv" path="res://Assets/art/tile_0087.png" id="5_nv777"]
+[ext_resource type="Texture2D" uid="uid://bjnuhwif6vjyt" path="res://Assets/art/jjk pin.png" id="6_d1fqh"]
+[ext_resource type="Texture2D" uid="uid://j6tusm1pre7f" path="res://Assets/art/Lightsaber.png" id="7_lgjhm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jk3dy"]
 line_spacing = 10.0
@@ -157,6 +159,7 @@ offset_right = 10.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("6_d1fqh")
 expand_mode = 1
 stretch_mode = 5
 
@@ -179,6 +182,7 @@ offset_right = 10.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("7_lgjhm")
 expand_mode = 1
 stretch_mode = 5
 

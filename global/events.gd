@@ -42,5 +42,5 @@ signal campfire_exited
 signal battle_reward_exited
 
 # Treasure Room-related events
-signal treasure_room_exited
-signal treasure_room_entered
+signal treasure_room_exited(found_card: Card)
+
