@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://berflxtj34m66"]
 
-[ext_resource type="Texture2D" uid="uid://xx85vc87o0m2" path="res://Assets/art/Darth Vader.png" id="1_r1ksu"]
+[ext_resource type="Texture2D" uid="uid://va3bbbrslw7t" path="res://Assets/art/Darth Vader.png" id="1_r1ksu"]
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_yct45"]
 [ext_resource type="Resource" uid="uid://ui6o320gf7oy" path="res://characters/assassin/assasin_draftable_deck.tres" id="2_ftg6l"]
 [ext_resource type="Resource" uid="uid://bhiew6dwoplq2" path="res://characters/assassin/assasin_starting_deck.tres" id="4_ngrd2"]
