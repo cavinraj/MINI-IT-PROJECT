@@ -1,8 +1,8 @@
 [gd_resource type="Resource" load_steps=4 format=3 uid="uid://bhqn21h24td2l"]
 
-[ext_resource type="Texture2D" uid="uid://y146jvpr5tqo" path="res://Assets/art/Lapse Blue.png" id="1_ylwdv"]
+[ext_resource type="Texture2D" uid="uid://catudnhqbfftd" path="res://Assets/art/Lapse Blue.png" id="1_ylwdv"]
 [ext_resource type="Script" path="res://characters/wizard/Cards/lapse_blue.gd" id="2_xhwi2"]
-[ext_resource type="AudioStream" uid="uid://bbpwjbht1y4ec" path="res://Assets/art/laspeblue.mp3" id="3_3ys3p"]
+[ext_resource type="AudioStream" uid="uid://b8nfrjr6wl8hp" path="res://Assets/art/laspeblue.mp3" id="3_3ys3p"]
 
 [resource]
 script = ExtResource("2_xhwi2")

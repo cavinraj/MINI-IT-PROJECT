@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bddao04i22ti4"]
+[gd_scene load_steps=38 format=3 uid="uid://bddao04i22ti4"]
 
 [ext_resource type="Texture2D" uid="uid://bw55n4qad7lo5" path="res://Assets/art/thetherone.png" id="1_3exg5"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/Battle/battle.gd" id="1_tx3os"]
@@ -13,11 +13,18 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/battle_ui.gd" id="7_ha0ax"]
 [ext_resource type="Resource" uid="uid://b44psi201n1r3" path="res://enemies/bat/bat_enemy.tres" id="8_d0xtb"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/player/player_handler.gd" id="8_vh6yu"]
-[ext_resource type="Resource" uid="uid://coxove2js18x0" path="res://enemies/boss_willie/boss_willie.tres" id="9_wsna4"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/enemy/enemy_action_picker.gd" id="9_cowvc"]
+[ext_resource type="Texture2D" uid="uid://dgwhrdx3g35rj" path="res://Assets/art/tile_0105.png" id="10_encuo"]
+[ext_resource type="Script" path="res://custom_resources/intent.gd" id="11_3agt6"]
 [ext_resource type="PackedScene" uid="uid://bp513pxbc4fic" path="res://Scenes (CardUI)/ui/mana_ui.tscn" id="11_xhb4w"]
+[ext_resource type="AudioStream" uid="uid://b2sfdkyc76joo" path="res://Assets/art/enemy_attack.ogg" id="12_641bm"]
 [ext_resource type="PackedScene" uid="uid://chry0sgk7t0yf" path="res://Scenes (CardUI)/ui/tooltip.tscn" id="12_ye4md"]
 [ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="13_fbh1k"]
+[ext_resource type="Texture2D" uid="uid://dx0tfeswds2d2" path="res://Assets/art/tile_0101.png" id="13_np2ke"]
+[ext_resource type="AudioStream" uid="uid://d147unt0ojc7v" path="res://Assets/art/enemy_block.ogg" id="14_wtjkl"]
+[ext_resource type="Texture2D" uid="uid://6jro0lf7vk6e" path="res://Assets/art/williefinalboss.png" id="15_iibu4"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/red_flash.gd" id="15_pflx1"]
+[ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="16_6vtbp"]
 [ext_resource type="PackedScene" uid="uid://b3n1w5dje7ia0" path="res://Scenes (CardUI)/ui/battle_over_panel.tscn" id="17_6iuyu"]
 [ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="17_tp2vk"]
 [ext_resource type="Texture2D" uid="uid://n0hg3rg4ly3o" path="res://Assets/art/discard.png" id="18_ujg67"]
@@ -26,6 +33,99 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0762l"]
 size = Vector2(256, 100)
+
+[sub_resource type="GDScript" id="GDScript_v2nf8"]
+script/source = "extends EnemyAction
+
+@export var damage := 8
+
+
+func perform_action():
+	if not enemy or not target:
+		return
+	
+	var tween = create_tween().set_trans(Tween.TRANS_QUINT)
+	var start = enemy.global_position
+	var end = target.global_position + Vector2.RIGHT * 32
+	var damage_effect := DamageEffect.new()
+	var target_array: Array[Node] = [target]
+	damage_effect.amount = damage
+	damage_effect.sound = sound
+	
+	tween.tween_property(enemy, \"global_position\", end, 0.4)
+	tween.tween_callback(damage_effect.execute.bind(target_array))
+	tween.tween_interval(0.35)
+	tween.tween_callback(damage_effect.execute.bind(target_array))
+	tween.tween_interval(0.25)
+	tween.tween_property(enemy, \"global_position\", start, 0.4)
+	
+	tween.finished.connect(
+		func():
+			Events.enemy_action_completed.emit(enemy)
+	)
+
+
+func update_intent_text() -> void:
+	var player := target as Player
+	if not player:
+		return
+		
+	var modified_dmg := player.modifier_handler.get_modified_value(damage, Modifier.Type.DMG_TAKEN)
+	intent.current_text = intent.base_text % modified_dmg
+"
+
+[sub_resource type="Resource" id="Resource_dk06j"]
+script = ExtResource("11_3agt6")
+base_text = "2x8"
+icon = ExtResource("10_encuo")
+
+[sub_resource type="GDScript" id="GDScript_4owg7"]
+script/source = "extends EnemyAction
+
+
+@export var block := 12
+
+func perform_action():
+	if not enemy or not target:
+		return
+	
+	
+	var block_effect := BlockEffect.new()
+	block_effect.amount = block
+	block_effect.sound = sound
+	block_effect.execute([enemy])
+	
+	get_tree().create_timer(0.6, false).timeout.connect(
+		func():
+			Events.enemy_action_completed.emit(enemy)
+	)
+
+
+"
+
+[sub_resource type="Resource" id="Resource_ltkox"]
+script = ExtResource("11_3agt6")
+base_text = ""
+icon = ExtResource("13_np2ke")
+
+[sub_resource type="PackedScene" id="PackedScene_e5t5s"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"names": PackedStringArray("BossWillieAI", "Node", "script", "BossWillieAttackAction", "Node", "script", "intent", "sound", "type", "chance_weight", "BossWillieBlockAction", "Node", "script", "intent", "sound", "type", "chance_weight"),
+"node_count": 3,
+"node_paths": [NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0, 1073741824, 0, 4, 3, -1, 5, 5, 1, 6, 2, 7, 3, 8, 4, 9, 5, 0, 1073741825, 0, 11, 10, -1, 5, 12, 6, 13, 7, 14, 8, 15, 9, 16, 10, 0),
+"variants": [ExtResource("9_cowvc"), SubResource("GDScript_v2nf8"), SubResource("Resource_dk06j"), ExtResource("12_641bm"), 1, 1.0, SubResource("GDScript_4owg7"), SubResource("Resource_ltkox"), ExtResource("14_wtjkl"), 1, 3.0],
+"version": 3
+}
+
+[sub_resource type="Resource" id="Resource_kh7j3"]
+script = ExtResource("16_6vtbp")
+ai = SubResource("PackedScene_e5t5s")
+max_health = 40
+art = ExtResource("15_iibu4")
 
 [node name="Battle" type="Node2D"]
 script = ExtResource("1_tx3os")
@@ -59,7 +159,7 @@ stats = ExtResource("5_g048m")
 
 [node name="BatEnemy2" parent="EnemyHandler" instance=ExtResource("2_134dg")]
 position = Vector2(235, 60)
-stats = ExtResource("9_wsna4")
+stats = SubResource("Resource_kh7j3")
 
 [node name="Player" parent="." instance=ExtResource("3_b7fq5")]
 position = Vector2(45, 80)

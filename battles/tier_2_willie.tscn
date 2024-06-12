@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://i8iqa1auy42t"]
+
+[ext_resource type="PackedScene" uid="uid://dhna04sq3k1a3" path="res://Scenes (CardUI)/enemy/enemy.tscn" id="1_ss5ep"]
+[ext_resource type="Resource" uid="uid://byt6ligag6jqq" path="res://enemies/willie/willie.tres" id="2_v2r2d"]
+
+[node name="Tier2Willie" type="Node2D"]
+
+[node name="Enemy" parent="." instance=ExtResource("1_ss5ep")]
+position = Vector2(200, 82)
+stats = ExtResource("2_v2r2d")

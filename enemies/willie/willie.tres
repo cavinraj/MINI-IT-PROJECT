@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=4 format=3 uid="uid://byt6ligag6jqq"]
+
+[ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="1_2urin"]
+[ext_resource type="Texture2D" uid="uid://6jro0lf7vk6e" path="res://Assets/art/williefinalboss.png" id="1_3jck8"]
+[ext_resource type="PackedScene" uid="uid://bt3de0a7lyi4j" path="res://enemies/willie/willie_ai.tscn" id="1_qkcpl"]
+
+[resource]
+script = ExtResource("1_2urin")
+ai = ExtResource("1_qkcpl")
+max_health = 40
+art = ExtResource("1_3jck8")
