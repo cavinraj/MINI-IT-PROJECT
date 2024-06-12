@@ -106,10 +106,12 @@ func _on_treasure_room_entered() -> void:
 	
 	
 
-func _on_treasure_room_exited(card: Card) -> void:
+func _on_treasure_room_exited() -> void:
 	var reward_scene := _change_view(BATTLE_REWARD_SCENE) as BattleReward
-	reward_scene.character_stats
+	reward_scene.run_stats = stats
+	reward_scene.character_stats = character
 	
+	reward_scene.add_gold_reward(200)
 	reward_scene.add_card_reward()
 	
 

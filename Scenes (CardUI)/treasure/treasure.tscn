@@ -1,8 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://ba4ggerfstw1u"]
+[gd_scene load_steps=17 format=3 uid="uid://ba4ggerfstw1u"]
 
 [ext_resource type="Texture2D" uid="uid://b16yub0h3t6lg" path="res://Assets/art/background.png" id="1_oc73h"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/treasure/treasure.gd" id="1_r5hgw"]
-[ext_resource type="Resource" uid="uid://bjdgy12x6xoyy" path="res://characters/assassin/cards/force_block.tres" id="2_7xbqw"]
 [ext_resource type="Texture2D" uid="uid://dbyeo5wdavyrn" path="res://Assets/art/tile_0089.png" id="3_42f33"]
 [ext_resource type="Texture2D" uid="uid://dws4h7bvt8pil" path="res://Assets/art/tile_0090.png" id="3_crwls"]
 [ext_resource type="Texture2D" uid="uid://w4qgfu2lbqlu" path="res://Assets/art/gold.png" id="3_oehrd"]
@@ -149,7 +148,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_r5hgw")
-treasure_card_pool = Array[Resource("res://custom_resources/card.gd")]([ExtResource("2_7xbqw"), ExtResource("2_7xbqw"), ExtResource("2_7xbqw")])
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
