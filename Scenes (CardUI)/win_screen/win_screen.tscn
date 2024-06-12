@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=3 uid="uid://cj6hli3j6sle3"]
+
+[ext_resource type="Script" path="res://Scenes (CardUI)/win_screen/win_screen.gd" id="1_ojw02"]
+[ext_resource type="Texture2D" uid="uid://k3lnmq8243cv" path="res://Assets/art/tile_0087.png" id="4_kptq5"]
+
+[sub_resource type="Gradient" id="Gradient_ctsge"]
+colors = PackedColorArray(0, 0, 0, 1, 0.659996, 0.0396639, 0.728421, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_h0ctb"]
+gradient = SubResource("Gradient_ctsge")
+fill_from = Vector2(0.5, 0.9)
+fill_to = Vector2(0.5, 0)
+metadata/_snap_enabled = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_iguwd"]
+line_spacing = 6.0
+font_size = 12
+shadow_size = 4
+shadow_color = Color(0.596078, 0.415686, 0.376471, 0.258824)
+
+[node name="WinScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_ojw02")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_h0ctb")
+expand_mode = 3
+
+[node name="CharacterPortrait" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -89.0
+offset_top = -30.0
+offset_right = -29.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_kptq5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VboxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -32.0
+offset_right = 93.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Message" type="Label" parent="VboxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "The Warrior
+is Victorious !"
+label_settings = SubResource("LabelSettings_iguwd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="VboxContainer"]
+custom_minimum_size = Vector2(60, 14)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Main Menu"
+
+[connection signal="pressed" from="VboxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
