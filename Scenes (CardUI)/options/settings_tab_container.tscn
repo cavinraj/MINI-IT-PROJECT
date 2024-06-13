@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dluw800vih6rd"]
+[gd_scene load_steps=6 format=3 uid="uid://dluw800vih6rd"]
 
 [ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="1_gawjn"]
 [ext_resource type="PackedScene" uid="uid://ck41lw6xx6jj1" path="res://Scenes (CardUI)/options/window_mode_button.tscn" id="2_08ycf"]
+[ext_resource type="Texture2D" uid="uid://ce0x5g38qwh45" path="res://Assets/art/Digi-Deck Domain No Text (2).png" id="2_j6ax1"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/options/settings_tab_container.gd" id="2_ji5c3"]
 [ext_resource type="PackedScene" uid="uid://cmk1a3juk4pxs" path="res://Scenes (CardUI)/options/resolution_mode_button.tscn" id="3_uyqpb"]
 
 [node name="SettingsTabContainer" type="Control"]
@@ -11,9 +13,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 theme = ExtResource("1_gawjn")
+script = ExtResource("2_ji5c3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_j6ax1")
+expand_mode = 1
 
 [node name="TabContainer" type="TabContainer" parent="."]
 layout_mode = 1
@@ -48,6 +59,7 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Display/MarginContainer/ScrollContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Window_Mode_Button" parent="TabContainer/Display/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_08ycf")]
 layout_mode = 2
@@ -77,18 +89,19 @@ layout_mode = 2
 [node name="Resolution_Mode_Button" parent="TabContainer/Resolution/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_uyqpb")]
 layout_mode = 2
 
-[node name="Sound" type="TabBar" parent="TabContainer"]
-visible = false
-layout_mode = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Sound"]
+[node name="ReturnButton" type="Button" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -28.0
+offset_top = -21.0
+offset_right = 22.0
+offset_bottom = -7.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 6
-theme_override_constants/margin_top = 6
-theme_override_constants/margin_right = 6
-theme_override_constants/margin_bottom = 6
+grow_vertical = 0
+text = "Return"
+
+[connection signal="pressed" from="ReturnButton" to="." method="_on_return_button_pressed"]
