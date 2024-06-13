@@ -36,8 +36,7 @@ func _ready() -> void:
 		RunStartup.Type.NEW_RUN:
 			character = run_startup.picked_character.create_instance()
 			_start_run()
-		RunStartup.Type.CONTINUED_RUN:
-			print("TODO: load previous Run")
+
 
 
 func _start_run() -> void:
