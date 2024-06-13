@@ -26,7 +26,7 @@
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/red_flash.gd" id="15_pflx1"]
 [ext_resource type="Script" path="res://custom_resources/enemy_stats.gd" id="16_v2c1s"]
 [ext_resource type="PackedScene" uid="uid://b3n1w5dje7ia0" path="res://Scenes (CardUI)/ui/battle_over_panel.tscn" id="17_6iuyu"]
-[ext_resource type="PackedScene" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="17_tp2vk"]
+[ext_resource type="PackedScene" uid="uid://ccy3s3xkt5rlo" path="res://Scenes (CardUI)/ui/card_pile_opener.tscn" id="17_tp2vk"]
 [ext_resource type="Texture2D" uid="uid://n0hg3rg4ly3o" path="res://Assets/art/discard.png" id="18_ujg67"]
 [ext_resource type="PackedScene" uid="uid://dws7irhbqmomu" path="res://Scenes (CardUI)/ui/card_pile_view.tscn" id="21_ub5ml"]
 [ext_resource type="PackedScene" uid="uid://cteykn8ftalpk" path="res://Scenes (CardUI)/ui/status_view.tscn" id="22_rntqu"]
@@ -302,5 +302,4 @@ layer = 4
 visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-volume_db = -11.934
 bus = &"Music"

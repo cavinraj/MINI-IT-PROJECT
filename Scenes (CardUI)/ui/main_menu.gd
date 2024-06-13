@@ -14,10 +14,6 @@ func _ready() -> void:
 		music_player.play()
 	
 
-func _on_continue_pressed() -> void:
-	print("continue run")
-
-
 func _on_new_run_pressed() -> void:
 	get_tree().change_scene_to_packed(CHAR_SELECTOR_SCENE)
 

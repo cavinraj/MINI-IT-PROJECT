@@ -34,9 +34,10 @@ func start_battle() -> void:
 	battle_ui.initialize_card_pile_ui()
 
 
+
 func _on_enemies_child_order_changed() -> void:
 	if enemy_handler.get_child_count() == 0:
-		Events.battle_over_screen_requested.emit("Victorious! :)", BattleOverPanel.Type.WIN )
+		Events.battle_over_screen_requested.emit("Victorious! :)", BattleOverPanel.Type.WIN)
 		
 	
 func _on_enemy_turn_ended() -> void:
