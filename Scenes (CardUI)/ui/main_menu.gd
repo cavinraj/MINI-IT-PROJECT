@@ -1,6 +1,7 @@
 extends Control
 
 const CHAR_SELECTOR_SCENE := preload("res://Scenes (CardUI)/ui/character_selector.tscn")
+const SETTINGS_TAB_SCENE := preload("res://Scenes (CardUI)/options/settings_tab_container.tscn")
 
 @onready var continue_button: Button = %Continue
 @export var music: AudioStream
@@ -21,3 +22,7 @@ func _on_new_run_pressed() -> void:
 func _on_exit_pressed() -> void:
 	get_tree().quit()
 	
+
+
+func _on_option_pressed():
+	get_tree().change_scene_to_packed(SETTINGS_TAB_SCENE)
