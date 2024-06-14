@@ -39,10 +39,10 @@ grow_horizontal = 2
 grow_vertical = 2
 tab_alignment = 1
 
-[node name="Display" type="TabBar" parent="TabContainer"]
+[node name="Window" type="TabBar" parent="TabContainer"]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Display"]
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Window"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -54,14 +54,14 @@ theme_override_constants/margin_top = 6
 theme_override_constants/margin_right = 6
 theme_override_constants/margin_bottom = 6
 
-[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Display/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Window/MarginContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Display/MarginContainer/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Window/MarginContainer/ScrollContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Window_Mode_Button" parent="TabContainer/Display/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_08ycf")]
+[node name="Window_Mode_Button" parent="TabContainer/Window/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_08ycf")]
 layout_mode = 2
 
 [node name="Resolution" type="TabBar" parent="TabContainer"]
