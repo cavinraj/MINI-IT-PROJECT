@@ -17,6 +17,21 @@ fill_to = Vector2(0.5, 0)
 metadata/_snap_enabled = true
 metadata/_snap_count = 8
 
+[sub_resource type="Animation" id="Animation_eg8fa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopKeeper:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_uw4an")]
+}
+
 [sub_resource type="Animation" id="Animation_dpdyb"]
 resource_name = "blink"
 length = 0.15
@@ -32,21 +47,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [ExtResource("3_1h8hn"), ExtResource("2_uw4an")]
-}
-
-[sub_resource type="Animation" id="Animation_eg8fa"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopKeeper:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_uw4an")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vnime"]

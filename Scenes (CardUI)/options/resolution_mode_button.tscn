@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmk1a3juk4pxs"]
+
+[ext_resource type="PackedScene" uid="uid://daun3f0shnihr" path="res://Scenes (CardUI)/options/options_display_button.tscn" id="1_gg4jq"]
+[ext_resource type="Script" path="res://Scenes (CardUI)/options/resolution_mode_button.gd" id="2_i3t5x"]
+
+[node name="Resolution_Mode_Button" instance=ExtResource("1_gg4jq")]
+script = ExtResource("2_i3t5x")
+
+[node name="HBoxContainer" parent="." index="0"]
+theme_override_constants/separation = 20
+
+[node name="OptionButton" parent="HBoxContainer" index="2"]
+custom_minimum_size = Vector2(85, 16)
