@@ -1,18 +1,18 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://dgryae3qv4lcu"]
 
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_3yr2w"]
-[ext_resource type="Texture2D" uid="uid://by2ii820t6bth" path="res://Assets/art/Kratos.png" id="1_w0ie8"]
+[ext_resource type="Texture2D" uid="uid://crvrkbtpw31a2" path="res://Assets/art/Kratos.png" id="1_w0ie8"]
 [ext_resource type="Resource" uid="uid://me46mh0cc7gi" path="res://characters/Warrior/warrior_draftable_cards.tres" id="2_htjh4"]
 [ext_resource type="Resource" uid="uid://c7lahkhmpspkw" path="res://characters/Warrior/warrior_starting_deck.tres" id="3_3ahsn"]
 
 [resource]
 script = ExtResource("1_3yr2w")
-character_name = "Kratos"
+character_name = "Ghost of Sparta"
 description = "Zeus! Your son has returned."
 portrait = ExtResource("1_w0ie8")
 starting_deck = ExtResource("3_3ahsn")
 draftable_cards = ExtResource("2_htjh4")
 cards_per_turn = 3
 max_mana = 5
-max_health = 35
+max_health = 45
 art = ExtResource("1_w0ie8")

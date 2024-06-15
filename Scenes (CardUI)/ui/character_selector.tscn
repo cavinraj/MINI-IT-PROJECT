@@ -2,20 +2,20 @@
 
 [ext_resource type="Script" path="res://Scenes (CardUI)/ui/character_selector.gd" id="1_mur4y"]
 [ext_resource type="Resource" uid="uid://dc5xau76tudru" path="res://Scenes (CardUI)/run/run_startup.tres" id="2_uoe0v"]
-[ext_resource type="Texture2D" uid="uid://do6acp5w4smo7" path="res://Assets/art/Digi-Deck Domain No Text (2).png" id="2_ypau3"]
-[ext_resource type="Texture2D" uid="uid://dteursjtpat74" path="res://Assets/art/Ragnarok.png" id="5_2gatj"]
-[ext_resource type="Texture2D" uid="uid://k3lnmq8243cv" path="res://Assets/art/tile_0087.png" id="5_nv777"]
-[ext_resource type="Texture2D" uid="uid://bjnuhwif6vjyt" path="res://Assets/art/jjk pin.png" id="6_d1fqh"]
-[ext_resource type="Texture2D" uid="uid://j6tusm1pre7f" path="res://Assets/art/Lightsaber.png" id="7_lgjhm"]
+[ext_resource type="Texture2D" uid="uid://ce5ftq0blnd4u" path="res://Assets/art/Digi-Deck Domain No Text (2).png" id="2_ypau3"]
+[ext_resource type="Texture2D" uid="uid://bp0as4mln2taw" path="res://Assets/art/Ragnarok.png" id="5_2gatj"]
+[ext_resource type="Texture2D" uid="uid://0btm3ibxio7s" path="res://Assets/art/tile_0087.png" id="5_nv777"]
+[ext_resource type="Texture2D" uid="uid://bn33fesrhjwcs" path="res://Assets/art/jjk pin.png" id="6_d1fqh"]
+[ext_resource type="Texture2D" uid="uid://be8u28lwx3pc4" path="res://Assets/art/Lightsaber.png" id="7_lgjhm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jk3dy"]
 line_spacing = 10.0
 shadow_size = 4
 shadow_color = Color(0.596078, 0.415686, 0.376471, 0.258824)
 
-[sub_resource type="LabelSettings" id="LabelSettings_iguwd"]
+[sub_resource type="LabelSettings" id="LabelSettings_upoxq"]
 line_spacing = 6.0
-font_size = 12
+font_size = 10
 shadow_size = 4
 shadow_color = Color(0.596078, 0.415686, 0.376471, 0.258824)
 
@@ -66,7 +66,7 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Likes to slice things up.
 Second line of text."
-label_settings = SubResource("LabelSettings_iguwd")
+label_settings = SubResource("LabelSettings_upoxq")
 horizontal_alignment = 1
 vertical_alignment = 1
 
