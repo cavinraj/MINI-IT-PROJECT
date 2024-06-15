@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://bptdw0dqa47mp" path="res://main_theme.tres" id="1_gawjn"]
 [ext_resource type="PackedScene" uid="uid://ck41lw6xx6jj1" path="res://Scenes (CardUI)/options/window_mode_button.tscn" id="2_08ycf"]
-[ext_resource type="Texture2D" uid="uid://ce0x5g38qwh45" path="res://Assets/art/Digi-Deck Domain No Text (2).png" id="2_j6ax1"]
+[ext_resource type="Texture2D" uid="uid://bamoprgmnrmsj" path="res://Assets/art/Digi-Deck Domain No Text (2).png" id="2_j6ax1"]
 [ext_resource type="Script" path="res://Scenes (CardUI)/options/settings_tab_container.gd" id="2_ji5c3"]
 [ext_resource type="PackedScene" uid="uid://cmk1a3juk4pxs" path="res://Scenes (CardUI)/options/resolution_mode_button.tscn" id="3_uyqpb"]
 

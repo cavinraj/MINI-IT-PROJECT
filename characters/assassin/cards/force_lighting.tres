@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bx7gcqc1vuv2m" path="res://Assets/art/Force Lightning.png" id="1_1wkph"]
 [ext_resource type="Script" path="res://characters/assassin/cards/force_lighting.gd" id="1_mybiq"]
-[ext_resource type="AudioStream" uid="uid://cff7w63abicna" path="res://Assets/art/forcelightning.mp3" id="3_8hh88"]
+[ext_resource type="AudioStream" uid="uid://y465xua2hy58" path="res://Assets/art/forcelightning.mp3" id="3_8hh88"]
 
 [resource]
 script = ExtResource("1_mybiq")
