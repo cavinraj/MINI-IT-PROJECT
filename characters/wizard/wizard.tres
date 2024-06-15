@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://dpirhtmqfyvfk"]
 
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_88tp5"]
-[ext_resource type="Texture2D" uid="uid://ucuqx5lo284i" path="res://Assets/art/Gojo.png" id="1_qlqaq"]
+[ext_resource type="Texture2D" uid="uid://clsgca46q2s2t" path="res://Assets/art/Gojo.png" id="1_qlqaq"]
 [ext_resource type="Resource" uid="uid://boyep4yo5a15h" path="res://characters/wizard/wizard_draftable_deck.tres" id="2_yx5ns"]
 [ext_resource type="Resource" uid="uid://ckvi5psijjpl1" path="res://characters/wizard/wizard_starting_deck.tres" id="3_wiv1v"]
 
@@ -14,5 +14,5 @@ starting_deck = ExtResource("3_wiv1v")
 draftable_cards = ExtResource("2_yx5ns")
 cards_per_turn = 3
 max_mana = 5
-max_health = 35
+max_health = 40
 art = ExtResource("1_qlqaq")

@@ -1,18 +1,18 @@
 [gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://berflxtj34m66"]
 
-[ext_resource type="Texture2D" uid="uid://va3bbbrslw7t" path="res://Assets/art/Darth Vader.png" id="1_r1ksu"]
+[ext_resource type="Texture2D" uid="uid://6ffywpqxvyqe" path="res://Assets/art/Darth Vader.png" id="1_r1ksu"]
 [ext_resource type="Script" path="res://custom_resources/character_stats.gd" id="1_yct45"]
 [ext_resource type="Resource" uid="uid://ui6o320gf7oy" path="res://characters/assassin/assasin_draftable_deck.tres" id="2_ftg6l"]
 [ext_resource type="Resource" uid="uid://bhiew6dwoplq2" path="res://characters/assassin/assasin_starting_deck.tres" id="4_ngrd2"]
 
 [resource]
 script = ExtResource("1_yct45")
-character_name = "Darth Vader"
+character_name = "Vader Hitam"
 description = "I find your lack of faith disturbing."
 portrait = ExtResource("1_r1ksu")
 starting_deck = ExtResource("4_ngrd2")
 draftable_cards = ExtResource("2_ftg6l")
-cards_per_turn = 5
+cards_per_turn = 3
 max_mana = 5
-max_health = 35
+max_health = 40
 art = ExtResource("1_r1ksu")

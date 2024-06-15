@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Git Exercise"
+config/name="TT5L-12 Digi Deck Domain"
 run/main_scene="res://Scenes (CardUI)/ui/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
@@ -30,6 +30,7 @@ BGMusic="*res://audio/bg_music/bg_music.tscn"
 
 window/size/viewport_width=256
 window/size/viewport_height=144
+window/size/mode=3
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
