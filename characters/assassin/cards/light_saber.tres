@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://6fjxnpgx2pt3" path="res://Assets/art/Lightsaber.png" id="1_o03kp"]
 [ext_resource type="Script" path="res://characters/assassin/cards/light_saber.gd" id="2_q78kb"]
-[ext_resource type="AudioStream" uid="uid://dkq7spfsldcin" path="res://Assets/art/lightsaber.mp3" id="3_dmchp"]
+[ext_resource type="AudioStream" uid="uid://ceqt2ov31dka6" path="res://Assets/art/lightsaber.mp3" id="3_dmchp"]
 
 [resource]
 script = ExtResource("2_q78kb")

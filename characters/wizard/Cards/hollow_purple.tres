@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://characters/wizard/Cards/hollow_purple.gd" id="1_qxq1y"]
 [ext_resource type="Texture2D" uid="uid://d1dv1tkw7y2if" path="res://Assets/art/Hollow Purple.png" id="1_sfyoe"]
-[ext_resource type="AudioStream" uid="uid://biicuu3alnqfo" path="res://Assets/art/hollowpurple.mp3" id="3_yryyg"]
+[ext_resource type="AudioStream" uid="uid://ckkxbxmtuu8qu" path="res://Assets/art/hollowpurple.mp3" id="3_yryyg"]
 
 [resource]
 script = ExtResource("1_qxq1y")
